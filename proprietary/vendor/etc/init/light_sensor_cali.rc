@@ -1,0 +1,7 @@
+service light_sensor_cali /vendor/bin/light_sensor_cali
+     #disabled
+     group system
+     #class core
+     oneshot
+on early-boot
+     start light_sensor_cali

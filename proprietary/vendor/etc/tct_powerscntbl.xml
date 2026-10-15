@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCNTABLE>
+    <!-- [TCT-SAT][PERF]Begin added by bo.cao for touch boost on 2020/11/4-->
+    <scenario powerhint="MTKPOWER_HINT_EXCITING_TOUCH">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="3000"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_SPORTS_MODE">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_DEX_OPT">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_SCROLLING">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_ROTATE">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_WAKE_UP">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_APP_LAUNCH">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="3000"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+        <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+        <data cmd="PERF_RES_SCHED_CACHE_PART_CTRL" param1="1"></data>
+        <data cmd="PERF_RES_PERF_TASK_TURBO" param1="15"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_SYS_BOOT">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="30000"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_FOCUS_CHANGING">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_VIDEO_GPU">
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <scenario powerhint="MTKPOWER_HINT_VIDEO_CPUGPU">
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+        <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+        <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+        <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+        <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+        <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+    </scenario>
+    <!-- [TCT-SAT][PERF]End added by bo.cao for touch boost on 2020/11/4-->    
+</SCNTABLE>

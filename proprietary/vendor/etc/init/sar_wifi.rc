@@ -1,0 +1,134 @@
+#begin added by kliu1 for sar wifi for XR11395889 telecomcode on 2021/08/04
+on property:sys.rf.sar.status=1 && property:vendor.headset.wifi.sar=0 && property:ro.boot.code=T767H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:vendor.headset.wifi.sar=1 && property:ro.boot.code=T767H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 1"
+#end added by kliu1 for sar wifi for XR11395889 telecomcode on 2021/08/04
+
+#ADD-BEGIN by huafeng.gu for sar wifi for 11457227 on 2021/08/27
+#Cruze_Pro
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6165H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6165H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:vendor.headset.wifi.sar=0 && property:ro.boot.code=6165H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:vendor.headset.wifi.sar=1 && property:ro.boot.code=6165H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6165A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6165A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6065A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6065A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6165S
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6165S
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+#Cruze_Lite_S
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6102H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6102H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6102K
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6102K
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6102D
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6102D
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+#Cruze
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6027A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6027A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6127D
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6127D
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 1"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6127H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6127H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 1"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6127I
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6127I
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=0 && property:ro.boot.code=6127A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 0"
+
+on property:sys.rf.sar.status=1 && property:persist.sys.sar.datalink=1 && property:ro.boot.code=6127A
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 9"
+
+#Passat
+on property:sys.boot_completed=1 && property:sys.rf.sar.status=1 && property:ro.boot.code=T676H
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 10"
+
+on property:sys.boot_completed=1 && property:sys.rf.sar.status=1 && property:ro.boot.code=T676K
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 10"
+
+on property:sys.boot_completed=1 && property:sys.rf.sar.status=1 && property:ro.boot.code=T676J
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_Scenario 10"
+#ADD-END by huafeng.gu for sar wifi for 11457227 on 2021/08/27
+
+# [SOCAOSP14-14796] modify-begin shangpeng.su 2023.06.08
+#ENCORETF-6062 add-begin shangpeng.su 2022.09.22
+on property:sys.sar.WifiEnable=0
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 1"
+on property:sys.sar.WifiEnable=1
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 2"
+on property:sys.sar.WifiEnable=2
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 3"
+on property:sys.sar.WifiEnable=3
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 4"
+on property:sys.sar.WifiEnable=4
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 5"
+on property:sys.sar.WifiEnable=5
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 6"
+on property:sys.sar.WifiEnable=6
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 7"
+
+on property:sys.sar.WifiEnable=11
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 11"
+on property:sys.sar.WifiEnable=12
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 12"
+on property:sys.sar.WifiEnable=13
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 13"
+on property:sys.sar.WifiEnable=14
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 14"
+on property:sys.sar.WifiEnable=15
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 15"
+on property:sys.sar.WifiEnable=16
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 16"
+on property:sys.sar.WifiEnable=17
+    exec - root shell -- /vendor/bin/iwpriv_system wlan0 driver "set_pwr_ctrl Sar_nScenario 17"
+#ENCORETF-6062 add-end shangpeng.su 2022.09.22
+# [SOCAOSP14-14796] modify-end shangpeng.su 2023.06.08

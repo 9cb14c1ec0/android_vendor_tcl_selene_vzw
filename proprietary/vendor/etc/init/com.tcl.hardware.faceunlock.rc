@@ -1,0 +1,49 @@
+on post-fs-data
+    mkdir /data/tct_face_data 0777 system system
+    chown system system /data/tct_face_data/files
+    chown system system /data/tct_face_data/files/megvii/
+    chown system system /data/tct_face_data/files/megvii/encrypt_feature_info
+    chown system system /data/tct_face_data/files/megvii/encypt_feature_20
+    chown system system /data/tct_face_data/files/megvii/encypt_restore_20
+    chown system system /data/tct_face_data/files/megvii/model
+    chown system system /data/tct_face_data/files/megvii/model/anc_model_file
+    chown system system /data/tct_face_data/files/megvii/model/panorama_mgb
+
+    chmod 0777 /data/tct_face_data/files
+    chmod 0777 /data/tct_face_data/files/megvii/
+    chmod 0777 /data/tct_face_data/files/megvii/encrypt_feature_info
+    chmod 0777 /data/tct_face_data/files/megvii/encypt_feature_20
+    chmod 0777 /data/tct_face_data/files/megvii/encypt_restore_20
+    chmod 0777 /data/tct_face_data/files/megvii/model
+    chmod 0777 /data/tct_face_data/files/megvii/model/anc_model_file
+    chmod 0777 /data/tct_face_data/files/megvii/model/panorama_mgb
+
+    mkdir /data/vendor/face-model 0777 system system
+    mkdir /data/vendor/face-model/store 0777 system system
+    copy /apex/com.tcl.hardware.faceunlock/etc/anc_model_file /data/vendor/face-model/anc_model_file
+    copy /apex/com.tcl.hardware.faceunlock/etc/anc_model_file /data/vendor/face-model/anc_model_file
+    mkdir /data/tct_face_data/4 0777 system system
+
+
+    chmod 0777 /data/vendor/face-model/anc_model_file
+
+on property:persist.vendor.test.face=1
+	start vendor.face_hal
+
+on property:persist.vendor.test.face=0
+	stop vendor.face_hal
+
+
+service vendor.face_hal /apex/com.tcl.hardware.faceunlock/bin/hw/android.hardware.biometrics.face-service
+    user system
+    group system
+
+    interface aidl  android.hardware.biometrics.face.IFace/default
+    class hal
+    # will not be restarted if it exits until it is requested to be restarted
+    oneshot
+    # will only be started when requested
+    disabled
+    user system
+    group system
+    updatable

@@ -1,0 +1,3 @@
+# add ueventd.tct.perf.rc for perf root permissions
+# perf_config permission
+/dev/perf_config          0666   system     system

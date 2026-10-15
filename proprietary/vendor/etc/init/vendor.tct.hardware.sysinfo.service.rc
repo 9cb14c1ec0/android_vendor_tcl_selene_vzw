@@ -1,0 +1,34 @@
+service sysinfo_hal_hwservice /vendor/bin/hw/vendor.tct.hardware.sysinfo.service
+    class hal
+    user system
+    group system
+
+on init
+    chmod 0666 /sys/class/power_supply/battery/state_of_health
+    chown system system /sys/class/power_supply/battery/state_of_health
+    chmod 0666 /sys/class/power_supply/battery/charging_enabled
+    chmod 0666 /sys/class/power_supply/battery_health/bat_health
+
+on property:sys.bfu.date.trigger=*
+   write /sys/class/power_supply/battery/first_usage_date ${sys.bfu.date.trigger}
+
+on property:sys.reset.bmf.dt=*
+   write /sys/class/power_supply/battery/manufacturing_date ${sys.reset.bmf.dt}
+
+on property:sys.reset.bmf.sn=*
+   write /sys/class/power_supply/battery/serial_number ${sys.reset.bmf.sn}
+   write /sys/class/power_supply/battery/battery_replacement 1
+
+on property:log.tag.battery.update=2
+   write /sys/class/power_supply/battery/battery_replacement 1
+
+on post-fs-data
+    mkdir /mnt/oempersist/batteryhealth  0770 system system
+    mkdir /mnt/oempersist/battery  0770 system system
+    chown system system /sys/class/power_supply/battery/state_of_health
+    chmod 0666 /sys/class/power_supply/battery/state_of_health
+    chown system system /sys/class/power_supply/battery_health/bat_health
+    chmod 0666 /sys/class/power_supply/battery_health/bat_health
+
+on property:sys.reset.bmp=*
+   write /sys/class/power_supply/smart_charge/charge_scene ${sys.reset.bmp}

@@ -1,0 +1,6 @@
+<CameraAlgoService>
+    <CurrentVersion>v3.2.1_240113</CurrentVersion>
+    <Date>2024-01-13</Date>
+    <Client>TCL,MobiWire,COOSEA</Client>
+    <BaseLine>mt6765-u-target-dev, mt6835-u-vf-t0-target-dev</BaseLine>
+</CameraAlgoService>

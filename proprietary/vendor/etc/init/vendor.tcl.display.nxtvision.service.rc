@@ -1,0 +1,9 @@
+service nxtvision /vendor/bin/hw/vendor.tcl.display.nxtvision.service
+    class main
+    user system
+    group system
+    disabled
+
+on early-boot
+    enable nxtvision
+    start nxtvision

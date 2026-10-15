@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<permissions>
+	<signature-permissions package="com.tcl.nxtpaperkey">
+		<permission name="android.permission.WRITE_SETTINGS" />
+		<permission name="android.permission.INTERACT_ACROSS_USERS" />
+	</signature-permissions>
+</permissions>

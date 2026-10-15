@@ -1,0 +1,82 @@
+service  tcl_perf_ko_ctrl_sh /vendor/bin/tcl_perf_ko_ctrl.sh
+    class main
+    user root
+    group root system
+
+on post-fs-data
+    chmod  664 /proc/tcl_modules_ctrl_msg
+
+#all_ko
+on property:persist.sys.perf_ko.all_ko=true
+    write   /proc/tcl_modules_ctrl_msg  enable:all_ko
+
+
+on property:persist.sys.perf_ko.all_ko=false
+    write   /proc/tcl_modules_ctrl_msg  disable:all_ko
+
+
+#tcl_uxthread
+on property:persist.sys.perf_ko.tcl_uxthread=true
+    write   /proc/tcl_modules_ctrl_msg  enable:tcl_uxthread
+
+on property:persist.sys.perf_ko.tcl_uxthread=false
+    write   /proc/tcl_modules_ctrl_msg  disable:tcl_uxthread
+
+#process_reclaim
+on property:persist.sys.perf_ko.process_reclaim=true
+    write   /proc/tcl_modules_ctrl_msg  enable:process_reclaim
+
+on property:persist.sys.perf_ko.process_reclaim=false
+    write   /proc/tcl_modules_ctrl_msg  disable:process_reclaim
+
+#tkperf
+on property:persist.sys.perf_ko.tkperf=true
+    write   /proc/tcl_modules_ctrl_msg  enable:tkperf
+
+on property:persist.sys.perf_ko.tkperf=false
+    write   /proc/tcl_modules_ctrl_msg  disable:tkperf
+
+#tcl_limit_mediascanner
+on property:persist.sys.perf_ko.tcl_limit_mediascanner=true
+    write   /proc/tcl_modules_ctrl_msg  enable:tcl_limit_mediascanner
+
+on property:persist.sys.perf_ko.tcl_limit_mediascanner=false
+    write   /proc/tcl_modules_ctrl_msg  disable:tcl_limit_mediascanner
+
+#tcl io limit
+on property:persist.sys.perf_ko.iolimit=true
+    write   /proc/tcl_modules_ctrl_msg  enable:iolimit
+
+on property:persist.sys.perf_ko.iolimit=false
+    write   /proc/tcl_modules_ctrl_msg  disable:iolimit
+
+#tcl_mm_reclaim_opt
+on property:persist.sys.perf_ko.tcl_mm_reclaim_opt=true
+    write   /proc/tcl_modules_ctrl_msg  enable:tcl_mm_reclaim_opt
+    write /sys/module/tcl_mm_reclaim_opt/parameters/ssb_enabled 1
+    write /sys/module/tcl_mm_reclaim_opt/parameters/dapb_enabled 1
+
+on property:persist.sys.perf_ko.tcl_mm_reclaim_opt=false
+    write   /proc/tcl_modules_ctrl_msg  disable:tcl_mm_reclaim_opt
+    write /sys/module/tcl_mm_reclaim_opt/parameters/ssb_enabled 0
+    write /sys/module/tcl_mm_reclaim_opt/parameters/dapb_enabled 0
+
+#cpu_perf_monitor
+on property:persist.sys.perf_ko.cpu_perf_monitor=true
+    write   /proc/tcl_modules_ctrl_msg  enable:cpu_perf_monitor
+
+on property:persist.sys.perf_ko.cpu_perf_monitor=false
+    write   /proc/tcl_modules_ctrl_msg  disable:cpu_perf_monitor
+
+#tcl_per_bdt
+on property:persist.sys.perf_ko.tcl_perf_bdt=true
+    write   /proc/tcl_modules_ctrl_msg  enable:tcl_perf_bdt
+    write /sys/module/tcl_perf_bdt/parameters/enabled_cpu 1
+    write /sys/module/tcl_perf_bdt/parameters/enabled_mem 1
+    write /sys/module/tcl_perf_bdt/parameters/enabled_io 1
+
+on property:persist.sys.perf_ko.tcl_perf_bdt=false
+    write   /proc/tcl_modules_ctrl_msg  disable:tcl_perf_bdt
+    write /sys/module/tcl_perf_bdt/parameters/enabled_cpu 0
+    write /sys/module/tcl_perf_bdt/parameters/enabled_mem 0
+    write /sys/module/tcl_perf_bdt/parameters/enabled_io 0

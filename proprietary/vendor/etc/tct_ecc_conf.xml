@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Type Define:(Refer to TctEccConfig.java)
+     ECC = 0; NON_ECC = 1; RIL_ONLY = 2; EMPTY = 3; -->
+
+<TctEccEntry>
+    <!-- Defect: MODEL3-5944 -->
+    <!-- Defect: 8390864 11692253 for gcf -->
+    <TctEccEntry ecid="22000001" ecc_type="1" ecc_number="120,122" />
+    <!-- Task 9049040; Defect 8956930 -->
+    <!-- Defect: MODEL3-5944 -->
+    <TctEccEntry ecid="33704002" ecc_type="3" />
+    <TctEccEntry ecid="13704002" ecc_type="3" />
+    <TctEccEntry ecid="33706003" ecc_type="3" />
+    <TctEccEntry ecid="13706003" ecc_type="3" />
+    <!-- Task 9049040;task 8956203 -->
+    <!-- For Latam Mexico 060 066 is not ecc ,but sim card's write 060 066 as ecc. So we need custom 060 066 is not ecc. -->
+    <TctEccEntry ecid="13334020" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="33334020" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="13334140" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="33334140" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="13334070" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="33334070" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="13334030" ecc_type="1" ecc_number="066,060" />
+    <TctEccEntry ecid="33334030" ecc_type="1" ecc_number="066,060" />
+    <!-- Defect 8842366 8842283 -->
+    <TctEccEntry ecid="13364039" ecc_type="0" ecc_number="919" />
+    <TctEccEntry ecid="33364039" ecc_type="0" ecc_number="919" />
+    <TctEccEntry ecid="13364049" ecc_type="0" ecc_number="919" />
+    <TctEccEntry ecid="33364049" ecc_type="0" ecc_number="919" />
+    <!-- Defect 11084535 -->
+    <TctEccEntry ecid="33732123" ecc_type="0" ecc_number="123" />
+    <!-- FR 9661862 -->
+    <TctEccEntry ecid="33740000" ecc_type="0" ecc_number="123" />
+    <TctEccEntry ecid="33740000" ecc_type="1" ecc_number="911" />
+
+    <!-- FR 8621602 -->
+    <TctEccEntry numeric="311480" ecc_type="0" ecc_number="*272911" />
+    <!-- Defect 11293570 -->
+    <TctEccEntry numeric="54705" ecc_type="1" ecc_number="15" />
+    <TctEccEntry numeric="54705" ecc_type="1" ecc_number="16" />
+    <TctEccEntry numeric="54705" ecc_type="1" ecc_number="17" />
+    <TctEccEntry numeric="54705" ecc_type="1" ecc_number="18" />
+    <TctEccEntry numeric="54705" ecc_type="1" ecc_number="911" />
+    <!-- Task 8676093 -->
+    <TctEccEntry numeric="364FFF" ecc_type="1" ecc_number="112" />
+    <!-- Defect 10467745 -->
+    <!-- remove by zhichao.si for MDOSUP-3162 on 2024/10/09-->
+    <!--<TctEccEntry numeric="23003" ecc_type="1" ecc_number="112" />-->
+    <!-- Defect 8842294 -->
+    <TctEccEntry numeric="732101" ecc_type="1" ecc_number="123" />
+    <!-- Defect 8959303 -->
+    <TctEccEntry numeric="36801" ecc_type="1" ecc_number="104,105,106" />
+    <!-- Defect: 8221962 For Common FR: 7313228 -->
+    <!-- For Belgium(206) , Germany(262), Italy (222), Netherlands (204), Portugal(268),Sweden(240) 118 is not emergency number -->
+    <TctEccEntry numeric="206FFF" ecc_type="1" ecc_number="118" />
+    <TctEccEntry numeric="262FFF" ecc_type="1" ecc_number="118" />
+    <TctEccEntry numeric="222FFF" ecc_type="1" ecc_number="08,118,119,999" />
+    <TctEccEntry numeric="268FFF" ecc_type="1" ecc_number="118" />
+    <TctEccEntry numeric="240FFF" ecc_type="1" ecc_number="118" />
+    <!-- Defect-SOCAOSP13-7593 not ecc 911,999,000,08,118,119-->
+    <TctEccEntry numeric="260FFF" ecc_type="1" ecc_number="911,999,08,118,119,000,998,997" />
+    <!-- Defect-9203555 -->
+    <TctEccEntry numeric="708001" ecc_type="2" />
+    <TctEccEntry numeric="70801" ecc_type="2" />
+    <TctEccEntry numeric="70401" ecc_type="2" />
+    <TctEccEntry numeric="71073" ecc_type="2" />
+    <!-- Defect-11221358 -->
+    <TctEccEntry numeric="27602" ecc_type="2" />
+     <!-- Defect-11662066 -->
+    <TctEccEntry numeric="73603" ecc_type="1" ecc_number="119" />
+    <!-- Defect-11704878 -->
+    <TctEccEntry numeric="71617" ecc_type="1" ecc_number="105,110,116,119" />
+    <!-- Defect-11714165 -->
+    <TctEccEntry numeric="71610" ecc_type="1" ecc_number="110,116,119" />
+    <!-- [BUGFIX]-MODIFY-BEGIN by shengfeng.zhang.cd,2023/08/24,MODEL3-14048 -->
+    <TctEccEntry numeric="724FFF" ecc_type="1" ecc_number="192,193" />
+    <!-- [BUGFIX]-MODIFY-END by shengfeng.zhang.cd,2023/08/24,MODEL3-14048 -->
+
+    <!--begin add by zhichao.si for LDB-3034 on 2023/11/7 -->
+    <TctEccEntry numeric="218FFF" ecc_type="1" ecc_number="112" />
+    <TctEccEntry numeric="220FFF" ecc_type="1" ecc_number="112" />
+    <!--end add by zhichao.si for LDB-3034 on 2023/11/7 -->
+
+    <!--begin add by zhichao.si for MODEL3-16556(cloneMP) on 2024/08/16, 185 for TIM is a non-emergency number refer to 586916-->
+    <TctEccEntry numeric="72402" ecc_type="1" ecc_number="185"/>
+    <TctEccEntry numeric="72403" ecc_type="1" ecc_number="185"/>
+    <TctEccEntry numeric="72404" ecc_type="1" ecc_number="185"/>
+    <TctEccEntry numeric="72454" ecc_type="1" ecc_number="185"/>
+    <!--end add by zhichao.si for MODEL3-16556 on 2024/08/16-->
+</TctEccEntry>

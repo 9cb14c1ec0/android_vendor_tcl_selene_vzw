@@ -1,0 +1,16 @@
+on property:debug.ufs_setlu=1 && property:ro.boot.inproductionflag=true
+    #exec - root -- /vendor/bin/ufs_setlu desc -t 1 -w 2 -i 3 -p /dev/ufs-bsg0
+    #exec - root -- /vendor/bin/ufs_setlu fl -t 2 -o -p /dev/ufs-bsg0
+    #exec - root -- /vendor/bin/ufs_setlu attr -t 11 -w 0x01 -p /dev/ufs-bsg0
+    # 3合一指令
+    exec - root -- /vendor/bin/ufs_setlu oem -w 2 -i 3 -p /dev/ufs-bsg0
+
+    setprop debug.ufs_setlu 0
+
+on property:debug.ufs_setlu_getresult=1 && property:ro.boot.inproductionflag=true
+    exec - root -- /vendor/bin/ufs_setlu oem -a -i 3 -p /dev/ufs-bsg0
+
+    setprop debug.ufs_setlu_getresult 0
+
+on boot
+    exec - root -- /vendor/bin/ufs_setlu oem -a -i 3 -p /dev/ufs-bsg0

@@ -1,0 +1,10 @@
+# TCT setup files/dirs of oempersist partition.
+# set file permission as xxx5 so that other(radio/etc) can read it.
+
+on post-fs
+    chown system system /mnt/oempersist
+    restorecon_recursive /mnt/oempersist
+    mkdir /mnt/oempersist/tct_call_data 0770 system system
+    mkdir /mnt/oempersist/apn_info 0775 system system
+    mkdir /mnt/oempersist/phone 0770 radio system
+

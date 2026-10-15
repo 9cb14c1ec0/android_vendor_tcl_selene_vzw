@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<permissions>
+	<privapp-permissions package="com.vzw.hss.myverizon">
+		<permission name="android.permission.PACKAGE_USAGE_STATS" />
+		<permission name="android.permission.REBOOT" />
+		<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+		<permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS" />
+		<permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+		<permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+		<permission name="android.permission.CLEAR_APP_CACHE" />
+		<permission name="android.permission.CONNECTIVITY_INTERNAL" />
+		<permission name="android.permission.WRITE_SECURE_SETTINGS" />
+	</privapp-permissions>
+	<privapp-permissions package="com.facebook.system">
+		<permission name="android.permission.REAL_GET_TASKS" />
+		<permission name="android.permission.DELETE_PACKAGES" />
+		<permission name="android.permission.INSTALL_PACKAGES" />
+		<permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+	</privapp-permissions>
+	<privapp-permissions package="com.vcast.mediamanager">
+		<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+	</privapp-permissions>
+	<privapp-permissions package="com.verizon.cloudsetupwizard">
+		<permission name="android.permission.STATUS_BAR" />
+	</privapp-permissions>
+	<privapp-permissions package="com.securityandprivacy.android.verizon.vms">
+		<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+	</privapp-permissions>
+	<privapp-permissions package="com.tcl.nxtpaperkey">
+		<permission name="android.permission.INTERACT_ACROSS_USERS" />
+	</privapp-permissions>
+	<privapp-permissions package="com.verizon.mips.services">
+		<permission name="android.permission.BATTERY_STATS" />
+		<permission name="android.permission.REBOOT" />
+		<permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS" />
+		<permission name="android.permission.INSTALL_PACKAGES" />
+		<permission name="android.permission.REAL_GET_TASKS" />
+		<permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+		<permission name="android.permission.MANAGE_USERS" />
+		<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+		<permission name="android.permission.PACKAGE_USAGE_STATS" />
+		<permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+		<permission name="android.permission.DELETE_PACKAGES" />
+		<permission name="android.permission.MODIFY_PHONE_STATE" />
+		<permission name="android.permission.MANAGE_SUBSCRIPTION_PLANS" />
+		<permission name="android.permission.SET_TIME" />
+		<permission name="android.permission.WRITE_SECURE_SETTINGS" />
+	</privapp-permissions>
+	<privapp-permissions package="com.google.android.apps.kids.home">
+		<permission name="android.permission.PACKAGE_USAGE_STATS" />
+		<permission name="android.permission.STATUS_BAR" />
+	</privapp-permissions>
+</permissions>

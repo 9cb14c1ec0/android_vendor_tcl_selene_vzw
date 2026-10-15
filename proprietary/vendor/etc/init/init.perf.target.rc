@@ -1,0 +1,138 @@
+on late-init
+    write /sys/block/mmcblk0/queue/scheduler tcl-mq-deadline
+
+on init
+    # ifdef VENDOR_EDIT
+    #add by mingyou.yu for highcpu
+    chown root system /proc/tcl_perf_monitor/threshold
+    chown root system /proc/tcl_perf_monitor/sampling_period
+    chown root system /proc/tcl_perf_monitor/show_excced_process
+
+    chmod 0660 /proc/tcl_perf_monitor/threshold
+    chmod 0660 /proc/tcl_perf_monitor/sampling_period
+    chmod 0440 /proc/tcl_perf_monitor/show_excced_process
+    #end
+
+    #shu5.zhang@arch 2022/11/19 modify for GT
+    chown system system /dev/gt_tcl
+    chmod 0666 /dev/gt_tcl
+    chmod 0666 /dev/ipel
+    #endif /* VENDOR_EDIT */
+
+    #[TCT-ROM][PERF]Begin Added by jingyuan.wei for freezer on 2019/08/02
+    # freezer cgroup entries
+    chown system system /dev/freezer
+    mkdir /dev/freezer/frozen
+    chown system system /dev/freezer/frozen
+    write /dev/freezer/frozen/freezer.state FROZEN
+    chown system system /dev/freezer/cgroup.procs
+    chown system system /dev/freezer/frozen
+    chown system system /dev/freezer/frozen/freezer.state
+    chown system system /dev/freezer/frozen/cgroup.procs
+
+    chmod 0664 /dev/freezer/frozen/freezer.state
+    #[TCT-ROM][PERF]End Added by jingyuan.wei for freezer on 2019/08/02
+
+    #[TMT-ROM][KERNEL]Begin Added by xiwu1.peng@KERNEL for thaw 2021.11.30
+    mkdir /dev/freezer/thaw
+    chown system system /dev/freezer/thaw
+    write /dev/freezer/thaw/freezer.state THAWED
+    chown system system /dev/freezer/thaw
+    chown system system /dev/freezer/thaw/cgroup.procs
+    chmod 0664 /dev/freezer/thaw/cgroup.procs
+    #[TMT-ROM][KERNEL]End Added by xiwu1.peng@KERNEL for thaw 2021.11.30
+
+    #[TMT-ROM][KERNEL]Begin Added by yipeng.jiang@tcl.com for reclaim 2021.11.30
+    chown system system /dev/memtcl
+    chmod 0644 /dev/memtcl
+    #[TMT-ROM][KERNEL]End Added by by yipeng.jiang@tcl.com for reclaim 2021.11.30
+
+    write /dev/memcg/system/memory.swappiness 100
+    write /dev/memcg/apps/memory.swappiness 100
+    write /dev/memcg/memory.swappiness 100
+    write /sys/module/vmscan/parameters/scan_file_threshold 50
+    write /proc/sys/vm/swappiness 100
+    write /proc/sys/vm/direct_swappiness 60
+
+    chown system system /proc/pressure/io
+    chmod 0664 /proc/pressure/io
+    mkdir /dev/blkio/top-apps
+    chown system system /dev/blkio/top-apps/cgroup.procs
+    chown system system /dev/blkio/top-apps/blkio.prio.class
+    chmod 0660 /dev/blkio/top-apps/cgroup.procs
+    chmod 0660 /dev/blkio/top-apps/blkio.prio.class
+
+    #endif /* VENDOR_EDIT */
+on post-fs-data
+    chown system system /dev/blkio/background/blkio.read_limit.iolimit
+    chown system system /dev/blkio/background/blkio.write_limit.iolimit
+    chown system system /dev/blkio/background/blkio.switching.iolimit
+    chown system system /dev/blkio/background/blkio.enable.iolimit
+    chown system system /dev/blkio/rootdir/blkio.read_limit.iolimit
+    chown system system /dev/blkio/rootdir/blkio.write_limit.iolimit
+    chown system system /dev/blkio/rootdir/blkio.switching.iolimit
+    chown system system /dev/blkio/rootdir/blkio.enable.iolimit
+    chmod 0660 /dev/blkio/background/blkio.read_limit.iolimit
+    chmod 0660 /dev/blkio/background/blkio.write_limit.iolimit
+    chmod 0660 /dev/blkio/background/blkio.switching.iolimit
+    chmod 0660 /dev/blkio/background/blkio.enable.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.read_limit.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.write_limit.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.switching.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.enable.iolimit
+
+on property:persist.sys.perf_iolimit=true
+    mkdir /dev/blkio/iomax
+    mkdir /dev/blkio/rootdir
+    chown system system /dev/blkio/iomax/cgroup.procs
+    chown system system /dev/blkio/rootdir/cgroup.procs
+    chown system system /dev/blkio/iomax/blkio.prio.class
+    chown system system /dev/blkio/background/blkio.prio.class
+    chown system system /dev/blkio/rootdir/blkio.prio.class
+    chown system system /dev/blkio/blkio.prio.class
+    chmod 0660 /dev/blkio/iomax/cgroup.procs
+    chmod 0660 /dev/blkio/rootdir/cgroup.procs
+    chmod 0660 /dev/blkio/blkio.prio.class
+    chmod 0660 /dev/blkio/background/blkio.prio.class
+    chmod 0660 /dev/blkio/rootdir/blkio.prio.class
+    chmod 0660 /dev/blkio/iomax/blkio.prio.class
+    write /dev/blkio/iomax/blkio.prio.class promote-to-rt
+    write /dev/blkio/blkio.prio.class idle
+    write /dev/blkio/background/blkio.prio.class idle
+    write /dev/blkio/rootdir/blkio.prio.class idle
+    write /dev/blkio/top-apps/blkio.prio.class promote-to-rt
+    setprop persist.sys.perf_ko.iolimit true
+
+    chown system system /dev/blkio/background/blkio.read_limit.iolimit
+    chown system system /dev/blkio/background/blkio.write_limit.iolimit
+    chown system system /dev/blkio/background/blkio.switching.iolimit
+    chown system system /dev/blkio/background/blkio.enable.iolimit
+    chown system system /dev/blkio/rootdir/blkio.read_limit.iolimit
+    chown system system /dev/blkio/rootdir/blkio.write_limit.iolimit
+    chown system system /dev/blkio/rootdir/blkio.switching.iolimit
+    chown system system /dev/blkio/rootdir/blkio.enable.iolimit
+    chmod 0660 /dev/blkio/background/blkio.read_limit.iolimit
+    chmod 0660 /dev/blkio/background/blkio.write_limit.iolimit
+    chmod 0660 /dev/blkio/background/blkio.switching.iolimit
+    chmod 0660 /dev/blkio/background/blkio.enable.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.read_limit.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.write_limit.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.switching.iolimit
+    chmod 0660 /dev/blkio/rootdir/blkio.enable.iolimit
+    write /sys/block/${dev.mnt.dev.data}/queue/max_sectors_kb 512
+    write /sys/block/sdc/queue/max_sectors_kb 512
+
+on property:persist.sys.perf_iolimit=false
+    setprop persist.sys.perf_ko.iolimit false
+
+on property:persist.sys.perf.resetswap=true
+    write /dev/memcg/system/memory.swappiness 160
+    write /dev/memcg/apps/memory.swappiness 160
+    write /dev/memcg/memory.swappiness 160
+    write /proc/sys/vm/swappiness 160
+    write /proc/sys/vm/direct_swappiness 40
+
+# process reclaim
+on late-init
+    chown root system /proc/tcl_reclaim/controller
+    chmod 0660 /proc/tcl_reclaim/controller

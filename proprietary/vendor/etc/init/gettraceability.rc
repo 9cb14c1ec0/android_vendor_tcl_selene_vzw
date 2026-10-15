@@ -1,0 +1,8 @@
+service gettraceability /vendor/bin/gettraceability
+    user root
+    group root
+#    seclabel u:object_r:gettraceability:s0
+    oneshot
+    
+on property:dev.bootcomplete=1
+    start gettraceability

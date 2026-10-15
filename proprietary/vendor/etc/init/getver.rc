@@ -1,0 +1,9 @@
+#[SYSD SYS]Add by kaiyi.chen for defect 9884662 (display software version) on 2020-09-14
+service getver /vendor/bin/getver
+    user root
+    group root
+    oneshot
+
+on boot
+    start getver
+

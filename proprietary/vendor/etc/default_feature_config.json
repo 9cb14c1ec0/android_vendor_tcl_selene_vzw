@@ -1,0 +1,2446 @@
+[
+  {
+    "Version": "V1.120"
+  },
+  {
+    "content": [
+      {
+        "name": "switch",
+
+        "PERF_MANAGER": -1,
+
+        "PERF_APP": -1,
+        "PERF_DEX_OPT": -1,
+        "PERF_UPGRADE_DEX_OPT": -1,
+        "PERF_APEX_UPGRADE_DEX_OPT": -1,
+        "PERF_3RD_APP_OPT": -1,
+        "PERF_3RD_LARGE_APP_UN_OPT": -1,
+
+        "PERF_PROCESS": -1,
+        "PERF_USAP": -1,
+        "PERF_LAUNCHER_PRELOAD": -1,
+        "PERF_SYS_PRELOAD": -1,
+        "PERF_DURA": -1,
+        "PERF_FREEZER": -1,
+        "PERF_PROC_MGR": -1,
+        "PERF_APP_BOOT": -1,
+        "PERF_ANR": -1,
+
+        "PERF_CPU": -1,
+        "PERF_COMPONENT_CONTROL": -1,
+        "PERF_AOSP_COMPACTION": -1,
+        "PERF_CPU_BOOSTER": -1,
+        "PERF_QOS": -1,
+        "PERF_CPU_USAGE": -1,
+        "PERF_UX": -1,
+        "PERF_UX_BITMAP": -1,
+        "PERF_UX_PRI": -1,
+        "PERF_STOP_BROADCAST": -1,
+
+        "PERF_MEM": -1,
+        "PERF_DALVIK_VM": -1,
+        "PERF_PINNER": -1,
+        "PERF_TGUARD": -1,
+        "PERF_GARBAGE": -1,
+        "PERF_ELABORATE": -1,
+        "PERF_RECLAIM": -1,
+        "PERF_MM_RECLAIM": -1,
+        "PERF_LMK": -1,
+        "PERF_SCUDO": -1,
+        "PERF_ZONE": -1,
+        "PERF_SWAP": -1,
+        "PERF_LOW_STORAGE": -1,
+
+        "PERF_IO": -1,
+        "PERF_IOLIMIT": -1,
+        "PERF_AGING": -1,
+        "PERF_SCAN": -1,
+        "PERF_DB": -1,
+
+        "PERF_DISPLAY": -1,
+        "PERF_FAST_COMPOSITION": -1,
+        "PERF_ROTATION": -1,
+        "PERF_SPLASH_SCREEN": -1,
+        "PERF_AUTO_RESOLUTION": -1,
+
+        "PERF_FRAMEWORK": -1,
+        "PERF_APP_TAG": -1,
+        "PERF_STD": -1,
+        "PERF_APP_CLASSIFY": -1,
+        "PERF_UNLOCK": -1,
+        "PERF_INPUT_BOOST": -1,
+        "PERF_KO": -1
+      }
+    ],
+    "project": {
+      "name": "PerfManager",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "switch",
+
+        "HERA_POWER": -1,
+        "HERA_LOGP": -1,
+        "HERA_TGUARD": -1,
+
+        "HERA_PERF": 0,
+        "HERA_PERF_BOOT": 0,
+        "HERA_PERF_KO": -1
+      }
+    ],
+    "project": {
+      "name": "HeraSmoothness",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "fgioConfig",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      },
+      {
+        "name": "freezeProcessList",
+        "value": [
+          "xfar_core",
+          "xiriservice_tcl",
+          "xiriservice_tcl",
+          "xiriservice_tcl",
+          "xiriservice_tcl",
+          "zygote64",
+          "xiriservice_tcl"
+        ]
+      }
+    ],
+    "project": {
+      "name": "processFreeze",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      },
+      {
+        "name": "jankManager",
+        "value": "true"
+      },
+      {
+        "name": "ipelNode",
+        "value": [
+          {
+            "path": "/sys/kernel/ux_thread/ux_enable",
+            "value": "1"
+          },
+          {
+            "path": "/sys/kernel/ux_thread/ux_depth",
+            "value": "4"
+          },
+          {
+            "path": "/sys/kernel/ux_thread/ktc_enable",
+            "value": "1"
+          },
+          {
+            "path": "/sys/kernel/ux_thread/ux_migrate_delay",
+            "value": "20"
+          },
+          {
+            "path": "/sys/kernel/ux_thread/dynamic_maxruning_ms",
+            "value": "1000"
+          },
+          {
+            "path": "/sys/kernel/ux_thread/ux_max_thresh",
+            "value": "2000"
+          },
+          {
+            "path": "/sys/kernel/ux_thread/ux_sched_delay",
+            "value": "0"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_running_ctrl/ctrl",
+            "value": "1"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_running_ctrl/logp",
+            "value": "0"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_runable_ctrl/ctrl",
+            "value": "1"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_runable_ctrl/logp",
+            "value": "0"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_dstate_ctrl/ctrl",
+            "value": "1"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_dstate_ctrl/logp",
+            "value": "0"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_sleep_ctrl/ctrl",
+            "value": "1"
+          },
+          {
+            "path": "/proc/tcl_healthinfo/ux_sleep_ctrl/logp",
+            "value": "0"
+          },
+          {
+            "path": "/sys/kernel/binder_feature/binder_ux_priority_on",
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "name": "displayPerfSystem",
+        "value": "true"
+      },
+      {
+        "name": "boostTime",
+        "value": "400"
+      },
+      {
+        "name": "enableFrameBoost",
+        "value": "true"
+      },
+      {
+        "name": "enableSFWatchThread",
+        "value": "false"
+      },
+      {
+        "name": "benchmarkWhiteList",
+        "value": [
+          "com.antutu.ABenchMark",
+          "com.antutu.ABenchMark:push",
+          "com.antutu.benchmark.full",
+          "com.antutu.benchmark.full.lite",
+          "com.antutu.benchmark.full.lite:unity",
+          "com.antutu.ABenchMark.lite",
+          "com.andromeda.androbench2",
+          "com.primatelabs.geekbench",
+          "com.futuremark.pcmark.android.benchmark",
+          "com.glbenchmark.glbenchmark27"
+        ]
+      },
+      {
+        "name": "enableBitmapUx",
+        "value": "true"
+      },
+      {
+        "name": "enableUxPriority",
+        "value": "true"
+      },
+      {
+        "name": "uxPriorityInfo",
+        "value": [
+            {
+                "name": "urgent_vip_priority_set",
+                "value": [
+                    "benchmark_render_tid",
+                    "benchmark_ui_tid",
+                    "benchmark_ui_render_tid"
+                ]
+            },
+            {
+                "name": "favorable_vip_priority_set",
+                "value": [
+                    "mediacodec_looper_tid",
+                    "codecloop_tid"
+                ]
+            },
+            {
+                "name": "important_vip_priority_set",
+                "value": [
+                    "input_reader_tid",
+                    "input_dispatcher_tid"
+                ]
+            },
+            {
+                "name": "normal_vip_priority_set",
+                "value": [
+                    "ui_and_render_tid",
+                    "animation_tid",
+                    "anim_if_tid",
+                    "ui_thread_tid",
+                    "render_thread_tid"
+                ]
+            },
+            {
+                "name": "default_priority_set",
+                "value": [
+                    "binder_tid",
+                    "decode_bitmap_thread_id"
+                ]
+            }
+        ]
+      }
+    ],
+    "project": {
+      "name": "IpelEngine",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "fastHibernate",
+        "value": "true"
+      },
+      {
+        "name": "fastHibernateTimeout",
+        "value": "1500"
+      },
+      {
+        "name": "persistHibernate",
+        "value": "true"
+      },
+      {
+        "name": "fastHibernateDebug",
+        "value": "false"
+      },
+      {
+        "name": "hibernateBlackProcess",
+        "value": [
+          "com.xunmeng.pinduoduo",
+          "com.tencent.android.qqdownloader"
+        ]
+      },
+      {
+        "name": "hibernateScanCode",
+        "value": [
+          "com.meituan.android.scan.NewArActivity",
+          "com.android.camera.CameraLauncher",
+          "com.ss.android.ugc.aweme.shortvideo.ui.scan.ScanNewActivity",
+          "com.ss.android.ugc.aweme.adaptation.saa.SAAActivity",
+          "com.facebook.inspiration.activity.InspirationCameraActivity",
+          "com.tencent.mm.plugin.scanner.ui.BaseScanUI"
+        ]
+      }
+    ],
+    "project": {
+      "name": "freeze",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "false"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      }
+    ],
+    "project": {
+      "name": "assert",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "fstrimConfig",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "fsyncConfig",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "false"
+      }
+    ],
+    "project": {
+      "name": "appresourcepreloadConfig",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "doFrameOpt",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "false"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      },
+      {
+        "name": "white_third_party_app",
+        "value": [
+          "com.audiocn.kalaok.tv",
+          "com.tcl.appreciate.art",
+          "com.tcl.fm",
+          "com.manmanapp.tv",
+          "com.tcl.gamecenter",
+          "com.tcl.ui_mediaCenter",
+          "com.tcl.weixin",
+          "com.huan.edu.lexue.frontend"
+        ]
+      }
+    ],
+    "project": {
+      "name": "startingWindow",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "GcTuning",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "app_frame_block",
+        "value": [
+          "false",
+          "60000ms"
+        ]
+      },
+      {
+        "name": "kernel_perf",
+        "value": [
+          "false",
+          ""
+        ]
+      },
+      {
+        "name": "kernel_record",
+        "value": [
+          "false",
+          "10800s"
+        ]
+      },
+      {
+        "name": "media_eeplayer",
+        "value": [
+          "false",
+          ""
+        ]
+      },
+      {
+        "name": "tboost_block_info",
+        "value": [
+          "false",
+          "60000ms"
+        ]
+      }
+    ],
+    "project": {
+      "name": "HealthInfo",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "visibleProcessList",
+        "value": [
+          "com.google.android.apps.tv.launcherx"
+        ]
+      },
+      {
+        "name": "preptibleProcessList",
+        "value": [
+        ]
+      },
+      {
+        "name": "seviceProcessList",
+        "value": [
+        ]
+      },
+      {
+        "name": "seviceBProcessList",
+        "value": [
+        ]
+      },
+      {
+        "name": "systemProcessList",
+        "value": [
+        ]
+      }
+    ],
+    "project": {
+      "name": "AdjAdjust",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "standbyProcessBlackList",
+        "value": [
+          "com.plexapp.android",
+          "com.canal.android.canal",
+          "com.mubi",
+          "com.tubitv",
+          "com.vectorunit.purple.googleplay",
+          "com.vectorunit.mercury.googleplay",
+          "com.hbo.hbonow"
+        ]
+      }
+    ],
+    "project": {
+      "name": "StandbyProcess",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "appBootRecord",
+      "type": "prop"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "ctsWhiteActionList",
+        "value": [
+          "android.net.cts.appForApi23.getWifiConnectivityActionCount"
+        ]
+      },
+      {
+        "name": "skipActionPackage",
+        "value": [
+          {
+            "actionName": "android.intent.action.BOOT_COMPLETED",
+            "packageName": [
+              "com.tcl.cyberui",
+              "com.tcl.eletronicpolicy",
+              "com.tcl.assistant",
+              "au.com.stan.and",
+              "com.amazon.amazonvideo.livingroom",
+              "com.eros.now",
+              "com.tcl.copydatatotv",
+              "tv.wuaki.apptv",
+              "com.tcl.esticker",
+              "com.graymatrix.did",
+              "com.tcl.factory.view"
+            ],
+            "PModePackageName": [
+              "com.tcl.cyberui",
+              "com.tcl.appmarket2",
+              "com.tcl.eletronicpolicy",
+              "com.tcl.versionUpdateApp",
+              "com.tcl.tvweishi",
+              "com.tcl.ui_mediaCenter",
+              "com.tcl.assistant",
+              "au.com.stan.and",
+              "com.amazon.amazonvideo.livingroom",
+              "com.eros.now",
+              "tv.wuaki.apptv",
+              "com.tcl.esticker",
+              "com.graymatrix.did",
+              "com.tcl.smartalexa"
+            ]
+          },
+          {
+            "actionName": "android.intent.action.LOCKED_BOOT_COMPLETED",
+            "packageName": [
+              "com.google.android.marvin.talkback"
+            ],
+            "PModePackageName": [
+              "com.google.android.marvin.talkback"
+            ]
+          },
+          {
+            "actionName": "android.net.conn.CONNECTIVITY_CHANGE",
+            "packageName": [
+              "com.tcl.tvweishi",
+              "com.tcl.appmarket2"
+            ],
+            "PModePackageName": [
+              "com.tcl.tvweishi",
+              "com.tcl.appmarket2"
+            ]
+          },
+          {
+            "actionName": "android.intent.action.MEDIA_MOUNTED",
+            "packageName": [
+              "com.tcl.versionUpdateApp"
+            ],
+            "PModePackageName": [
+              "com.tcl.versionUpdateApp"
+            ]
+          }
+        ]
+      }
+    ],
+    "project": {
+      "name": "VIPBroadcast",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "enable_5g": {
+          "enable": "true",
+          "device_list": "seattle,ottawa,irvine,chicago,buffalo",
+          "enable_weak_network": "false"
+        },
+        "feature_fired": {
+          "enable": "true",
+          "214": "1",
+          "215": "1",
+          "216": "1"
+        },
+        "sleep_predication": {
+          "enable": "true",
+          "charging": "true",
+          "power-save": "true",
+          "power-save_V2": "true",
+          "charge_disable_list":""
+        },
+        "power_abnormal": {
+          "enable": "true",
+          "V2_enable": "true",
+          "notice_enable": "true",
+          "restrict_enable": "true",
+          "kill_enable": "true",
+          "whiteAppList": [
+            "com.facebook.services"
+          ],
+          "device_disable_list": "",
+          "device_list": "Passat,Model_3,Bora_TF,Eternals11,Civic_S,Dragonfly_TF,Dragonfly_VZW,Scarab_Pro_VZW,Scarab_Lite_TF,Scarab_Pro_TF,Ladybird,Optimus_5G_VZW,Ant,Goldfinch_TMO,Dragonfly,Dragonfly_OM,Dragonfly_CAN,Goldfinch_Pro_CS"
+        },
+        "Hera_power_monitor": {
+          "Hera_power_switch": "false",
+          "Hera_wakelock": "false",
+          "Hera_alarm": "false",
+          "Hera_gps": "false",
+          "Hera_net_location": "false",
+          "Hera_sensor": "false",
+          "Hera_wifi_scan": "false",
+          "Hera_bluetooth": "false",
+          "Hera_data_traffic": "false",
+          "Hera_auto_start": "false",
+          "Hera_scr_off_current": "false",
+          "Hera_device_consume_power": "false",
+          "Hera_battery_capacity": "false",
+          "Hera_net_wakeup": "false",
+          "Hera_app_fg_heavy_current": "false",
+          "Hera_app_bg_heavy_current": "false",
+          "Hera_app_power_consume": "false",
+          "Hera_sleep_mode": "false",
+          "Hera_thermal_info": "false",
+          "Hera_super_saving_mode": "false",
+          "Hera_long_standby_mode": "false",
+          "Hera_dou_log_waring_threshold": 240,
+          "uploadblacklist": [
+            "com.microsoft.amp.apps.bingnews"
+          ]
+        },
+        "smart_bg_restrict": {
+          "enable": "true",
+          "device_disable_list": "",
+          "device_list": "Bora_TF,Dragonfly_TF,Dragonfly_VZW,Scarab_Pro_VZW,Scarab_Lite_TF,Scarab_Pro_TF,Ladybird,Optimus_5G_VZW,Ant,Goldfinch_TMO,Dragonfly,Dragonfly_OM,Dragonfly_CAN,Goldfinch_Pro_CS",
+          "alarmrestrictlist": [],
+          "restrictblacklist": [
+            "com.google.android.youtube",
+            "com.swishme.tracfone",
+            "com.handmark.expressweather",
+            "com.facebook.katana",
+            "com.facebook.orca",
+            "com.facebook.katana.stub",
+            "com.facebook.katana.mlite",
+            "com.facebook.katana.appmanager",
+            "com.facebook.system",
+            "com.facebook.services",
+            "com.facebook.lite",
+            "com.facebook.lite.stub",
+            "com.tcl.services.coretests"
+          ]
+        },
+        "normal_power_save": {
+          "enable": "true",
+          "cpu_boost_disable": "true",
+          "user_func_disable":"true",
+          "bg_restrict":"true",
+          "black_list": [
+            "com.handmark.expressweather"
+          ]
+        },
+        "superpowersave": {
+          "enable": "true",
+          "device_disable_list": "",
+          "device_list": "Bora_TF,Dragonfly_TF,Dragonfly_VZW,Scarab_Pro_VZW,Scarab_Lite_TF,Scarab_Pro_TF,Ladybird,Optimus_5G_VZW,Ant,Goldfinch_TMO,Dragonfly,Dragonfly_OM,Dragonfly_CAN,Goldfinch_Pro_CS",
+          "disablelist": [
+            "com.google.android.ext.services",
+            "com.google.android.onetimeinitializer",
+            "com.google.android.ext.shared",
+            "com.google.android.configupdater",
+            "com.facebook.services",
+            "com.google.android.syncadapters.contacts",
+            "com.google.android.syncadapters.calendar",
+            "com.google.android.apps.walletnfcrel",
+            "com.google.android.partnersetup",
+            "com.google.android.printservice.recommendation"
+          ],
+          "restrictlist": [
+            "com.google.android.youtube",
+            "com.google.android.music",
+            "com.google.android.apps.photos",
+            "com.google.android.gm",
+            "com.google.android.apps.magazines",
+            "com.google.android.apps.books",
+            "com.google.android.videos",
+            "com.google.android.apps.docs",
+            "com.google.android.apps.maps",
+            "com.google.android.apps.nbu.files",
+            "com.android.chrome",
+            "com.google.android.calculator",
+            "com.google.android.setupwizard",
+            "com.google.android.talk",
+            "com.google.android.apps.plus",
+            "com.android.vending",
+            "com.swishme.tracfone",
+            "com.handmark.expressweather",
+            "com.facebook.katana"
+          ]
+        },
+        "poweroptimized": {
+          "enable": "true",
+          "alarm_algin_enable": "true",
+          "wakelock_constrain_enable": "true",
+          "device_disable_list": "",
+          "black_list": [
+            "com.handmark.expressweather",
+            "com.tcl.power.test"
+          ],
+          "white_list": [
+            ""
+          ]
+        },
+        "batteryhealth": {
+          "enable": "true",
+          "device_disable_list": ""
+        },
+        "long_standby": {
+          "enable": "true",
+          "device_list": "Bellona_WF_GL,Selene_VZW,Lugh_10.1_4G,Lugh_10.1_WiFi,Ares_Vis_WIFI,Ares_11_4G,Ares_11_WIFI,BELUGA,Diana_TMO"
+        },
+        "update_speed_real_time": "true",
+        "download": "true",
+        "watchdog": "false",
+        "feature_sensor": "false",
+        "game_policy": "false",
+        "data_hub": "false"
+      }
+    ],
+    "project": {
+      "name": "ConfigPerf",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "loop_time",
+        "value": 2000
+      },
+      {
+        "name": "start_time",
+        "value": 10
+      },
+      {
+        "name": "end_time",
+        "value": 3
+      },
+      {
+        "name": "cpu_level",
+        "value": 60
+      },
+      {
+        "name": "black_list",
+        "value": [
+          "com.android.networkstack.process",
+          "com.qualcomm.qtil.aptxals",
+          "com.qti.phone",
+          "vendor.qti.qesdk.sysservice",
+          "com.qti.qcc",
+          "com.qualcomm.qtil.aptxui",
+          "com.qti.services.zprovidertest",
+          "com.qualcomm.qti.workloadclassifier",
+          "com.qualcomm.location",
+          "com.qti.diagservices",
+          "org.codeaurora.ims",
+          "com.android.devicelockcontroller",
+          "com.android.imsserviceentitlement",
+          "com.android.mmitest",
+          "com.android.traceur",
+          "com.android.externalstorage",
+          "com.android.managedprovisioning",
+          "com.android.providers.calendar",
+          "com.android.shell",
+          "com.android.contacts",
+          "com.android.dynsystem",
+          "com.android.rkpdapp",
+          "com.android.carrierdefaultapp",
+          "android.process.media",
+          "com.google.android.permissioncontroller",
+          "com.google.android.cellbroadcastreceiver",
+          "com.google.android.gms",
+          "com.google.android.deskclock",
+          "com.google.android.euicc",
+          "com.google.android.youtube",
+          "com.google.android.apps.youtube.music",
+          "com.google.android.apps.messaging",
+          "com.google.android.partnersetup",
+          "com.google.android.apps.carrier.carrierwifi",
+          "com.google.android.apps.docs",
+          "com.google.android.apps.maps",
+          "com.google.android.apps.nbu.files",
+          "com.google.android.apps.safetyhub",
+          "com.google.android.apps.tachyon",
+          "com.google.android.apps.turbo",
+          "com.google.android.apps.photos",
+          "com.google.android.contacts",
+          "com.google.android.apps.walletnfcrel",
+          "com.google.android.as.oss",
+          "com.google.android.configupdater",
+          "com.google.android.federatedcompute",
+          "com.google.android.healthconnect.controller",
+          "com.google.android.apps.restore",
+          "com.google.android.inputmethod.latin",
+          "com.google.android.apps.setupwizard.searchselector",
+          "com.google.android.ondevicepersonalization.services",
+          "com.google.android.packageinstaller",
+          "com.google.android.setupwizard",
+          "com.google.android.onetimeinitializer",
+          "com.google.android.tts",
+          "com.google.android.projection.gearhead",
+          "com.google.android.videos",
+          "com.google.android.gm",
+          "com.mediatek.engineermode",
+          "com.qualcomm.qti.powersavemode",
+          "com.qualcomm.qti.smq",
+          "com.qti.ltebc",
+          "com.qualcomm.qti.modemtestmode",
+          "com.qualcomm.qti.qms.service.connectionsecurity",
+          "com.tcl.engineermode",
+          "com.tcl.ai.app",
+          "com.tcl.apnhotfix",
+          "com.tcl.guard",
+          "com.tcl.healthcare",
+          "com.tct.gdpr",
+          "com.tcl.tclmsgproxy",
+          "com.tcl.ttvs",
+          "com.tct.setupwizard",
+          "us.sliide.tiger",
+          "com.linkedin.android",
+          "com.mobisystems.office",
+          "org.telegram.messenger",
+          "com.quicinc.voice.activation",
+          "com.amazon.mShop.android.shopping",
+          "com.instagram.android",
+          "com.skype.raider",
+          "org.telegram.messenger",
+          "com.whatsapp",
+          "sg.bigo.live",
+          "com.booking",
+          "com.lemon.lvoverseas",
+          "com.einnovation.temu",
+          "com.king.candycrushsaga",
+          "com.scopely.monopolygo",
+          "com.android.chrome",
+          "com.reddit.frontpage",
+          "com.dreamgames.royalmatch",
+          "com.zzkko",
+          "com.spotify.music",
+          "com.kiloo.subwaysurf",
+          "com.imangi.templerun2",
+          "com.twitter.android"
+        ]
+      },
+      {
+        "name": "app_boot_list",
+        "value": [
+          {
+            "package_name": "com.google.android.videos",
+            "priority": 1,
+            "delay_time_offset": 2000
+          }
+        ]
+      }
+    ],
+    "project": {
+      "name": "ProcessStart",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "disabled_persistent_apps",
+        "value": [
+          "com.tcl.versionUpdateApp",
+          "com.tcl.usagestats"
+        ]
+      },
+      {
+        "name": "ui_services",
+        "value": [
+          "com.tcl.versionUpdateApp",
+          "com.tcl.usagestats"
+        ]
+      }
+    ],
+    "project": {
+      "name": "MemControl",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "special_compile_apps_install_list",
+        "value": [
+        ]
+      },
+      {
+        "name": "special_compile_filter_install",
+        "value": "speed"
+      },
+      {
+        "name": "special_compile_apps_build_list",
+        "value": [
+        ]
+      },
+      {
+        "name": "special_compile_filter_build",
+        "value": "speed"
+      }
+    ],
+    "project": {
+      "name": "ArtOpt",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "version": 3.0,
+        "enable": true,
+        "assocCtlEnable": false,
+        "activityFunEnable": true,
+        "serviceFunEnable": true,
+        "broadcastFunEnable": true,
+        "providerFunEnable": true,
+        "notificationFunEnable": false,
+        "windowFunEnable": false,
+        "strictModeFunEnable": true,
+        "reportEnable": true,
+        "reportType": 0,
+        "powerOnCtlTime": 60,
+        "procWhiteList": {
+          "packageName": [
+            "com.microsoft.teams",
+            "com.facebook.katana",
+            "com.facebook.lite",
+            "com.facebook.mptshelper",
+            "com.facebook.system",
+            "com.facebook.moments",
+            "com.facebook.Mentions",
+            "com.facebook.lite.stub",
+            "com.facebook.deviceinfo",
+            "com.tencent.wework",
+            "com.whatsapp",
+            "sk.forbis.messenger",
+            "jp.naver.line.android",
+            "com.skype.raider",
+            "com.skype.insiders",
+            "com.skype.rover",
+            "com.viber.voip",
+            "com.tencent.mm.clone",
+            "com.tencent.mobileqq.clone",
+            "com.whatsapp.clone",
+            "com.immomo.momo",
+            "com.facebook.orca",
+            "com.twitter.android",
+            "com.snapchat.android",
+            "com.instagram.android",
+            "ru.ok.android",
+            "com.yahoo.mobile.client.android.mail",
+            "com.microsoft.office.outlook",
+            "ru.mail.mailapp",
+            "ru.yandex.mail",
+            "me.bluemail.mail",
+            "de.web.mobile.android.mail",
+            "de.gmx.mobile.android.mail",
+            "com.boxer.email",
+            "om.wemail",
+            "com.cloudmagic.mail",
+            "org.kman.AquaMail",
+            "om.mailboxapp",
+            "com.syntomo.email",
+            "com.my.mail",
+            "com.appple.app.email",
+            "park.outlook.sign.in.client",
+            "u.mail.mailapp",
+            "com.email.email",
+            "com.huawei.health",
+            "com.huawei.hwid",
+            "com.samsung.accessory",
+            "com.samsung.android.gearfit2plugin",
+            "com.fitbit.FitbitMobile",
+            "org.telegram.messenger",
+            "com.trackerandroid.trackerandroid",
+            "free.vpn.unblock.proxy.turbovpn",
+            "com.jrzheng.supervpnfree",
+            "free.vpn.unblock.proxy.vpnmaster",
+            "com.opera.vpn",
+            "com.chengcheng.FreeVPN",
+            "hotspotshield.android.vpn",
+            "com.freevpn.vpn_master",
+            "free.vpn.unblock.proxy.vpnpro",
+            "us.gospeed.speedvpn",
+            "com.yogavpn",
+            "com.cmcm.freevpn",
+            "de.mobileconcepts.cyberghost",
+            "com.free.vpn.proxy.unblock.websites",
+            "com.free.supervpn.proxy.unblock.websites",
+            "com.goldenfrog.vyprvpn.app",
+            "com.freevpn.vpn_speed",
+            "com.freevpnintouch",
+            "com.northghost.touchvpn",
+            "com.androapplite.shadowsocks",
+            "net.flashsoft.flashvpn.activity",
+            "net.openvpn.openvpn",
+            "free.vpn.proxy.unblock.android.easy.app",
+            "us.ultrasurf.mobile.ultrasurf",
+            "net.tntapp.app.zerovpn",
+            "vpn.saudi.arabia.free",
+            "com.expressvpn.vpn",
+            "com.unitedstatesvpn.usa_vpn",
+            "us.unbounded.vpn_private",
+            "free.unblock.pro.hotvpn",
+            "org.furyweb.linkvpn",
+            "com.snap.vpn.free.proxy",
+            "free.unblock.vpnpro",
+            "com.superspeedvpn.free.vpn.proxy",
+            "com.free.vpn.proxy.vpnhotspot",
+            "org.getlantern.lantern",
+            "com.surfeasy",
+            "info.vpncloud.app_vpn",
+            "net.hideman",
+            "com.musjoy.pocketvpn",
+            "com.fsecure.freedome.vpn.security.privacy.android",
+            "com.lausny.ocvpnaiofree",
+            "com.finchvpn.android",
+            "com.cryptninja.vpn",
+            "de.blinkt.openvpn",
+            "com.tigervpns.android",
+            "com.privateinternetaccess.android",
+            "im.zpn",
+            "org.telegram.messenger",
+            "com.wWhatsUpMessenger_4083770",
+            "mx.weex.ss",
+            "com.aleskovacic.messenger",
+            "com.hitwe.android",
+            "com.jaumo.prime",
+            "com.customermobile.alcatel.idol5s.cricket",
+            "com.alcatel.movetrack",
+            "com.groupme.android",
+            "com.orange.conecta.es",
+            "com.vkontakte.android",
+            "org.thunderdog.challegram",
+            "com.ironsrc.aura.tmo",
+            "w1.fi.wpadebug",
+            "com.gamestar.perfectpiano",
+            "com.turkcell.bip",
+            "com.nest.android.nft",
+            "com.ironsource.appcloud.oobe",
+            "com.orange.conecta.es",
+            "com.tmobile.pr.adapt",
+            "com.amazon.appmanager",
+            "com.tmobile.rsuapp",
+            "com.facebook.services",
+            "com.wsandroid.suite.tmobile",
+            "com.tmobile.services.nameid",
+            "com.jrdcom.tethering",
+            "com.tmobile.pr.mytmobile",
+            "com.tmobile.m1",
+            "com.tmobile.vvm.application",
+            "com.lookout",
+            "com.metro.minus1",
+            "com.metropcs.metrozone",
+            "com.nuance.nmc.sihome.metropcs",
+            "com.privacystar.android.metro",
+            "com.metropcs.service.vvm",
+            "com.amazon.mShop.android.shopping",
+            "com.amazon.avod.thirdpartyclient",
+            "com.sprint.ecid",
+            "com.sprint.w.installer",
+            "com.coremobility.app.vnotes",
+            "com.sprint.ms.cdm",
+            "com.sprint.ce.updater",
+            "com.sprint.ms.smf.services",
+            "com.metro.rsuapp",
+            "com.getech.teamwork",
+            "com.LogiaGroup.LogiaDeck",
+            "com.vzw.hss.myverizon",
+            "com.verizon.mips.services",
+            "com.vcast.mediamanager",
+            "com.verizon.messaging.vzmsgs",
+            "com.telecomsys.directedsms.android.SCG",
+            "com.vzw.ecid",
+            "com.securityandprivacy.android.verizon.vms",
+            "com.customermobile.preload.vzw",
+            "com.verizon.obdm",
+            "com.metropcs.scamshield",
+            "com.hicorenational.antifraud",
+            "com.jot.smart.tcl20xe",
+            "com.verizon.mips.services",
+            "com.trustonic.telecoms.xti.dpc",
+            "com.unikey.kevo",
+            "com.example.fotatest",
+            "com.tct.smart.push",
+            "com.payjoy.access",
+            "com.payjoy.status",
+            "com.trustonic.telecoms.client.standard.dlc.playground",
+            "com.trustonic.telecoms.standard.dlc",
+            "com.trustonic.telecoms.xti.dpc",
+            "com.orange.update",
+            "com.comprion.android.GSMA_AC_Mobile_App_SP1_signed",
+            "com.tmobile.echolocate",
+            "com.zing.zalo",
+            "android.incrementalinstall.incrementaltestapp",
+            "android.incrementalinstall.inrementaltestappvalidation",
+            "android.devicepolicy.cts",
+            "android.server.wm.cts",
+            "android.telephony.cts",
+            "com.whatsapp.w4b",
+            "com.macropay.downloader",
+            "com.huawei.bone",
+            "io.wallpaperengine.weclient",
+            "com.tencent.mm"
+          ]
+        },
+        "procBlackList": {
+          "packageName": []
+        },
+        "CTSList": {
+          "packageName": [
+            "androidx.test.services",
+            "com.android.opengl.cts",
+            "com.android.cts.splitapp",
+            "android.tradefed.contentprovider",
+            "com.google.android.app1",
+            "com.google.android.app3",
+            "android.abioverride.app",
+            "android.accounts.test.shared",
+            "android.admin.app",
+            "android.alarmclock.service",
+            "android.app.stubs",
+            "android.app.usage.app",
+            "android.app.usage.apptoo",
+            "android.assist.service",
+            "android.assist.testapp",
+            "android.backup.app",
+            "android.backup.kvapp",
+            "android.backup.permission",
+            "android.backup.permission22",
+            "android.core.tests.runner",
+            "android.cpptools.app",
+            "android.displaysize.app",
+            "android.externalservice.service",
+            "android.jdwptunnel.sampleapp",
+            "android.largeapk.app",
+            "android.leanbackjank.app",
+            "android.libcore.runner",
+            "android.media.app.media_session_test_helper",
+            "android.nativemedia.aaudio",
+            "android.os.app",
+            "android.os.powermanagertests",
+            "android.os.procfs",
+            "android.perfetto.producer",
+            "android.rootlessgpudebug.DEBUG.app",
+            "android.rootlessgpudebug.GLES_LAYERS.app",
+            "android.rootlessgpudebug.LAYERS.app",
+            "android.rootlessgpudebug.RELEASE.app",
+            "android.sample.app",
+            "android.server.alertwindowapp",
+            "android.server.alertwindowappsdk25",
+            "android.server.displayservice",
+            "android.server.FrameTestApp",
+            "android.server.translucentapp",
+            "android.server.translucentapp26",
+            "android.taskswitching.appa",
+            "android.taskswitching.appb",
+            "android.test.app",
+            "android.testharness.app",
+            "android.tests.devicesetup",
+            "android.theme.app",
+            "android.trustedvoice.app",
+            "android.voiceinteraction.service",
+            "android.voiceinteraction.testapp",
+            "android.voicesettings.service",
+            "android.wifibroadcasts.app",
+            "com.android.angleIntegrationTest.driverTest",
+            "com.android.angleIntegrationTest.driverTestSecondary",
+            "com.android.app1",
+            "com.android.app2",
+            "com.android.app3",
+            "com.android.appSdk25",
+            "com.android.compatibility.common",
+            "com.android.compatibility.common.deviceinfo",
+            "com.android.dynamiclinker",
+            "com.android.game.qualification.allocstress",
+            "com.android.game.qualification.tests",
+            "com.android.gputest",
+            "com.android.ndkaudio",
+            "com.android.nn.benchmark.vts.v1_2",
+            "com.android.simpleperf",
+            "com.android.simpleperf.debuggable",
+            "com.android.simpleperf.profileable",
+            "com.drawelements.deqp",
+            "com.example.hellojni",
+            "com.google.android.app1",
+            "com.google.android.app2",
+            "com.google.android.app3",
+            "com.google.android.app.stubs",
+            "com.google.android.ar.svc",
+            "com.google.android.assist.app1",
+            "com.google.android.assist.app2",
+            "com.google.android.suspendapps.emptydeviceadmin",
+            "com.google.android.suspendapps.suspendtestapp",
+            "com.replica.replicaisland",
+            "foo.bar.baz",
+            "libcore.java.util.collectiontests",
+            "org.skia.skqp",
+            "test.instant.cookie",
+            "com.android.RemoteDPC",
+            "com.android.Delegate",
+            "android.dynamicmime.preferred",
+            "android.appenumeration.syncadapter",
+            "com.google.android.gts.jniuncompress",
+            "android.os.lib.consumer1",
+            "android.recognitionservice.service",
+            "com.android.tradefed.utils.wifi",
+            "android.tradefed.contentprovider",
+            "foo.bar.multipleservices",
+            "android.telephony.cts"
+          ]
+        },
+        "autoStartWhiteList": {
+          "packageName": [
+            "com.mobisystems.office",
+            "com.orange.aura.oobe"
+          ]
+        },
+        "assocStartWhiteList": {
+          "packageName": [
+            "com.mobisystems.office",
+            "com.orange.aura.oobe"
+          ]
+        },
+        "systemAppCallerBlackList": {
+          "packageName": []
+        },
+        "systemAppCalleeBlackList": {
+          "packageName": []
+        },
+        "autoStartBlackList": {
+          "packageName": []
+        },
+        "assocStartBlackList": {
+          "packageName": []
+        },
+        "fgBlackList": {
+          "packageName": []
+        },
+        "activityWhiteList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "activityRestrictionBgList": {
+          "packageName": []
+        },
+        "serviceWhiteList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "startServiceWhiteList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "alarmServiceWhiteList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "bindServiceWhiteList": {
+          "packageName": [
+            "com.google.android.gms"
+          ],
+          "componentName": []
+        },
+        "jobServiceWhiteList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "serviceStartForegroundWhiteList": {
+          "packageName": []
+        },
+        "restartServiceWhiteList": {
+          "packageName": [
+          ],
+          "componentName": []
+        },
+        "broadcastWhiteList": {
+          "packageName": [
+          ]
+        },
+        "broadcastBlackList": {
+          "packageName": []
+        },
+        "broadcastCalleeWhiteList": {
+          "packageName": [
+          ]
+        },
+        "broadcastCalleeBlackList": {
+          "packageName": []
+        },
+        "providerWhiteList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "providerBlackList": {
+          "packageName": [],
+          "componentName": []
+        },
+        "persistentBlackList": {
+          "packageName": []
+        },
+        "thirdAppWhiteList": {
+          "packageName": [
+            "com.LogiaGroup.LogiaDeck",
+            "com.verizon.mips.services",
+            "com.att.personalcloud",
+            "com.whatsapp",
+            "com.facebook.orca",
+            "com.whatsapp.w4b",
+            "com.gbwhatsapp",
+            "com.google.android.gm",
+            "com.facebook.mlite",
+            "com.lava.launcher",
+            "com.google.android.apps.tachyon",
+            "com.google.android.captiveportallogin",
+            "com.microsoft.office.outlook",
+            "com.google.android.gms"
+          ]
+        },
+        "notificationBlackList": {
+          "packageName": []
+        },
+        "windowBlackList": {
+          "packageName": []
+        },
+        "actionPackageBlackList": [
+            {
+                "action": "android.intent.action.PACKAGE_ADDED",
+                "packageName": [
+                    "com.smile.gifmaker"
+                ]
+            },
+            {
+                "action": "android.intent.action.PACKAGE_CHANGED",
+                "packageName": [
+                    "com.smile.gifmaker"
+                ]
+            }
+        ],
+        "bootBlackList": {
+            "packageName": [
+                "com.baidu.BaiduMap",
+                "com.chinamworld.main",
+                "com.eg.android.AlipayGphone",
+                "com.jiongji.andriod.card",
+                "com.yaya.mmbang",
+                "com.cleanmaster.mguard_cn",
+                "com.tencent.karaoke",
+                "com.tencent.mobileqq",
+                "com.youloft.calendar",
+                "air.tv.douyu.android",
+                "cn.gov.tax.its",
+                "cn.xtgames.thdz.baidu",
+                "com.autonavi.minimap",
+                "com.baidu.homework",
+                "com.by.butter.camera",
+                "com.carrot.iceworld",
+                "com.cubic.autohome",
+                "com.dangdang.buy2",
+                "com.duowan.kiwi",
+                "com.hexin.plat.android",
+                "com.hpbr.bosszhipin",
+                "com.jingyao.easybike",
+                "com.lalamove.huolala.client",
+                "com.lingan.seeyou",
+                "com.netease.mobimail",
+                "com.pingan.papd",
+                "com.sdu.didi.psnger",
+                "com.shuidihuzhu.aixinchou",
+                "com.shuqi.controller",
+                "com.sina.weibo",
+                "com.ss.android.article.news",
+                "com.ss.android.ugc.aweme",
+                "com.ss.android.ugc.live",
+                "com.taobao.taobao",
+                "com.taobao.trip",
+                "com.tencent.mm",
+                "com.tencent.qqmusic",
+                "com.tmall.wireless",
+                "com.xingin.xhs",
+                "com.yinxiang",
+                "com.youdao.dict",
+                "com.zhenai.android",
+                "com.zhihu.android",
+                "tv.danmaku.bili",
+                "com.UCMobile.intl",
+                "com.UCMobile",
+                "com.tencent.android.qqdownloader"
+            ]
+        },
+        "pushServiceBlackList": [
+            {
+                "serviceName": "com.ss.android.message.PushJobService",
+                "packageName": [
+                    "com.ss.android.article.news",
+                    "com.ss.android.ugc.live"
+                ]
+            },
+            {
+                "serviceName": "com.tencent.assistant.sdk.SDKSupportService",
+                "packageName": [
+                    "com.tencent.android.qqdownloader"
+                ]
+            }
+        ],
+        "jobServiceBlackList": [
+            {
+                "serviceName": "com.taobao.accs.internal.AccsJobService",
+                "packageName": [
+                    "com.taobao.taobao",
+                    "com.ss.android.article.news"
+                ]
+            },
+            {
+                "serviceName": "com.evernote.android.job.JobRescheduleService",
+                "packageName": [
+                    "com.yinxiang"
+                ]
+            }
+        ]
+      }
+    ],
+    "project": {
+      "name": "AppBootPolicy",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      },
+      {
+        "name": "maxcount",
+        "value": "3"
+      }
+    ],
+    "project": {
+      "name": "ionCache",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "false"
+      }
+    ],
+    "project": {
+      "name": "ionMultiThread",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "highcpu",
+        "value": "true"
+      },
+      {
+        "name": "xtsMonitor",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "AppRecord",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "Keycode",
+        "value": [
+          "4062",
+          "4065",
+          "4066",
+          "4093",
+          "4096",
+          "4098",
+          "4099",
+          "4100",
+          "4101",
+          "4102",
+          "4103",
+          "4133",
+          "4134",
+          "4136"
+        ]
+      }
+    ],
+    "project": {
+      "name": "SupportUserActionCollect",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "menuhelp",
+        "value": "true"
+      },
+      {
+        "name": "virtualkey",
+        "value": "true"
+      },
+      {
+        "name": "hotkey",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "KeyHelp",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "KillSystemBlackList",
+        "value": []
+      },
+      {
+        "name": "KillWhiteList",
+        "value": [
+          "android.os.cts",
+          "com.trustonic.telecoms.setup",
+          "com.android.cts.splitapp",
+          "com.android.preconditions.cts",
+          "com.google.android.apps.mediashell",
+          "com.android.bluetooth",
+          "com.google.android.providers.media.module",
+          "com.tcl.tvinput",
+          "com.android.providers.tv",
+          "com.tcl.autopair",
+          "com.google.android.katniss",
+          "com.tcl.ttvs",
+          "com.tcl.versionUpdateApp",
+          "com.tcl.usagestats",
+          "com.tcl.MultiScreenInteraction_TV",
+          "com.getpebble.android.basalt",
+          "com.samsung.accessory",
+          "com.samsung.android.gearrplugin",
+          "com.samsung.android.app.watchmanager",
+          "com.skype.insiders",
+          "com.skype.rover",
+          "com.skype.raider",
+          "com.android.externalstorage",
+          "com.example.mtk10263.whatsTemp",
+          "com.google.android.as",
+          "com.android.providers.contacts",
+          "com.tcl.logger",
+          "com.android.systemui",
+          "com.android.providers.calendar",
+          "com.tcl.newiodemo",
+          "com.tct.rsudaemon",
+          "com.tcl.rsuapp",
+          "com.tct.aio",
+          "com.tct.cota.wallpaper",
+          "com.tct.smart.cota",
+          "com.tct.smart.aota"
+        ]
+      },
+      {
+        "name": "ImportantAppList",
+        "value": [
+          "com.tencent.mm",
+          "com.tencent.mobileqq",
+          "com.whatsapp",
+          "com.facebook.katana",
+          "com.facebook.lite",
+          "com.facebook.orca",
+          "com.google.android.dialer",
+          "com.android.dialer",
+          "com.tct.phone"
+        ]
+      },
+      {
+        "name": "OperatorAppList",
+        "value": [
+          "com.orange.aura.oobe"
+        ]
+      },
+      {
+        "name": "FloatAppStackNewList",
+        "value": [
+          "com.tcl.settings"
+        ]
+      },
+      {
+        "name": "MaxKillRank",
+        "value": [
+          "-1",
+          "-1",
+          "3",
+          "9",
+          "-1",
+          "-1",
+          "9",
+          "9",
+          "-1",
+          "3",
+          "10",
+          "16"
+        ]
+      },
+      {
+        "name": "HandleEnable",
+        "value": true
+      },
+      {
+        "name": "KillEnable",
+        "value": true
+      },
+      {
+        "name": "ReclaimEnable",
+        "value": true
+      },
+      {
+        "name": "MaxImportantProcessMemThreshold",
+        "value": 819200
+      },
+      {
+        "name": "SingleSystemAppPssThreshold",
+        "value": 0
+      },
+      {
+        "name": "TotalSystemAppPssMemThreshold",
+        "value": 512000
+      },
+      {
+        "name": "MinProcessTrimmedInterval",
+        "value": 60
+      },
+      {
+        "name": "PollingEnable",
+        "value": true
+      },
+      {
+        "name": "HighCpuSwitch",
+        "value": true
+      },
+      {
+        "name": "CameraSceneSwitch",
+        "value": true
+      },
+      {
+        "name": "SwapFreeKillerEnable",
+        "value": true
+      },
+      {
+        "name": "PollingCleanIntervalMS",
+        "value": 30000
+      }
+    ],
+    "project": {
+      "name": "TGuardMemoryManager",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "MultiThreadLoad",
+        "value": "false"
+      }
+    ],
+    "project": {
+      "name": "Zygote",
+      "type": "prop"
+    }
+    },
+    {
+        "content": [
+            {
+                "name": "enable",
+                "value": "false"
+            },
+            {
+                "name": "logenable",
+                "value": "true"
+            },
+            {
+                "name": "sampling_rate",
+                "value": "1.0"
+            },
+            {
+                "name": "log_interval",
+                "value": "300"
+            },
+            {
+                "name": "log_level",
+                "value": "I"
+            },
+            {
+                "name": "log_tags",
+                "value": "sita.video,sita.factory,tsdkNative,tpdlcore,PLAYER_ODK,fpp_factory"
+            },
+            {
+                "name": "log_threold",
+                "value": "20,10,2000,10"
+            },
+            {
+                "name": "log_procs",
+                "value": ""
+            },
+            {
+                "name": "log_buf_size",
+                "value": "1048576,1048576,262144,262144,1048576"
+            },
+            {
+                "name": "nvrhung_anr",
+                "value": "true"
+            },
+            {
+                "name": "nvrhung_heaphealth",
+                "value":"false,5000,0.84f,3,0.65f"
+            },
+            {
+                "name": "nvrhung_wp_vm_watchdog",
+                "value": "true"
+            },
+            {
+                "name": "nvrhung_crash",
+                "value": "true"
+            },
+            {
+                "name": "nvrhung_logreportlimit",
+                "value": "30"
+            },
+            {
+                "name": "nvrhung_kfault",
+                "value": "true"
+            },
+            {
+                "name": "nvrhung_thread",
+                "value": "false,15,249,5"
+            },
+            {
+                "name":"nvrhung_globalreference",
+                "value":"false"
+            },
+            {
+	        "name": "nvrhung_phone",
+	        "value": "{call_end:false,ims_reg:false,call_data:false,call_quality:false,sim_drop:false}"
+            },
+            {
+	        "name": "nvrhung_telecomdata",
+	        "value": "{network_err:false,data_type_rat:false,low_signal:false,data_call_err:false,attach_rej:false,data_perf:false,qos_opti:false}"
+            },
+            {
+              "name": "nvrhung_logsize",
+              "value": "100.0"
+            },
+            {
+              "name": "nvrhung_1hanr&wtgdb",
+              "value": "false"
+            },
+            {
+              "name": "nvrhung_anrsystrace",
+              "value": "false"
+            },
+            {
+              "name": "nvrhung_wtgdbg",
+              "value": "false"
+            },
+            {
+              "name": "nvrhung_driver",
+              "value": "false"
+            },
+            {
+              "name": "nvrhung_dfs_boot",
+              "value": "false"
+            },
+            {
+              "name": "PerfMonitor",
+              "value": "true"
+            },
+            {
+              "name": "perfmonitor_f_onoff",
+              "value": "true"
+            },
+            {
+              "name":"perfmonitor_app_launch_threshold",
+              "value": "8000"
+            },
+            {
+                "name":"hera_features",
+                "value":"1111111"
+            },
+            {
+                "name":"hera_log_feature",
+                "value":"1111111111111111"
+            },
+            {
+                "name": "nvrhuang_wifi_buried",
+                "value": "{wifiBuriedFeature:254,dumpsysFeature:126,normalBuriedTH:30,abnormalBuriedTH:30,abnormalBuriedLogTH:2}"
+            }
+        ],
+        "project": {
+            "name": "heraeye",
+            "type": "database"
+        }
+    },
+  {
+      "content": [
+         {
+          "name": "enable",
+          "value": "true"
+        },
+       {
+          "name": "call_switch",
+          "value": "{call_csfb:true,call_wfc:true,ims_reg:true,call_rtcp:true}"
+        }
+      ],
+      "project": {
+        "name": "callenhance",
+        "type": "database"
+      }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "debugFlag",
+        "value": "-1"
+      },
+      {
+        "name": "timeoutLimitVending",
+        "value": "1200000"
+      },
+      {
+        "name": "bandWidthRead",
+        "value": 50331648
+      },
+      {
+        "name": "bandWidthWrite",
+        "value": 25165824
+      },
+      {
+        "name": "timeout",
+        "appStartTimeout": 5000,
+        "appInstallTimeout": 60000
+      },
+      {
+        "name": "whiteList",
+        "value": [
+          "com.google.android.providers.media.module",
+          "com.google.android.googlequicksearchbox",
+          "com.android.chrome",
+          "com.tcl.keyguardshortcut",
+          "com.android.settings",
+          "com.android.systemui",
+          "com.tcl.android.launcher",
+          "com.google.android.gms",
+          "com.google.android.gms.persistent",
+          "com.google.android.gms.unstable",
+          "com.google.android.gms:snet",
+          "com.example.mtk10263.whatsTemp",
+          "com.vcast.mediamanager",
+          "com.google.android.apps.messaging",
+          "com.android.providers.contacts"
+        ]
+      }
+    ],
+    "project": {
+      "name": "IOLimit",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enable",
+        "value": "true"
+      },
+      {
+        "name": "trace_all",
+        "value": "false"
+      },
+      {
+        "name": "blacklist",
+        "value": [
+          "com.android.settings",
+          "com.google.android.tvlauncher",
+          "com.tcl.android.launcher",
+          "com.tct.simplelauncher",
+          "com.google.android.apps.turbo",
+          "com.google.android.apps.safetyhub",
+          "com.google.android.googlequicksearchbox",
+          "com.google.android.tungsten.setupwraith",
+          "com.tcl.tcl_bt_rcu_service",
+          "com.tcl.settings",
+          "com.tcl.useragreement",
+          "com.tcl.rc.ota",
+          "com.tcl.initsetup",
+          "com.tcl.copydatatotv",
+          "com.tcl.factory.view"
+        ]
+      },
+      {
+        "name": "inopath",
+        "value": "true"
+      },
+      {
+        "name": "duration_ms",
+        "value": "2100"
+      },
+      {
+        "name": "buffer_size",
+        "value": "8192"
+      }
+    ],
+    "project": {
+      "name": "Iopred",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "main_switch",
+        "value": "true"
+      },
+      {
+        "name": "use_cloud_profile_switch",
+        "value": "true"
+      },
+      {
+        "name": "use_upgrade_profile_switch",
+        "value": "false"
+      },
+      {
+        "name": "dcs_switch",
+        "value": "true"
+      },
+      {
+        "name": "top_app_number",
+        "value": "20"
+      },
+      {
+        "name": "app_usage_in_recent_months",
+        "value": "-1"
+      },
+      {
+        "name": "valid_file_size_threshold",
+        "value": "15"
+      },
+      {
+        "name": "all_in_pre_compile_switch",
+        "value": "true"
+      },
+      {
+        "name": "all_in_background_compile_switch",
+        "value": "false"
+      },
+      {
+        "name": "tcl_profile_compile_switch",
+        "value": "true"
+      },
+      {
+        "name": "tcl_profile_compile_set_size",
+        "value": "30"
+      },
+      {
+        "name": "idle_time_to_compile",
+        "value": "1"
+      },
+      {
+        "name": "time_slot_to_compile",
+        "value": "1"
+      },
+      {
+        "name": "white_list_package",
+        "value": [
+          "com.facebook.katana",
+          "com.getech.teamwork"
+        ]
+      },
+      {
+        "name": "black_list_package",
+        "value": []
+      }
+    ],
+    "project": {
+      "name": "CloudProfile",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "main_switch": true,
+        "top_app_number": 30,
+        "min_time_slot_to_collect": 2,
+        "max_time_slot_to_collect": 5,
+        "device_idle_to_collect": false,
+        "valid_file_size_threshold": 20,
+        "collect_system_app": true,
+        "device_idle_to_upload": false,
+        "time_slot_to_upload": 5
+      }
+    ],
+    "project": {
+      "name": "ArtProfileCollection",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "enabled",
+        "value": "true"
+      }
+    ],
+    "project": {
+      "name": "usap",
+      "type": "prop"
+    }
+  },
+  {
+    "content": [
+      {
+        "name": "size_max",
+        "value": "10"
+      }
+    ],
+    "project": {
+      "name": "usap_pool",
+      "type": "prop"
+    }
+  },
+  {
+    "content": [
+      {
+        "OnlineSupport": {
+          "enable": "true",
+          "content": [
+            {
+              "flowControl": [
+                {
+                  "name": "WifiEnable",
+                  "value": true
+                },
+                {
+                  "name": "MobileDataEnable",
+                  "value": false
+                },
+                {
+                  "name": "WifiThreshold",
+                  "value": 20480
+                },
+                {
+                  "name": "MobileDataThreshold",
+                  "value": 20480
+                },
+                {
+                  "name": "ResetDate",
+                  "value": 1
+                },
+                {
+                  "name": "Interval",
+                  "value": 24
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "HealthInfo": {
+          "enable": "true"
+        }
+      }
+    ],
+    "project": {
+      "name": "TGuard",
+      "type": "database"
+    }
+  },
+  {
+    "content":[
+      {
+        "name":"enable",
+        "value":"false"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      },
+      {
+        "name": "GameWhiteList",
+        "value": [
+          "com.tencent.gamematrix.gmcg.webrtcdemo",
+          "com.tencent.gamereva",
+          "com.tencent.start.tv",
+          "com.start.tvcapadete",
+          "tv.danmaku.bili",
+          "com.gameloft.android.GloftROLP",
+          "com.gameloft.android.GloftANPH"
+        ]
+      },
+      {
+        "name": "NavigateWhiteList",
+        "value": [
+          "com.google.android.apps.maps"
+        ]
+      }
+    ],
+    "project":{
+      "name":"TScene",
+      "type":"database"
+    }
+  },
+  {
+    "content": [{
+      "CTSPackageList": {
+        "packageName": [
+          "androidx.test.services",
+          "com.android.opengl.cts",
+          "com.android.cts.splitapp",
+          "android.tradefed.contentprovider",
+          "com.google.android.app1",
+          "com.google.android.app3",
+          "android.abioverride.app",
+          "android.accounts.test.shared",
+          "android.admin.app",
+          "android.alarmclock.service",
+          "android.app.stubs",
+          "android.app.usage.app",
+          "android.app.usage.apptoo",
+          "android.assist.service",
+          "android.assist.testapp",
+          "android.backup.app",
+          "android.backup.kvapp",
+          "android.backup.permission",
+          "android.backup.permission22",
+          "android.core.tests.runner",
+          "android.cpptools.app",
+          "android.displaysize.app",
+          "android.externalservice.service",
+          "android.jdwptunnel.sampleapp",
+          "android.largeapk.app",
+          "android.leanbackjank.app",
+          "android.libcore.runner",
+          "android.media.app.media_session_test_helper",
+          "android.nativemedia.aaudio",
+          "android.os.app",
+          "android.os.powermanagertests",
+          "android.os.procfs",
+          "android.perfetto.producer",
+          "android.rootlessgpudebug.DEBUG.app",
+          "android.rootlessgpudebug.GLES_LAYERS.app",
+          "android.rootlessgpudebug.LAYERS.app",
+          "android.rootlessgpudebug.RELEASE.app",
+          "android.sample.app",
+          "android.server.alertwindowapp",
+          "android.server.alertwindowappsdk25",
+          "android.server.displayservice",
+          "android.server.FrameTestApp",
+          "android.server.translucentapp",
+          "android.server.translucentapp26",
+          "android.taskswitching.appa",
+          "android.taskswitching.appb",
+          "android.test.app",
+          "android.testharness.app",
+          "android.tests.devicesetup",
+          "android.theme.app",
+          "android.trustedvoice.app",
+          "android.voiceinteraction.service",
+          "android.voiceinteraction.testapp",
+          "android.voicesettings.service",
+          "android.wifibroadcasts.app",
+          "com.android.angleIntegrationTest.driverTest",
+          "com.android.angleIntegrationTest.driverTestSecondary",
+          "com.android.app1",
+          "com.android.app2",
+          "com.android.app3",
+          "com.android.appSdk25",
+          "com.android.compatibility.common",
+          "com.android.compatibility.common.deviceinfo",
+          "com.android.dynamiclinker",
+          "com.android.game.qualification.allocstress",
+          "com.android.game.qualification.tests",
+          "com.android.gputest",
+          "com.android.ndkaudio",
+          "com.android.nn.benchmark.vts.v1_2",
+          "com.android.simpleperf",
+          "com.android.simpleperf.debuggable",
+          "com.android.simpleperf.profileable",
+          "com.drawelements.deqp",
+          "com.example.hellojni",
+          "com.google.android.app1",
+          "com.google.android.app2",
+          "com.google.android.app3",
+          "com.google.android.app.stubs",
+          "com.google.android.ar.svc",
+          "com.google.android.assist.app1",
+          "com.google.android.assist.app2",
+          "com.google.android.suspendapps.emptydeviceadmin",
+          "com.google.android.suspendapps.suspendtestapp",
+          "com.replica.replicaisland",
+          "foo.bar.baz",
+          "libcore.java.util.collectiontests",
+          "org.skia.skqp",
+          "test.instant.cookie",
+          "android.dynamicmime.testapp",
+          "android.dynamicmime.helper",
+          "android.security.sts.CVE_2020_0215",
+          "com.android.RemoteDPC",
+          "com.android.Delegate",
+          "android.dynamicmime.preferred",
+          "android.appenumeration.syncadapter",
+          "android.slice.cts",
+          "com.google.android.gts.jniuncompress",
+          "android.os.lib.consumer1",
+          "android.recognitionservice.service",
+          "com.android.tradefed.utils.wifi",
+          "foo.bar.multipleservices",
+          "com.android.se",
+          "android.appsearch.app.helper_a",
+          "android.telephony.cts",
+          "android.devicepolicy.cts",
+          "android.server.wm.cts",
+          "android.telephony.cts",
+          "android.omapi.cts",
+          "com.comprion.android.AndroidTestExecutor2",
+          "android.incrementalinstall.incrementaltestapp",
+          "android.incrementalinstall.inrementaltestappvalidation",
+          "android.platform.test.scenario.apts",
+          "org.videolan.vlc",
+          "com.socialnmobile.dictapps.notepad.color.note",
+          "com.snapchat.android"
+        ]
+      },
+      "XTSInstrumentationNameList":{
+        "packageName": [
+          "androidx.test.runner.AndroidJUnitRunner",
+          "com.tcl.autotest.device.TclJUnitRunner"
+        ]
+      },
+      "XTSEndPackageList":{
+        "packageName": [
+          "com.android.tradefed.utils.wifi"
+        ]
+      },
+      "SpecialPackageList":{
+        "packageName": [
+          "com.android.tradefed.utils.wifi",
+          "android.tradefed.contentprovider"
+        ]
+      }
+    }],
+    "project": {
+      "name":"AppRecordConfig",
+      "type": "database"
+    }
+  },
+  {
+    "content": [
+        {
+            "name": "enable",
+            "value": "false"
+        },
+        {
+            "name": "debug",
+            "value": "false"
+        },
+        {
+            "name": "tracker_ids",
+            "value": [
+                {"id": 115000, "value": 1},
+                {"id": 115001, "value": 1},
+                {"id": 115002, "value": 1},
+                {"id": 115003, "value": 1},
+                {"id": 115004, "value": 1},
+                {"id": 115005, "value": 1},
+                {"id": 115006, "value": 1},
+                {"id": 115007, "value": 1},
+                {"id": 115008, "value": 1},
+                {"id": 115009, "value": 1},
+                {"id": 115010, "value": 1},
+                {"id": 115011, "value": 1},
+                {"id": 115012, "value": 1},
+                {"id": 115013, "value": 1},
+                {"id": 115014, "value": 1},
+                {"id": 115015, "value": 1},
+                {"id": 115016, "value": 1},
+                {"id": 115017, "value": 1},
+                {"id": 115018, "value": 1},
+                {"id": 115019, "value": 1},
+                {"id": 115020, "value": 1}
+            ]
+        },
+        {
+            "name": "tracker_origin",
+            "value": [
+                {"event_code": "309C19B858", "value": 1},
+                {"event_code": "324CF2E19C", "value": 1}
+            ]
+        }
+    ],
+    "project": {
+            "name": "CustomTrackerEvent",
+            "type": "database"
+        }
+   },
+   {
+    "content":[
+      {
+        "name":"enable",
+        "value":"true"
+      },
+      {
+        "name": "debug",
+        "value": "false"
+      },
+      {
+        "name": "nxturboState",
+        "value": "true"
+      },
+      {
+        "name": "nxturboPackageList",
+        "value": [
+          "com.lemon.lvoverseas",
+          "com.tubitv",
+          "com.scopely.monopolygo",
+          "com.roblox.client",
+          "com.dreamgames.royalmatch",
+          "io.supercent.pizzaidle",
+          "com.kiloo.subwaysurf"
+        ]
+      }],
+    "project":{
+      "name":"NxturboWindow",
+      "type":"database"
+    }
+  }
+]

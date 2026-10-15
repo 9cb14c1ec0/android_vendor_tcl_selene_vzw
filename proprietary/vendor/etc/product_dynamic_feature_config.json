@@ -1,0 +1,153 @@
+[
+    {
+        "Version": "V1.001"
+    },
+  {
+    "content": [
+      {
+        "name": "KillSystemBlackList",
+        "value": []
+      },
+      {
+        "name": "KillWhiteList",
+        "value": [
+          "android.os.cts",
+          "com.trustonic.telecoms.setup",
+          "com.android.cts.splitapp",
+          "com.android.preconditions.cts",
+          "com.google.android.apps.mediashell",
+          "com.android.bluetooth",
+          "com.google.android.providers.media.module",
+          "com.tcl.tvinput",
+          "com.android.providers.tv",
+          "com.tcl.autopair",
+          "com.google.android.katniss",
+          "com.tcl.ttvs",
+          "com.tcl.versionUpdateApp",
+          "com.tcl.usagestats",
+          "com.tcl.MultiScreenInteraction_TV",
+          "com.getpebble.android.basalt",
+          "com.samsung.accessory",
+          "com.samsung.android.gearrplugin",
+          "com.samsung.android.app.watchmanager",
+          "com.skype.insiders",
+          "com.skype.rover",
+          "com.skype.raider",
+          "com.android.externalstorage",
+          "com.example.mtk10263.whatsTemp",
+          "com.google.android.as",
+          "com.android.providers.contacts",
+          "com.tcl.logger",
+          "com.android.systemui",
+          "com.android.providers.calendar",
+          "com.tcl.newiodemo",
+          "com.tct.rsudaemon",
+          "com.tcl.rsuapp",
+          "com.tct.aio",
+          "com.tct.cota.wallpaper",
+          "com.tct.smart.cota",
+          "com.tct.smart.aota"
+        ]
+      },
+      {
+        "name": "ImportantAppList",
+        "value": [
+          "com.tencent.mm",
+          "com.tencent.mobileqq",
+          "com.whatsapp",
+          "com.facebook.katana",
+          "com.facebook.lite",
+          "com.facebook.orca",
+          "com.google.android.dialer",
+          "com.android.dialer",
+          "com.tct.phone"
+        ]
+      },
+      {
+        "name": "OperatorAppList",
+        "value": [
+          "com.orange.aura.oobe"
+        ]
+      },
+      {
+        "name": "FloatAppStackNewList",
+        "value": [
+          "com.tcl.settings"
+        ]
+      },
+      {
+        "name": "MaxKillRank",
+        "value": [
+          "-1",
+          "-1",
+          "3",
+          "9",
+          "-1",
+          "-1",
+          "9",
+          "9",
+          "-1",
+          "3",
+          "10",
+          "16"
+        ]
+      },
+      {
+        "name": "HandleEnable",
+        "value": true
+      },
+      {
+        "name": "KillEnable",
+        "value": true
+      },
+      {
+        "name": "ReclaimEnable",
+        "value": true
+      },
+      {
+        "name": "MaxImportantProcessMemThreshold",
+        "value": 819200
+      },
+      {
+        "name": "SingleSystemAppPssThreshold",
+        "value": 0
+      },
+      {
+        "name": "TotalSystemAppPssMemThreshold",
+        "value": 512000
+      },
+      {
+        "name": "MinProcessTrimmedInterval",
+        "value": 60
+      },
+      {
+        "name": "PollingEnable",
+        "value": true
+      },
+      {
+        "name": "HighCpuSwitch",
+        "value": true
+      },
+      {
+        "name": "CameraSceneSwitch",
+        "value": true
+      },
+      {
+        "name": "SwapFreeKillerEnable",
+        "value": true
+      },
+      {
+        "name": "PollingCleanIntervalMS",
+        "value": 30000
+      },
+      {
+        "name": "Magic",
+        "value": 0.1
+      }
+    ],
+    "project": {
+      "name": "TGuardMemoryManager",
+      "type": "database"
+    }
+  }
+]

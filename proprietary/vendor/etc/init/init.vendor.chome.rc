@@ -1,0 +1,17 @@
+
+on post-fs
+#    setprop ro.product.name ${ro.vendor.build.fingerprint}
+#    setprop ro.vendor.product.cpu.abilist       ${ro.product.cpu.abilist}
+#    setprop ro.vendor.product.cpu.abilist32     ${ro.product.cpu.abilist32}
+#    setprop ro.vendor.product.cpu.abilist62     ${ro.product.cpu.abilist64}
+
+    setprop ro.product.vendor.brand             ${ro.boot.brand}
+    setprop ro.product.vendor.device            ${ro.boot.product}
+#[SYSD SYS] Modified manufacturer source by yangao.chen for T8868855 on 2020-02-11
+    setprop ro.product.vendor.manufacturer      ${ro.boot.manufacturer}
+    setprop ro.product.vendor.model             ${ro.boot.model}
+    setprop ro.product.vendor.name              ${ro.boot.name}
+    setprop ro.vendor.build.fingerprint         ${ro.boot.brand:-unknown}/${ro.boot.name:-unknown}/${ro.boot.product:-unknown}:${ro.vendor.build.version.release_or_codename:-unknown}/${ro.vendor.build.id:-unknown}/${ro.vendor.build.version.incremental:-unknown}:${ro.vendor.build.type:-unknown}/${ro.vendor.build.tags:-unknown}
+    setprop ro.odm.build.fingerprint            ${ro.boot.brand:-unknown}/${ro.boot.name:-unknown}/${ro.boot.product:-unknown}:${ro.vendor.build.version.release_or_codename:-unknown}/${ro.vendor.build.id:-unknown}/${ro.vendor.build.version.incremental:-unknown}:${ro.vendor.build.type:-unknown}/${ro.vendor.build.tags:-unknown}
+
+

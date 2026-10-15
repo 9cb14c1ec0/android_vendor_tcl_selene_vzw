@@ -1,0 +1,12 @@
+service hal_simlock_default /vendor/bin/hw/vendor.tct.hardware.radio.simlock.service
+interface aidl vendor.tct.hardware.radio.simlock.ITctSimlockHal/default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled
+
+on early-boot
+    mkdir /mnt/vendor/persist/simlock 0770 system system
+    start hal_simlock_default
+

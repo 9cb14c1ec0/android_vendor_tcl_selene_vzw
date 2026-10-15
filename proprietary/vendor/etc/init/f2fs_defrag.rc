@@ -1,0 +1,16 @@
+service tdefrag_engine /vendor/bin/tdefrag_engine
+    class core
+    user root
+    group  root system readproc
+    writepid /dev/cpuset/background/tasks
+    disabled
+
+on post-fs-data && property:ro.vendor.tdefrag_engine=1
+    start tdefrag_engine
+
+on property:persist.sys.tdefrag_engine=1
+    start tdefrag_engine
+
+on property:persist.sys.tdefrag_engine=0
+    stop tdefrag_engine
+    write /sys/fs/f2fs/${dev.mnt.dev.data}/gc_urgent 0

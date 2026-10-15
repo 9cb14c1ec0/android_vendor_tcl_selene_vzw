@@ -1,0 +1,172 @@
+#====== Capture Boot Systrace ======
+on early-init && property:ro.boot.boot_trace=1
+   # Configuare ftrace
+   write /sys/kernel/tracing/buffer_size_kb "24576"
+   write /sys/kernel/tracing/trace_options "nooverwrite"
+
+   write /sys/kernel/tracing/events/sched/sched_stat_iowait/enable 1
+   write /sys/kernel/tracing/events/sched/sched_wakeup_new/enable 1
+   write /sys/kernel/tracing/events/sched/sched_blocked_reason/enable 1
+   write /sys/kernel/tracing/events/android_fs/enable 1
+   write /sys/kernel/tracing/events/block/block_rq_issue/enable 1
+   write /sys/kernel/tracing/events/block/block_rq_insert/enable 1
+   write /sys/kernel/tracing/events/block/block_rq_complete/enable 1
+   write /sys/kernel/tracing/events/power/cpu_frequency_limits/enable 1
+
+   # enable mtk events for Legacy kernel
+   write /sys/devices/system/cpu/perf/enable 1
+   write /sys/kernel/tracing/events/mtk_events/perf_index_l/enable 1
+   write /sys/kernel/tracing/events/mtk_events/perf_index_s/enable 1
+
+   setprop debug.atrace.tags.enableflags 0x1fffffe
+
+   #Trace SystemUI App for booting
+   setprop debug.atrace.app_number 1
+   setprop debug.atrace.app_0 "com.android.systemui"
+
+# try to enable mtk events early
+on late-fs && property:ro.boot.boot_trace=1
+   write /sys/devices/system/cpu/perf/enable 1
+   write /sys/devices/system/cpu/perf/mcupm_freq_enable 1
+   write /sys/devices/system/cpu/cpuqos/cpuqos_trace_enable 1
+
+   write /sys/kernel/tracing/events/perf_tracker/enable 1
+   write /sys/kernel/tracing/events/scheduler/sched_frequency_limits/enable 1
+   write /sys/kernel/tracing/events/cpuqos_v3/cpuqos_debug_info/enable 1
+
+# enable mtk events
+on post-fs-data && property:ro.boot.boot_trace=1
+   write /sys/devices/system/cpu/perf/enable 1
+   write /sys/devices/system/cpu/perf/mcupm_freq_enable 1
+   write /sys/devices/system/cpu/cpuqos/cpuqos_trace_enable 1
+
+   write /sys/kernel/tracing/events/perf_tracker/enable 1
+   write /sys/kernel/tracing/events/scheduler/sched_frequency_limits/enable 1
+   write /sys/kernel/tracing/events/cpuqos_v3/cpuqos_debug_info/enable 1
+
+# atrace.rc disable ftrace on late-init, re-enable ftrace
+on late-init && property:ro.boot.boot_trace=1
+   write /sys/kernel/tracing/tracing_on 1
+
+
+#======  Capture Systrace via property  ======
+on property:persist.vendor.boot_trace=1
+   write /proc/bootprof "Persist boot_trace trigger"
+   write /sys/devices/system/cpu/perf/enable 1
+   write /sys/devices/system/cpu/perf/mcupm_freq_enable 1
+   write /sys/devices/system/cpu/cpuqos/cpuqos_trace_enable 1
+
+   # enable flags for boot Systrace
+   setprop debug.atrace.tags.enableflags 0x1fffffe
+
+   # enable events
+   write /sys/kernel/tracing/events/power/cpu_frequency/enable 1
+   write /sys/kernel/tracing/events/power/cpu_frequency_limits/enable 1
+   write /sys/kernel/tracing/events/sched/sched_wakeup/enable 1
+   write /sys/kernel/tracing/events/sched/sched_wakeup_new/enable 1
+   write /sys/kernel/tracing/events/sched/sched_switch/enable 1
+   write /sys/kernel/tracing/events/sched/sched_blocked_reason/enable 1
+   write /sys/kernel/tracing/events/mtk_ftrace/enable 1
+   write /sys/kernel/tracing/events/perf_tracker/enable 1
+   write /sys/kernel/tracing/events/android_fs/enable 1
+   write /sys/kernel/tracing/events/block/block_rq_issue/enable 1
+   write /sys/kernel/tracing/events/block/block_rq_insert/enable 1
+   write /sys/kernel/tracing/events/block/block_rq_complete/enable 1
+   write /sys/kernel/tracing/events/workqueue/workqueue_execute_start/enable 1
+   write /sys/kernel/tracing/events/workqueue/workqueue_execute_end/enable 1
+   write /sys/kernel/tracing/events/scheduler/sched_frequency_limits/enable 1
+   write /sys/kernel/tracing/events/cpuqos_v3/cpuqos_debug_info/enable 1
+
+
+   # Configuare ftrace
+   write /sys/kernel/tracing/buffer_size_kb "24576"
+   write /sys/kernel/tracing/trace_options "nooverwrite"
+   write /sys/kernel/tracing/tracing_on 1
+
+   #Trace SystemUI App for booting
+   setprop debug.atrace.app_number 1
+   setprop debug.atrace.app_0 "com.android.systemui"
+
+on property:sys.boot_completed=* && property:persist.vendor.boot_trace=1
+   #force to disable boot ftrace after boot complete.
+   write /sys/devices/system/cpu/perf/enable 0
+   write /sys/devices/system/cpu/perf/mcupm_freq_enable 0
+   write /sys/devices/system/cpu/cpuqos/cpuqos_trace_enable 0
+   write /sys/kernel/tracing/tracing_on 0
+
+# add by zhoujinggao@tcl.com for bluescreen  For DFLYGL-4855 on 2024-01-09
+on property:vendor.bluescreen.start=1
+   start logcat_expdbd
+   start klog_expdbd
+
+# 10 mins will save android log again and display bluescreen error information
+on property:vendor.bluescreen.start=2
+   exec u:r:logexpdb:s0 root root -- /system/bin/logcat_expdb -D -b crash,main -t 5000 -f /dev/block/by-name/expdb
+   exec /system/bin/logcat -b crash,main -t 5000 -f /dev/aed2
+
+# for test android log to bluescreen error information
+on property:vendor.bluescreen.start=3
+   exec /system/bin/logcat -b crash,main -t 5000 -f /dev/aed2
+
+
+# add by zhoujinggao@tcl.com for bluescreen  For DFLYGL-4855 on 2024-01-09
+service klog_expdbd /system/bin/klog_expdb
+    class late_start
+    disabled
+    oneshot
+    user root
+    group root
+    seclabel u:r:logexpdb:s0
+
+service logcat_expdbd /system/bin/logcat_expdb -b crash,main -t 5000 -f /dev/block/by-name/expdb
+    class late_start
+    disabled
+    oneshot
+    user root
+    group root
+    seclabel u:r:logexpdb:s0
+
+# when boot completed finish , failed_count-- and write flag.
+# ro.build.type=user
+on property:sys.boot_completed=1 && property:ro.build.type=user && property:ro.boot.notstart_hera=65
+      exec - root -- /system/bin/notstart_hera countdown
+
+# when system server repeat reboot,need save log to expdb .
+on property:sys.system_server.start_count=2 && property:ro.build.type=user && property:ro.boot.notstart_hera=65
+   exec - root -- /system/bin/notstart_hera count_write3
+   start logcat_expdbd
+   start klog_expdbd
+
+# notstart_hera check_hera will delay 120 seconds check oembin flag
+service notstart_check_hera /system/bin/notstart_hera check_hera
+    class late_start
+    disabled
+    oneshot
+    user root
+    group root
+    seclabel u:r:logexpdb:s0
+
+# when boot completed finish , wait 120s, check oembin flag trig hera,
+# notstart_hera need property:persist.sys.hera_tguard=true && property:persist.sys.sugarupload=1 start check
+on property:sys.boot_completed=1 && property:persist.sys.hera_tguard=true && property:persist.sys.sugarupload=1 && property:ro.build.type=user && property:ro.boot.notstart_hera=65
+      start notstart_check_hera
+
+# heserver NvrHungUtils.cpp dumpExpdbLogs will save log and setprop persist.log.hera_expdb_logsave=2
+# cmd strings /dev/block/by-name/expdb > /data/system/nvrhung/not_startup/log/expdb.log
+on property:sys.boot_completed=1 && property:persist.log.hera_expdb_logsave=2 && property:ro.build.type=user && property:ro.boot.notstart_hera=65
+      exec - root -- /system/bin/notstart_hera savelog
+
+# notstart_hera clean expdb log
+service notstart_clean_expdb /system/bin/notstart_hera clean_expdb
+    class late_start
+    disabled
+    oneshot
+    user root
+    group root
+    seclabel u:r:logexpdb:s0
+
+# when expdb log save finish, clean oembin flag and clean persist.log.hera_expdb_logsave=0
+on property:sys.boot_completed=1 && property:persist.log.hera_expdb_logsave=1 && property:ro.build.type=user && property:ro.boot.notstart_hera=65
+      exec - root -- /system/bin/notstart_hera count_clean
+      start notstart_clean_expdb
+

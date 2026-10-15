@@ -1,0 +1,23 @@
+#add by tao.wang for MODEL3-2216 create a cpuset for dex2oat processes 20221011 begin
+on init
+    mkdir /dev/cpuset/dex2oat
+    copy /dev/cpuset/cpus /dev/cpuset/dex2oat/cpus
+    copy /dev/cpuset/mems /dev/cpuset/dex2oat/mems	
+    chmod 0664 /dev/cpuset/dex2oat/cpus
+    chmod 0664 /dev/cpuset/dex2oat/cgroup.procs
+    chmod 0664 /dev/cpuset/dex2oat/cpus	
+    chown system system /dev/cpuset/dex2oat/cgroup.procs
+    chown system system /dev/cpuset/dex2oat/cpus
+    chown system system /dev/cpuset/dex2oat/tasks	
+    write /dev/cpuset/dex2oat/cpus 0-7	
+
+on property:sys.dex2oat.foreground=1
+    chmod 0644 /dev/cpuset/cpus
+    chmod 0664 /dev/cpuset/dex2oat/cpus
+    copy /dev/cpuset/cpus /dev/cpuset/dex2oat/cpus
+    chmod 0664 /dev/cpuset/cpus
+
+on property:sys.dex2oat.foreground=0
+    chmod 0664 /dev/cpuset/dex2oat/cpus
+    copy /dev/cpuset/system-background/cpus /dev/cpuset/dex2oat/cpus
+#add by tao.wang for MODEL3-2216 create a cpuset for dex2oat processes 20221011 end

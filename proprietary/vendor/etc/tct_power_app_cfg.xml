@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The source code provided herein is for optimizing power and performance of gaming software
+and certain applications (e.g. Sina Weibo, QQ) only and should not be used and/or included in
+any software that is unrelated to enhancing end-user experience. -->
+<WHITELIST>
+    <!-- [TCT-SAT][PERF]Begin added by yingbao.wang for touch boost on 2021/06/08-->
+    <Package name="com.antutu.ABenchMark">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.antutu.benchmark.full">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.antutu.benchmark.full.lite">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>    
+    <Package name="com.antutu.ABenchMark.lite">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+
+    <Package name="com.andromeda.androbench2">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.primatelabs.geekbench">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.tcl.android.launcher">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_POWERHAL_EXCITING_TOUCH" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.google.android.gm">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_POWERHAL_EXCITING_TOUCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_BOOST_VALUE_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.google.android.dialer">
+         <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_POWERHAL_EXCITING_TOUCH" param1="1"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+         </Activity>
+     </Package>
+     <Package name="com.futuremark.dmandroid.application">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.futuremark.pcmark.android.benchmark">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.glbenchmark.glbenchmark27">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.lunarlabs.panda">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp1">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp2">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp3">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp4">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp5">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp6">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp7">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp8">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp9">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp10">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp11">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp12">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp13">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp14">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp15">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp16">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp17">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp18">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp19">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.viserdapp20">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.smartviser.demogame">
+         <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+         </Activity>
+    </Package>
+    <Package name="com.cisco.webex.meetings">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.fusionprojects.edmodo">
+        <Activity name="Common">
+            <FPS value="Common">
+               <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+               <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+               <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+               <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+               <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="2"></data>
+               <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.microsoft.teams">
+        <Activity name="Common">
+            <FPS value="Common">
+               <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+               <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+               <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+               <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+               <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="2"></data>
+               <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.foxieventures.virtualworldlifesim">
+        <Activity name="Common">
+            <FPS value="Common">
+               <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+               <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+               <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+               <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+               <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="2"></data>
+               <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+               <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <!-- [TCT-SAT][PERF]End added by yingbao.wang for touch boost on 2021/06/08-->
+    <Package name="com.sankuai.meituan">
+        <Activity name="com.meituan.android.scan.NewArActivity">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="1500"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="com.ss.android.ugc.aweme">
+        <Activity name="com.ss.android.ugc.aweme.shortvideo.edit.VEVideoPublishEditActivity">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="2000"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_CACHE_PART_CTRL" param1="1"></data>
+                <data cmd="PERF_RES_PERF_TASK_TURBO" param1="15"></data>
+            </FPS>
+        </Activity>
+        <Activity name="com.ss.android.ugc.aweme.shortvideo.ui.VideoPublishActivity">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="2000"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_CACHE_PART_CTRL" param1="1"></data>
+                <data cmd="PERF_RES_PERF_TASK_TURBO" param1="15"></data>
+            </FPS>
+        </Activity>
+    </Package>
+    <Package name="android.view.cts">
+        <Activity name="Common">
+            <FPS value="Common">
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_0" param1="6"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_0" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUCORE_MIN_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUCORE_MAX_CLUSTER_1" param1="2"></data>
+                <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_MAX_CLUSTER_1" param1="3000000"></data>
+                <data cmd="PERF_RES_CPUFREQ_CCI_FREQ" param1="1"></data>
+                <data cmd="PERF_RES_POWER_HINT_HOLD_TIME" param1="400"></data>
+                <data cmd="PERF_RES_POWERHAL_SCREEN_OFF_STATE" param1="2"></data>
+                <data cmd="PERF_RES_GPU_FREQ_MIN" param1="0"></data>
+                <data cmd="PERF_RES_DRAM_OPP_MIN" param1="0"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="120"></data>
+                <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="120"></data>
+                <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
+                <data cmd="PERF_RES_FPS_EARA_BENCH" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_UCLAMP_MIN_TA" param1="100"></data>
+                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PREFER_IDLE_TA" param1="1"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_DOWN_THROTTLE_NS" param1="4000000"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_UP_THROTTLE_NS" param1="0"></data>
+                <data cmd="PERF_RES_SCHED_PLUS_SYNC_FLAG" param1="1"></data>
+            </FPS>
+        </Activity>
+    </Package>
+</WHITELIST>

@@ -1,0 +1,13 @@
+libOpenCL.so
+libtclbokeh.so
+libtclGestureDetectorJNI.so
+libTctWaterMark.so
+libTclHKAIColor.so
+libTclHKAIMutliPhoto.so
+libtcltflitev2.so
+libopencv_calib3d.so
+libopencv_flann.so
+libopencv_core.so
+libopencv_imgproc.so
+libTclImage_ImageEngine.so
+libc++_shared.so

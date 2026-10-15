@@ -1,0 +1,39 @@
+service oqc_flag /vendor/bin/oqc_mark oqc_flag
+    user root
+    group root
+    oneshot
+
+service oqc_checkbox /vendor/bin/oqc_mark oqc_checkbox
+    user root
+    group root
+    oneshot
+
+service checkbox_clear /vendor/bin/oqc_mark checkbox_clear
+    user root
+    group root
+    oneshot
+
+service resetflag_clear /vendor/bin/oqc_mark resetflag_clear
+    user root
+    group root
+    oneshot
+
+service wait_time /vendor/bin/oqc_mark wait_time
+    user root
+    group root
+    oneshot
+
+#modified by peng-zhou for oqc_mark on 20231204
+on property:debug.factory.oqcflag=1
+    start oqc_flag
+
+on property:debug.check.box=1
+    start oqc_checkbox
+
+on property:ro.boot.oqc=1
+    setprop debug.need.wait 1
+    start resetflag_clear
+    start wait_time
+
+on property:debug.checkbox.clear=1
+    start checkbox_clear

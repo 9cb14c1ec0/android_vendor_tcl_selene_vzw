@@ -1,0 +1,60 @@
+service ipel_engine_service /vendor/bin/hw/vendor.tcl.ipel@1.0-service
+    class hal
+    user system
+    group system readproc
+    capabilities SYS_NICE
+
+on init
+    # input boost
+    # he.ding@ARCH. 2020/07/03. add for input boost & ipel
+    chown system system /sys/module/cpu_boost/parameters/input_boost_freq
+    chmod 0660 /sys/module/cpu_boost/parameters/input_boost_freq
+    chown system system /sys/module/cpu_boost/parameters/input_boost_ms
+    chmod 0660 /sys/module/cpu_boost/parameters/input_boost_ms
+    chown system system /sys/module/cpu_boost/parameters/sched_boost_on_input
+    chmod 0660 /sys/module/cpu_boost/parameters/sched_boost_on_input
+    chown system system /dev/ipel
+    # change ipel to 666 for GT
+    chmod 0666 /dev/ipel
+    # xing10.chen@tcl.com 2021/04/26. add for ipel dynamic configure
+    chown system system /sys/kernel/ux_thread/ux_depth
+    chmod 0660 /sys/kernel/ux_thread/ux_depth
+    chown system system /sys/kernel/ux_thread/ux_enable
+    chmod 0660 /sys/kernel/ux_thread/ux_enable
+    chown system system /sys/kernel/ux_thread/ktc_enable
+    chmod 0660 /sys/kernel/ux_thread/ktc_enable
+    chown system system /sys/kernel/ux_thread/ux_migrate_delay
+    chmod 0660 /sys/kernel/ux_thread/ux_migrate_delay
+    chown system system /sys/kernel/ux_thread/dynamic_maxruning_ms
+    chmod 0660 /sys/kernel/ux_thread/dynamic_maxruning_ms
+    chown system system /sys/kernel/ux_thread/ux_max_thresh
+    chmod 0660 /sys/kernel/ux_thread/ux_max_thresh
+    chown system system /sys/kernel/ux_thread/ux_sched_delay
+    chmod 0660 /sys/kernel/ux_thread/ux_sched_delay
+    chown system system /proc/tcl_healthinfo/ux_running_ctrl/ctrl
+    chmod 0660 /proc/tcl_healthinfo/ux_running_ctrl/ctrl
+    chown system system /proc/tcl_healthinfo/ux_running_ctrl/logp
+    chmod 0660 /proc/tcl_healthinfo/ux_running_ctrl/logp
+    chown system system /proc/tcl_healthinfo/ux_runable_ctrl/ctrl
+    chmod 0660 /proc/tcl_healthinfo/ux_runable_ctrl/ctrl
+    chown system system /proc/tcl_healthinfo/ux_runable_ctrl/logp
+    chmod 0660 /proc/tcl_healthinfo/ux_runable_ctrl/logp
+    chown system system /proc/tcl_healthinfo/ux_dstate_ctrl/ctrl
+    chmod 0660 /proc/tcl_healthinfo/ux_dstate_ctrl/ctrl
+    chown system system /proc/tcl_healthinfo/ux_dstate_ctrl/logp
+    chmod 0660 /proc/tcl_healthinfo/ux_dstate_ctrl/logp
+    chown system system /proc/tcl_healthinfo/ux_sleep_ctrl/ctrl
+    chmod 0660 /proc/tcl_healthinfo/ux_sleep_ctrl/ctrl
+    chown system system /proc/tcl_healthinfo/ux_sleep_ctrl/logp
+    chmod 0660 /proc/tcl_healthinfo/ux_sleep_ctrl/logp
+    chown system system /sys/kernel/binder_feature/binder_ux_priority_on
+    chmod 0660 /sys/kernel/binder_feature/binder_ux_priority_on
+    chown system system /proc/tcl_healthinfo
+    chown system system /proc/tcl_healthinfo/ux_running_ctrl
+    chown system system /proc/tcl_healthinfo/ux_runable_ctrl
+    chown system system /proc/tcl_healthinfo/ux_dstate_ctrl
+    chown system system /proc/tcl_healthinfo/ux_sleep_ctrl
+    chown system system /sys/kernel/ipel/vip_first
+    chown system system /proc/tcl_fgio
+    chown system system /proc/tcl_fgio/enable
+    chmod 0660 /proc/tcl_fgio/enable
