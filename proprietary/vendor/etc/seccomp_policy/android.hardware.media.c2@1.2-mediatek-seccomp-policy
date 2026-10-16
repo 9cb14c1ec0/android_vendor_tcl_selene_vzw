@@ -84,3 +84,5 @@ getgid: 1
 getegid: 1
 getgroups: 1
 unlinkat: 1
+uname: 1
+sysinfo: 1
