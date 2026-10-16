@@ -1724,62 +1724,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.boot@1.0-impl-1.2-mtkimpl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "libbase",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "android.hardware.boot@1.0",
-                "android.hardware.boot@1.1",
-                "android.hardware.boot@1.2",
-                "libmtk_bsg",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "libbase",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "android.hardware.boot@1.0",
-                "android.hardware.boot@1.1",
-                "android.hardware.boot@1.2",
-                "libmtk_bsg",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.gatekeeper@1.0-impl_vendor",
     stem: "android.hardware.gatekeeper@1.0-impl",
     owner: "tcl",
@@ -37135,8 +37079,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio-impl_vendor",
-    stem: "android.hardware.bluetooth.audio-impl",
+    name: "android.hardware.bluetooth.audio-impl-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -37144,7 +37087,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so",
+                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -48861,7 +48804,7 @@ cc_prebuilt_binary {
                 "vendor.mediatek.hardware.audio@8.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "vendor.mediatek.hardware.bluetooth.audio-impl",
-                "android.hardware.bluetooth.audio-impl_vendor",
+                "android.hardware.bluetooth.audio-impl-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -48913,46 +48856,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.boot@1.2-service_vendor",
-    stem: "android.hardware.boot@1.2-service",
+    name: "android.hardware.drm-service.clearkey-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.boot@1.2-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.boot@1.0",
-                "android.hardware.boot@1.1",
-                "android.hardware.boot@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.drm-service.clearkey_vendor",
-    stem: "android.hardware.drm-service.clearkey",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey",
+                "proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey-v33",
             ],
             shared_libs: [
                 "libbase",
@@ -49241,13 +49150,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.health-service.example_vendor",
-    stem: "android.hardware.health-service.example",
+    name: "android.hardware.health-service.example-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.health-service.example",
+                "proprietary/vendor/bin/hw/android.hardware.health-service.example-v33",
             ],
             shared_libs: [
                 "libbase_shim",
@@ -49602,13 +49510,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.sensors-service.multihal_vendor",
-    stem: "android.hardware.sensors-service.multihal",
+    name: "android.hardware.sensors-service.multihal-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal",
+                "proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal-v33",
             ],
             shared_libs: [
                 "libbase_shim",
@@ -50600,13 +50507,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "wpa_supplicant_vendor",
-    stem: "wpa_supplicant",
+    name: "wpa_supplicant-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/wpa_supplicant",
+                "proprietary/vendor/bin/hw/wpa_supplicant-v33",
             ],
             shared_libs: [
                 "libcrypto_shim_selene",

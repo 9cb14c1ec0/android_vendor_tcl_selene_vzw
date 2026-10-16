@@ -321,7 +321,6 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/init/aee_aedv64_v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64_v2.rc \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
-    vendor/tcl/selene_vzw/proprietary/vendor/etc/init/android.hardware.boot@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.2-service.rc \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
@@ -1541,7 +1540,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl_vendor \
     android.hardware.bluetooth.audio@2.1-impl_vendor \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.boot@1.0-impl-1.2-mtkimpl \
     android.hardware.gatekeeper@1.0-impl_vendor \
     android.hardware.renderscript@1.0-impl_vendor \
     android.hardware.soundtrigger@2.3-impl_vendor \
@@ -2418,7 +2416,7 @@ PRODUCT_PACKAGES += \
     libvcodecdrv \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
-    android.hardware.bluetooth.audio-impl_vendor \
+    android.hardware.bluetooth.audio-impl-v33 \
     android.hardware.graphics.composer@2.1-resources_vendor \
     android.hardware.graphics.composer@2.2-resources_vendor \
     android.hardware.power-service-mediatek_vendor \
@@ -2789,8 +2787,7 @@ PRODUCT_PACKAGES += \
     hs20-osu-client_vendor \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
-    android.hardware.boot@1.2-service_vendor \
-    android.hardware.drm-service.clearkey_vendor \
+    android.hardware.drm-service.clearkey-v33 \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service_vendor \
     android.hardware.gnss-service.mediatek \
@@ -2798,7 +2795,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service_vendor \
     android.hardware.graphics.composer@2.4-service_vendor \
     android.hardware.graphics.composer@3.1-service \
-    android.hardware.health-service.example_vendor \
+    android.hardware.health-service.example-v33 \
     android.hardware.lights-service.mediatek \
     android.hardware.media.c2@1.2-mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
@@ -2808,7 +2805,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-shim-service-mtk-lazy \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@2.0-service.trustonic \
-    android.hardware.sensors-service.multihal_vendor \
+    android.hardware.sensors-service.multihal-v33 \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb-aidl-service.mediatekv1.0 \
     android.hardware.usb.gadget-service.mediatekv1.1 \
@@ -2837,7 +2834,7 @@ PRODUCT_PACKAGES += \
     vendor.tct.hardware.sysinfo.service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
-    wpa_supplicant_vendor \
+    wpa_supplicant-v33 \
     init.insmod \
     ipsec_mon \
     iwpriv_system \
