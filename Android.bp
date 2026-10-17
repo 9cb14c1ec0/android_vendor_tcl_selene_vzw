@@ -37079,7 +37079,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio-impl-v33",
+    name: "android.hardware.bluetooth.audio-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -37087,7 +37087,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl-v33.so",
+                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -48804,7 +48804,7 @@ cc_prebuilt_binary {
                 "vendor.mediatek.hardware.audio@8.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "vendor.mediatek.hardware.bluetooth.audio-impl",
-                "android.hardware.bluetooth.audio-impl-v33",
+                "android.hardware.bluetooth.audio-v33",
                 "libc++",
                 "libc",
                 "libm",

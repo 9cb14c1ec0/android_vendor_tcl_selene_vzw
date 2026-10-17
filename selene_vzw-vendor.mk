@@ -2416,7 +2416,7 @@ PRODUCT_PACKAGES += \
     libvcodecdrv \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
-    android.hardware.bluetooth.audio-impl-v33 \
+    android.hardware.bluetooth.audio-v33 \
     android.hardware.graphics.composer@2.1-resources_vendor \
     android.hardware.graphics.composer@2.2-resources_vendor \
     android.hardware.power-service-mediatek_vendor \
