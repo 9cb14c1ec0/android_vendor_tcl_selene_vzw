@@ -1537,15 +1537,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio@7.0-impl-mediatek \
     android.hardware.audio@7.1-impl-mediatek \
-    android.hardware.bluetooth.audio@2.0-impl_vendor \
-    android.hardware.bluetooth.audio@2.1-impl_vendor \
     android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.gatekeeper@1.0-impl_vendor \
     android.hardware.renderscript@1.0-impl_vendor \
     android.hardware.soundtrigger@2.3-impl_vendor \
     android.hardware.thermal@1.0-impl_vendor \
     android.hardware.thermal@2.0-impl \
-    audio.bluetooth.default_vendor \
     audio.primary.mediatek \
     audio.r_submix.default_vendor \
     audio.r_submix.mediatek \
@@ -1904,8 +1901,6 @@ PRODUCT_PACKAGES += \
     libawinic_mtk_aurisys \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session_vendor \
-    libbluetooth_audio_session_aidl_vendor \
     libbluetooth_audio_session_aidl_mediatek \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
@@ -1946,7 +1941,6 @@ PRODUCT_PACKAGES += \
     libdynamiclog \
     libfgauge_gm30 \
     libfile_op \
-    libflatbuffers-cpp_vendor \
     libformatter \
     libged \
     libgpu_aux \
@@ -2416,7 +2410,6 @@ PRODUCT_PACKAGES += \
     libvcodecdrv \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
-    android.hardware.bluetooth.audio-v33 \
     android.hardware.graphics.composer@2.1-resources_vendor \
     android.hardware.graphics.composer@2.2-resources_vendor \
     android.hardware.power-service-mediatek_vendor \

@@ -1562,116 +1562,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.0-impl_vendor",
-    stem: "android.hardware.bluetooth.audio@2.0-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "libbase",
-                "libbluetooth_audio_session_vendor",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "libbase",
-                "libbluetooth_audio_session_vendor",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio@2.1-impl_vendor",
-    stem: "android.hardware.bluetooth.audio@2.1-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libbluetooth_audio_session_vendor",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libbluetooth_audio_session_vendor",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth@1.1-impl-mediatek",
     owner: "tcl",
     strip: {
@@ -1968,73 +1858,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.thermal@1.0",
                 "android.hardware.thermal@2.0",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.bluetooth.default_vendor",
-    stem: "audio.bluetooth.default",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.bluetooth.default.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-                "libbluetooth_audio_session_aidl_mediatek",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbluetooth_audio_session_mediatek",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.bluetooth.default.so",
-            ],
-            shared_libs: [
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-                "libbluetooth_audio_session_aidl_mediatek",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "libbluetooth_audio_session_mediatek",
-                "libhidlbase",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -15494,116 +15317,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session_vendor",
-    stem: "libbluetooth_audio_session",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_audio_session.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session_aidl_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session_aidl_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session_aidl_vendor",
-    stem: "libbluetooth_audio_session_aidl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbluetooth_audio_session_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "android.hardware.bluetooth.audio-V2-ndk",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "android.hardware.bluetooth.audio-V2-ndk",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_mediatek",
     owner: "tcl",
     strip: {
@@ -17577,42 +17290,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libnvram",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libflatbuffers-cpp_vendor",
-    stem: "libflatbuffers-cpp",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libflatbuffers-cpp.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libflatbuffers-cpp.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -22275,7 +21952,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libflatbuffers-cpp_vendor",
+                "libflatbuffers-cpp",
                 "libruy_vendor",
                 "libtextclassifier_hash_vendor",
                 "libnativewindow",
@@ -22291,7 +21968,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libflatbuffers-cpp_vendor",
+                "libflatbuffers-cpp",
                 "libruy_vendor",
                 "libtextclassifier_hash_vendor",
                 "libnativewindow",
@@ -37079,37 +36756,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio-v33",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-v33.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "android.hardware.bluetooth.audio-V2-ndk",
-                "libbluetooth_audio_session_aidl_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.graphics.composer@2.1-resources_vendor",
     stem: "android.hardware.graphics.composer@2.1-resources",
     owner: "tcl",
@@ -48804,7 +48450,6 @@ cc_prebuilt_binary {
                 "vendor.mediatek.hardware.audio@8.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "vendor.mediatek.hardware.bluetooth.audio-impl",
-                "android.hardware.bluetooth.audio-v33",
                 "libc++",
                 "libc",
                 "libm",
