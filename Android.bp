@@ -9,8 +9,7 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common-util_vendor",
-    stem: "android.hardware.audio.common-util",
+    name: "android.hardware.audio.common-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -18,7 +17,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common-util.so",
+                "proprietary/vendor/lib/android.hardware.audio.common-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -32,7 +31,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -51,8 +50,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@6.0-util_vendor",
-    stem: "android.hardware.audio.common@6.0-util",
+    name: "android.hardware.audio.common@6.0-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -60,13 +58,13 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@6.0-util.so",
+                "proprietary/vendor/lib/android.hardware.audio.common@6.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@6.0",
                 "libc++",
                 "libc",
@@ -76,13 +74,13 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@6.0-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common@6.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@6.0",
                 "libc++",
                 "libc",
@@ -97,8 +95,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@7.0-enums_vendor",
-    stem: "android.hardware.audio.common@7.0-enums",
+    name: "android.hardware.audio.common@7.0-enums-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -106,7 +103,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so",
+                "proprietary/vendor/lib/android.hardware.audio.common@7.0-enums-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -119,7 +116,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -137,8 +134,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@7.0-util_vendor",
-    stem: "android.hardware.audio.common@7.0-util",
+    name: "android.hardware.audio.common@7.0-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -146,15 +142,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@7.0-util.so",
+                "proprietary/vendor/lib/android.hardware.audio.common@7.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums_vendor",
+                "android.hardware.audio.common@7.0-enums-v33",
                 "libbase",
                 "libc++",
                 "libc",
@@ -164,15 +160,15 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@7.0-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common@7.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums_vendor",
+                "android.hardware.audio.common@7.0-enums-v33",
                 "libbase",
                 "libc++",
                 "libc",
@@ -187,8 +183,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@7.1-enums_vendor",
-    stem: "android.hardware.audio.common@7.1-enums",
+    name: "android.hardware.audio.common@7.1-enums-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -196,7 +191,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@7.1-enums.so",
+                "proprietary/vendor/lib/android.hardware.audio.common@7.1-enums-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -209,7 +204,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -227,8 +222,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@7.1-util_vendor",
-    stem: "android.hardware.audio.common@7.1-util",
+    name: "android.hardware.audio.common@7.1-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -236,15 +230,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@7.1-util.so",
+                "proprietary/vendor/lib/android.hardware.audio.common@7.1-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums_vendor",
+                "android.hardware.audio.common@7.1-enums-v33",
                 "libbase",
                 "libc++",
                 "libc",
@@ -254,15 +248,15 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@7.1-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio.common@7.1-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums_vendor",
+                "android.hardware.audio.common@7.1-enums-v33",
                 "libbase",
                 "libc++",
                 "libc",
@@ -277,8 +271,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@6.0-util_vendor",
-    stem: "android.hardware.audio.effect@6.0-util",
+    name: "android.hardware.audio.effect@6.0-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -286,15 +279,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.effect@6.0-util.so",
+                "proprietary/vendor/lib/android.hardware.audio.effect@6.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "android.hardware.audio.effect@6.0",
                 "libc++",
                 "libc",
@@ -304,15 +297,15 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.effect@6.0-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio.effect@6.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "android.hardware.audio.effect@6.0",
                 "libc++",
                 "libc",
@@ -327,8 +320,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@7.0-util_vendor",
-    stem: "android.hardware.audio.effect@7.0-util",
+    name: "android.hardware.audio.effect@7.0-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -336,15 +328,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.effect@7.0-util.so",
+                "proprietary/vendor/lib/android.hardware.audio.effect@7.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
+                "android.hardware.audio.common@7.0-util-v33",
                 "android.hardware.audio.effect@7.0",
                 "libc++",
                 "libc",
@@ -354,15 +346,15 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.effect@7.0-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio.effect@7.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
+                "android.hardware.audio.common@7.0-util-v33",
                 "android.hardware.audio.effect@7.0",
                 "libc++",
                 "libc",
@@ -377,8 +369,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio@7.0-util_vendor",
-    stem: "android.hardware.audio@7.0-util",
+    name: "android.hardware.audio@7.0-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -386,16 +377,16 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio@7.0-util.so",
+                "proprietary/vendor/lib/android.hardware.audio@7.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums_vendor",
-                "android.hardware.audio.common@7.0-util_vendor",
+                "android.hardware.audio.common@7.0-enums-v33",
+                "android.hardware.audio.common@7.0-util-v33",
                 "android.hardware.audio@7.0",
                 "libbase",
                 "libc++",
@@ -406,16 +397,16 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio@7.0-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio@7.0-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums_vendor",
-                "android.hardware.audio.common@7.0-util_vendor",
+                "android.hardware.audio.common@7.0-enums-v33",
+                "android.hardware.audio.common@7.0-util-v33",
                 "android.hardware.audio@7.0",
                 "libbase",
                 "libc++",
@@ -431,8 +422,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio@7.1-util_vendor",
-    stem: "android.hardware.audio@7.1-util",
+    name: "android.hardware.audio@7.1-util-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -440,16 +430,16 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.audio@7.1-util.so",
+                "proprietary/vendor/lib/android.hardware.audio@7.1-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
+                "android.hardware.audio.common@7.1-enums-v33",
+                "android.hardware.audio.common@7.1-util-v33",
                 "android.hardware.audio@7.1",
                 "libbase",
                 "libc++",
@@ -460,16 +450,16 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio@7.1-util.so",
+                "proprietary/vendor/lib64/android.hardware.audio@7.1-util-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
+                "android.hardware.audio.common@7.1-enums-v33",
+                "android.hardware.audio.common@7.1-util-v33",
                 "android.hardware.audio@7.1",
                 "libbase",
                 "libc++",
@@ -485,8 +475,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.sensors@2.0-ScopedWakelock_vendor",
-    stem: "android.hardware.sensors@2.0-ScopedWakelock",
+    name: "android.hardware.sensors@2.0-ScopedWakelock-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -494,7 +483,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so",
+                "proprietary/vendor/lib/android.hardware.sensors@2.0-ScopedWakelock-v33.so",
             ],
             shared_libs: [
                 "android.hardware.sensors@1.0",
@@ -515,7 +504,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so",
+                "proprietary/vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock-v33.so",
             ],
             shared_libs: [
                 "android.hardware.sensors@1.0",
@@ -541,8 +530,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.media.audio.common.types-V1-cpp_vendor",
-    stem: "android.media.audio.common.types-V1-cpp",
+    name: "android.media.audio.common.types-V1-cpp-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -550,7 +538,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/android.media.audio.common.types-V1-cpp.so",
+                "proprietary/vendor/lib/android.media.audio.common.types-V1-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -563,7 +551,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.media.audio.common.types-V1-cpp.so",
+                "proprietary/vendor/lib64/android.media.audio.common.types-V1-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -581,8 +569,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audioclient-types-aidl-cpp_vendor",
-    stem: "audioclient-types-aidl-cpp",
+    name: "audioclient-types-aidl-cpp-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -590,13 +577,13 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/audioclient-types-aidl-cpp.so",
+                "proprietary/vendor/lib/audioclient-types-aidl-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
                 "libutils",
-                "android.media.audio.common.types-V1-cpp_vendor",
-                "framework-permission-aidl-cpp_vendor",
+                "android.media.audio.common.types-V1-cpp-v33",
+                "framework-permission-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -605,13 +592,13 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/audioclient-types-aidl-cpp.so",
+                "proprietary/vendor/lib64/audioclient-types-aidl-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
                 "libutils",
-                "android.media.audio.common.types-V1-cpp_vendor",
-                "framework-permission-aidl-cpp_vendor",
+                "android.media.audio.common.types-V1-cpp-v33",
+                "framework-permission-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -735,9 +722,9 @@ cc_prebuilt_library_shared {
                 "libyuv",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge_vendor",
+                "libsensorndkbridge-v33",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libtclSceneDetector",
                 "libc++",
                 "libc",
@@ -759,9 +746,9 @@ cc_prebuilt_library_shared {
                 "libyuv",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge_vendor",
+                "libsensorndkbridge-v33",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libtclSceneDetector",
                 "libc++",
                 "libc",
@@ -1176,8 +1163,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "framework-permission-aidl-cpp_vendor",
-    stem: "framework-permission-aidl-cpp",
+    name: "framework-permission-aidl-cpp-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -1185,7 +1171,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/framework-permission-aidl-cpp.so",
+                "proprietary/vendor/lib/framework-permission-aidl-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -1198,7 +1184,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/framework-permission-aidl-cpp.so",
+                "proprietary/vendor/lib64/framework-permission-aidl-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -1211,140 +1197,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@6.0-impl_vendor",
-    stem: "android.hardware.audio.effect@6.0-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util_vendor",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio.effect@6.0-util_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util_vendor",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio.effect@6.0-util_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.effect@7.0-impl_vendor",
-    stem: "android.hardware.audio.effect@7.0-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util_vendor",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.effect@7.0",
-                "android.hardware.audio.effect@7.0-util_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libbase",
-                "libcutils",
-                "libeffects",
-                "libfmq",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libutils",
-                "android.hardware.audio.common-util_vendor",
-                "android.hidl.memory@1.0",
-                "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.effect@7.0",
-                "android.hardware.audio.effect@7.0-util_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -1361,19 +1213,19 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libbase",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "android.hardware.audio@6.0",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "vendor.mediatek.hardware.audio@6.1",
                 "libmedia_helper",
                 "libc++",
@@ -1387,19 +1239,19 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libbase",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "android.hardware.audio@6.0",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "vendor.mediatek.hardware.audio@6.1",
                 "libmedia_helper",
                 "libc++",
@@ -1427,21 +1279,21 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libbase",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "android.hardware.audio@7.0",
-                "android.hardware.audio@7.0-util_vendor",
+                "android.hardware.audio@7.0-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums_vendor",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common@7.0-enums-v33",
+                "android.hardware.audio.common@7.0-util-v33",
+                "android.hardware.audio.common-util-v33",
                 "vendor.mediatek.hardware.audio@7.1",
                 "libmedia_helper",
                 "libc++",
@@ -1455,21 +1307,21 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libbase",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "android.hardware.audio@7.0",
-                "android.hardware.audio@7.0-util_vendor",
+                "android.hardware.audio@7.0-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums_vendor",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common@7.0-enums-v33",
+                "android.hardware.audio.common@7.0-util-v33",
+                "android.hardware.audio.common-util-v33",
                 "vendor.mediatek.hardware.audio@7.1",
                 "libmedia_helper",
                 "libc++",
@@ -1497,24 +1349,24 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/android.hardware.audio@7.1-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libbase",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libmediautils_vendor_vendor",
-                "libmemunreachable_vendor",
+                "libhidltransport-v33",
+                "libmediautils_vendor-v33",
+                "libmemunreachable",
                 "liblog",
                 "libutils",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
-                "android.hardware.audio@7.1-util_vendor",
+                "android.hardware.audio@7.1-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common@7.1-enums-v33",
+                "android.hardware.audio.common@7.1-util-v33",
+                "android.hardware.audio.common-util-v33",
                 "vendor.mediatek.hardware.audio@8.1",
                 "libmedia_helper",
                 "libc++",
@@ -1528,24 +1380,24 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl-mediatek.so",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libbase",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libmediautils_vendor_vendor",
-                "libmemunreachable_vendor",
+                "libhidltransport-v33",
+                "libmediautils_vendor-v33",
+                "libmemunreachable",
                 "liblog",
                 "libutils",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
-                "android.hardware.audio@7.1-util_vendor",
+                "android.hardware.audio@7.1-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common@7.1-enums-v33",
+                "android.hardware.audio.common@7.1-util-v33",
+                "android.hardware.audio.common-util-v33",
                 "vendor.mediatek.hardware.audio@8.1",
                 "libmedia_helper",
                 "libc++",
@@ -1600,210 +1452,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.gatekeeper@1.0-impl_vendor",
-    stem: "android.hardware.gatekeeper@1.0-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.gatekeeper@1.0",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.gatekeeper@1.0",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.renderscript@1.0-impl_vendor",
-    stem: "android.hardware.renderscript@1.0-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.renderscript@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libhidlbase",
-                "libutils",
-                "android.hardware.renderscript@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.soundtrigger@2.3-impl_vendor",
-    stem: "android.hardware.soundtrigger@2.3-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libhidlmemory",
-                "libutils",
-                "libhardware",
-                "android.hardware.soundtrigger@2.0",
-                "android.hardware.soundtrigger@2.0-core",
-                "android.hardware.soundtrigger@2.1",
-                "android.hardware.soundtrigger@2.2",
-                "android.hardware.soundtrigger@2.3",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libhidlmemory",
-                "libutils",
-                "libhardware",
-                "android.hardware.soundtrigger@2.0",
-                "android.hardware.soundtrigger@2.0-core",
-                "android.hardware.soundtrigger@2.1",
-                "android.hardware.soundtrigger@2.2",
-                "android.hardware.soundtrigger@2.3",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.thermal@1.0-impl_vendor",
-    stem: "android.hardware.thermal@1.0-impl",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libbase",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "android.hardware.thermal@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libbase",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "android.hardware.thermal@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -1886,7 +1534,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libalsautils_vendor",
+                "libalsautils-v33",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
@@ -1898,18 +1546,18 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
+                "android.hardware.audio.common@7.0-util-v33",
+                "android.hardware.audio.common@7.1-util-v33",
                 "vendor.mediatek.hardware.audio@8.1",
                 "libbwc",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "libbinder_ndk",
-                "libtinycompress_vendor",
+                "libtinycompress",
                 "libaedv",
-                "libdrm_vendor",
+                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -1926,7 +1574,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libalsautils_vendor",
+                "libalsautils-v33",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
@@ -1938,65 +1586,18 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
-                "android.hardware.audio.common-util_vendor",
+                "android.hardware.audio.common-util-v33",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
+                "android.hardware.audio.common@7.0-util-v33",
+                "android.hardware.audio.common@7.1-util-v33",
                 "vendor.mediatek.hardware.audio@8.1",
                 "libbwc",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "libbinder_ndk",
-                "libtinycompress_vendor",
+                "libtinycompress",
                 "libaedv",
-                "libdrm_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.r_submix.default_vendor",
-    stem: "audio.r_submix.default",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.r_submix.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libnbaio_mono_vendor",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libnbaio_mono_vendor",
-                "libutils",
+                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -2026,7 +1627,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmedia_helper",
                 "libutils",
-                "libnbaio_mono_vendor",
+                "libnbaio_mono-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -2042,93 +1643,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libmedia_helper",
                 "libutils",
-                "libnbaio_mono_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.usb.default_vendor",
-    stem: "audio.usb.default",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.usb.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libtinyalsa",
-                "libalsautils_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.usb.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libtinyalsa",
-                "libalsautils_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio_policy.stub_vendor",
-    stem: "audio_policy.stub",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio_policy.stub.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio_policy.stub.so",
-            ],
-            shared_libs: [
-                "liblog",
+                "libnbaio_mono-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -2305,7 +1820,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm_vendor",
+                "libdrm",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
@@ -2338,7 +1853,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm_vendor",
+                "libdrm",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
@@ -2385,7 +1900,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm_vendor",
+                "libdrm",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
                 "libc",
@@ -2417,7 +1932,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm_vendor",
+                "libdrm",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
                 "libc",
@@ -2451,7 +1966,7 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libsync",
                 "libutils",
-                "libdrm_vendor",
+                "libdrm",
                 "libGLESv1_CM",
                 "libnativewindow",
                 "libgralloc_metadata",
@@ -2477,7 +1992,7 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libsync",
                 "libutils",
-                "libdrm_vendor",
+                "libdrm",
                 "libGLESv1_CM",
                 "libnativewindow",
                 "libgralloc_metadata",
@@ -2514,7 +2029,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libhidlbase",
                 "libhidlmemory",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.camera.atms@1.0",
                 "libcutils",
                 "libmtkcam.atmseventmgr",
@@ -2533,7 +2048,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libhidlbase",
                 "libhidlmemory",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.camera.atms@1.0",
                 "libcutils",
                 "libmtkcam.atmseventmgr",
@@ -2564,8 +2079,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -2577,7 +2092,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
-                "libdrm_vendor",
+                "libdrm",
                 "libaalservice",
                 "libpqframework",
                 "libsync",
@@ -2599,8 +2114,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -2612,7 +2127,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
-                "libdrm_vendor",
+                "libdrm",
                 "libaalservice",
                 "libpqframework",
                 "libsync",
@@ -2757,61 +2272,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "sensors.dynamic_sensor_hal_vendor",
-    stem: "sensors.dynamic_sensor_hal",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/sensors.dynamic_sensor_hal.so",
-            ],
-            shared_libs: [
-                "libhidparser_vendor",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock_vendor",
-                "android.hardware.sensors@2.1",
-                "libhidlbase",
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so",
-            ],
-            shared_libs: [
-                "libhidparser_vendor",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock_vendor",
-                "android.hardware.sensors@2.1",
-                "libhidlbase",
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "sound_trigger.primary.default",
     owner: "tcl",
     strip: {
@@ -2933,7 +2393,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "android.hardware.audio@6.0",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
@@ -2958,7 +2418,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "android.hardware.audio@6.0",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
@@ -2998,7 +2458,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "android.hardware.audio@6.0",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
@@ -3024,7 +2484,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "android.hardware.audio@6.0",
                 "android.hardware.audio.common@6.0",
-                "android.hardware.audio.common@6.0-util_vendor",
+                "android.hardware.audio.common@6.0-util-v33",
                 "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
@@ -3052,8 +2512,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -3084,8 +2544,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -3185,7 +2645,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "libnvram",
@@ -3207,7 +2667,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "libnvram",
@@ -13980,8 +13440,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libalsautils_vendor",
-    stem: "libalsautils",
+    name: "libalsautils-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -13989,7 +13448,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libalsautils.so",
+                "proprietary/vendor/lib/libalsautils-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -14004,7 +13463,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libalsautils.so",
+                "proprietary/vendor/lib64/libalsautils-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -14486,8 +13945,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioclient_aidl_conversion_vendor",
-    stem: "libaudioclient_aidl_conversion",
+    name: "libaudioclient_aidl_conversion-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -14495,19 +13953,19 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libaudioclient_aidl_conversion.so",
+                "proprietary/vendor/lib/libaudioclient_aidl_conversion-v33.so",
             ],
             shared_libs: [
-                "android.media.audio.common.types-V1-cpp_vendor",
-                "audioclient-types-aidl-cpp_vendor",
+                "android.media.audio.common.types-V1-cpp-v33",
+                "audioclient-types-aidl-cpp-v33",
                 "libbase",
                 "libbinder",
                 "liblog",
-                "libshmemcompat_vendor",
+                "libshmemcompat-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
-                "shared-file-region-aidl-cpp_vendor",
-                "framework-permission-aidl-cpp_vendor",
+                "shared-file-region-aidl-cpp-v33",
+                "framework-permission-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -14516,19 +13974,19 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libaudioclient_aidl_conversion.so",
+                "proprietary/vendor/lib64/libaudioclient_aidl_conversion-v33.so",
             ],
             shared_libs: [
-                "android.media.audio.common.types-V1-cpp_vendor",
-                "audioclient-types-aidl-cpp_vendor",
+                "android.media.audio.common.types-V1-cpp-v33",
+                "audioclient-types-aidl-cpp-v33",
                 "libbase",
                 "libbinder",
                 "liblog",
-                "libshmemcompat_vendor",
+                "libshmemcompat-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
-                "shared-file-region-aidl-cpp_vendor",
-                "framework-permission-aidl-cpp_vendor",
+                "shared-file-region-aidl-cpp-v33",
+                "framework-permission-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -14861,8 +14319,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudiofoundation_vendor",
-    stem: "libaudiofoundation",
+    name: "libaudiofoundation-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -14870,12 +14327,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libaudiofoundation.so",
+                "proprietary/vendor/lib/libaudiofoundation-v33.so",
             ],
             shared_libs: [
-                "android.media.audio.common.types-V1-cpp_vendor",
-                "audioclient-types-aidl-cpp_vendor",
-                "libaudioclient_aidl_conversion_vendor",
+                "android.media.audio.common.types-V1-cpp-v33",
+                "audioclient-types-aidl-cpp-v33",
+                "libaudioclient_aidl_conversion-v33",
                 "libaudioutils",
                 "libbase",
                 "libbinder",
@@ -14890,12 +14347,12 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libaudiofoundation.so",
+                "proprietary/vendor/lib64/libaudiofoundation-v33.so",
             ],
             shared_libs: [
-                "android.media.audio.common.types-V1-cpp_vendor",
-                "audioclient-types-aidl-cpp_vendor",
-                "libaudioclient_aidl_conversion_vendor",
+                "android.media.audio.common.types-V1-cpp-v33",
+                "audioclient-types-aidl-cpp-v33",
+                "libaudioclient_aidl_conversion-v33",
                 "libaudioutils",
                 "libbase",
                 "libbinder",
@@ -14975,13 +14432,13 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libbase",
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "libhidlbase",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
+                "android.hardware.audio.common@7.0-util-v33",
+                "android.hardware.audio.common@7.1-util-v33",
                 "libmedia_helper",
                 "libbinder",
                 "libc++",
@@ -14999,13 +14456,13 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libbase",
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "libhidlbase",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-util_vendor",
-                "android.hardware.audio.common@7.1-util_vendor",
+                "android.hardware.audio.common@7.0-util-v33",
+                "android.hardware.audio.common@7.1-util-v33",
                 "libmedia_helper",
                 "libbinder",
                 "libc++",
@@ -15152,8 +14609,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libavservices_minijail_vendor",
-    stem: "libavservices_minijail",
+    name: "libavservices_minijail-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -15161,7 +14617,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libavservices_minijail.so",
+                "proprietary/vendor/lib/libavservices_minijail-v33.so",
             ],
             shared_libs: [
                 "libbase_shim",
@@ -15175,7 +14631,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libavservices_minijail.so",
+                "proprietary/vendor/lib64/libavservices_minijail-v33.so",
             ],
             shared_libs: [
                 "libbase_shim",
@@ -15966,1022 +15422,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.0_vendor",
-    stem: "libcodec2_hidl@1.0",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_hidl@1.0.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.0.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.1_vendor",
-    stem: "libcodec2_hidl@1.1",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_hidl@1.1.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0_vendor",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.1.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0_vendor",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.2_vendor",
-    stem: "libcodec2_hidl@1.2",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_hidl@1.2.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0_vendor",
-                "libcodec2_hidl@1.1_vendor",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.2.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0_vendor",
-                "libcodec2_hidl@1.1_vendor",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_plugin_vendor",
-    stem: "libcodec2_hidl_plugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_hidl_plugin.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl_plugin.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_c2store",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_c2store.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libion",
-                "libion_mtk",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils-v33",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libion",
-                "libion_mtk",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_vdec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_vdec.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder_vendor",
-                "libged",
-                "libcodec2_soft_common_vendor",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libcodec2_vpp_qt_plugin",
-                "libcodec2_vpp_mi_plugin",
-                "libcodec2_vpp_rs_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui-v33",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder_vendor",
-                "libged",
-                "libcodec2_soft_common-v33",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils-v33",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libcodec2_vpp_qt_plugin",
-                "libcodec2_vpp_mi_plugin",
-                "libcodec2_vpp_rs_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_mtk_venc",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_mtk_venc.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder_vendor",
-                "libged",
-                "libcodec2_soft_common_vendor",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
-            ],
-            shared_libs: [
-                "libformatter",
-                "libdpframework",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libui-v33",
-                "libgralloc_extra",
-                "libexpat",
-                "libsync",
-                "libhidlbase",
-                "libhwbinder_vendor",
-                "libged",
-                "libcodec2_soft_common-v33",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils-v33",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libion",
-                "libdmabufheap",
-                "libion_mtk",
-                "libcodec2_mtk_c2store",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_common_vendor",
-    stem: "libcodec2_soft_common",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_common.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_common.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_alacdec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_alacdec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_mtk_c2store",
-                "libalacdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_mtk_c2store",
-                "libalacdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_imaadpcmdec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_mtk_c2store",
-                "libadpcmdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_mtk_c2store",
-                "libadpcmdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_mp3dec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_mp3dec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_mtk_c2store",
-                "libmp3dec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_mtk_c2store",
-                "libmp3dec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_mtk_msadpcmdec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_soft_mtk_msadpcmdec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libcodec2_vndk_vendor",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2",
-                "libcodec2_mtk_c2store",
-                "libadpcmdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libcodec2_vndk-v33",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libstagefright_foundation-v33",
-                "libbase",
-                "libcodec2-v33",
-                "libcodec2_mtk_c2store",
-                "libadpcmdec_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vndk_vendor",
-    stem: "libcodec2_vndk",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vndk.so",
-            ],
-            shared_libs: [
-                "libui_shim",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libfmq",
-                "libgralloctypes",
-                "libhidlbase",
-                "libion",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vndk.so",
-            ],
-            shared_libs: [
-                "libui_shim",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "libbase",
-                "libcutils",
-                "libdmabufheap",
-                "libfmq",
-                "libgralloctypes",
-                "libhidlbase",
-                "libion",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
-                "libstagefright_bufferpool@2.0.1_vendor",
-                "libui",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_mi_plugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_mi_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vpp_mi_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libsfplugin_ccodec_utils-v33",
-                "libstagefright_foundation-v33",
-                "libcodec2-v33",
-                "libcodec2_vndk-v33",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_qt_plugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_qt_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libsfplugin_ccodec_utils-v33",
-                "libstagefright_foundation-v33",
-                "libcodec2-v33",
-                "libcodec2_vndk-v33",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vpp_rs_plugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcodec2_vpp_rs_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common_vendor",
-                "libsfplugin_ccodec_utils_vendor",
-                "libstagefright_foundation-v33",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
-            ],
-            shared_libs: [
-                "libcodec2_soft_common-v33",
-                "libsfplugin_ccodec_utils-v33",
-                "libstagefright_foundation-v33",
-                "libcodec2-v33",
-                "libcodec2_vndk-v33",
-                "liblog",
-                "libbase",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libconnfem",
     owner: "tcl",
     strip: {
@@ -17131,42 +15571,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libsysutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdrm_vendor",
-    stem: "libdrm",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libdrm.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdrm.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -17804,8 +16208,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhidltransport_vendor",
-    stem: "libhidltransport",
+    name: "libhidltransport-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -17813,7 +16216,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libhidltransport.so",
+                "proprietary/vendor/lib/libhidltransport-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -17824,7 +16227,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libhidltransport.so",
+                "proprietary/vendor/lib64/libhidltransport-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -17840,8 +16243,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhidparser_vendor",
-    stem: "libhidparser",
+    name: "libhidparser-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -17849,7 +16251,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libhidparser.so",
+                "proprietary/vendor/lib/libhidparser-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -17861,7 +16263,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libhidparser.so",
+                "proprietary/vendor/lib64/libhidparser-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -17878,8 +16280,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhwbinder_vendor",
-    stem: "libhwbinder",
+    name: "libhwbinder-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -17887,7 +16288,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libhwbinder.so",
+                "proprietary/vendor/lib/libhwbinder-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -17898,7 +16299,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libhwbinder.so",
+                "proprietary/vendor/lib64/libhwbinder-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -18244,8 +16645,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeystore-wifi-hidl_vendor",
-    stem: "libkeystore-wifi-hidl",
+    name: "libkeystore-wifi-hidl-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -18253,7 +16653,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libkeystore-wifi-hidl.so",
+                "proprietary/vendor/lib/libkeystore-wifi-hidl-v33.so",
             ],
             shared_libs: [
                 "android.system.wifi.keystore@1.0",
@@ -18269,7 +16669,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libkeystore-wifi-hidl.so",
+                "proprietary/vendor/lib64/libkeystore-wifi-hidl-v33.so",
             ],
             shared_libs: [
                 "android.system.wifi.keystore@1.0",
@@ -18331,8 +16731,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmediautils_vendor_vendor",
-    stem: "libmediautils_vendor",
+    name: "libmediautils_vendor-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -18340,7 +16739,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libmediautils_vendor.so",
+                "proprietary/vendor/lib/libmediautils_vendor-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -18353,49 +16752,11 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmediautils_vendor.so",
+                "proprietary/vendor/lib64/libmediautils_vendor-v33.so",
             ],
             shared_libs: [
                 "liblog",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmemunreachable_vendor",
-    stem: "libmemunreachable",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmemunreachable.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmemunreachable.so",
-            ],
-            shared_libs: [
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -18425,7 +16786,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libdrm_vendor",
+                "libdrm",
                 "libbase",
                 "libc++",
                 "libc",
@@ -18443,7 +16804,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libdrm_vendor",
+                "libdrm",
                 "libbase",
                 "libc++",
                 "libc",
@@ -19834,8 +18195,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnbaio_mono_vendor",
-    stem: "libnbaio_mono",
+    name: "libnbaio_mono-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -19843,7 +18203,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libnbaio_mono.so",
+                "proprietary/vendor/lib/libnbaio_mono-v33.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -19858,7 +18218,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libnbaio_mono.so",
+                "proprietary/vendor/lib64/libnbaio_mono-v33.so",
             ],
             shared_libs: [
                 "libaudioutils",
@@ -20399,8 +18759,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpcap_vendor",
-    stem: "libpcap",
+    name: "libpcap-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -20408,7 +18767,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libpcap.so",
+                "proprietary/vendor/lib/libpcap-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -20419,7 +18778,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libpcap.so",
+                "proprietary/vendor/lib64/libpcap-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -20536,11 +18895,11 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdecrypt",
-                "libpcap_vendor",
+                "libpcap-v33",
                 "liblog",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "vendor.mediatek.hardware.mdmonitor@1.0",
                 "vendor.mediatek.hardware.apmonitor@2.0",
                 "libapmonitor_vendor",
@@ -20559,11 +18918,11 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libc++",
                 "libdecrypt",
-                "libpcap_vendor",
+                "libpcap-v33",
                 "liblog",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "vendor.mediatek.hardware.mdmonitor@1.0",
                 "vendor.mediatek.hardware.apmonitor@2.0",
                 "libapmonitor_vendor",
@@ -21085,7 +19444,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge_vendor",
+                "libsensorndkbridge-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -21104,7 +19463,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge_vendor",
+                "libsensorndkbridge-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -21214,8 +19573,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libruy_vendor",
-    stem: "libruy",
+    name: "libruy-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -21223,7 +19581,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libruy.so",
+                "proprietary/vendor/lib/libruy-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -21234,7 +19592,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libruy.so",
+                "proprietary/vendor/lib64/libruy-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -21287,8 +19645,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsensorndkbridge_vendor",
-    stem: "libsensorndkbridge",
+    name: "libsensorndkbridge-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -21296,7 +19653,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libsensorndkbridge.so",
+                "proprietary/vendor/lib/libsensorndkbridge-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -21312,7 +19669,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libsensorndkbridge.so",
+                "proprietary/vendor/lib64/libsensorndkbridge-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -21333,8 +19690,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsfplugin_ccodec_utils_vendor",
-    stem: "libsfplugin_ccodec_utils",
+    name: "libshmemcompat-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -21342,17 +19698,13 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libsfplugin_ccodec_utils.so",
+                "proprietary/vendor/lib/libshmemcompat-v33.so",
             ],
             shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
+                "libbinder",
+                "libshmemutil-v33",
                 "libutils",
+                "shared-file-region-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -21361,17 +19713,13 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libsfplugin_ccodec_utils.so",
+                "proprietary/vendor/lib64/libshmemcompat-v33.so",
             ],
             shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_vendor",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
+                "libbinder",
+                "libshmemutil-v33",
                 "libutils",
+                "shared-file-region-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -21385,8 +19733,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libshmemcompat_vendor",
-    stem: "libshmemcompat",
+    name: "libshmemutil-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -21394,13 +19741,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libshmemcompat.so",
+                "proprietary/vendor/lib/libshmemutil-v33.so",
             ],
             shared_libs: [
-                "libbinder",
-                "libshmemutil_vendor",
-                "libutils",
-                "shared-file-region-aidl-cpp_vendor",
+                "shared-file-region-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -21409,51 +19753,10 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libshmemcompat.so",
+                "proprietary/vendor/lib64/libshmemutil-v33.so",
             ],
             shared_libs: [
-                "libbinder",
-                "libshmemutil_vendor",
-                "libutils",
-                "shared-file-region-aidl-cpp_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libshmemutil_vendor",
-    stem: "libshmemutil",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libshmemutil.so",
-            ],
-            shared_libs: [
-                "shared-file-region-aidl-cpp_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libshmemutil.so",
-            ],
-            shared_libs: [
-                "shared-file-region-aidl-cpp_vendor",
+                "shared-file-region-aidl-cpp-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -21618,54 +19921,6 @@ cc_prebuilt_library_shared {
                 "libaudioutils",
                 "libmedia_helper",
                 "libxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferpool@2.0.1_vendor",
-    stem: "libstagefright_bufferpool@2.0.1",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -21860,8 +20115,8 @@ cc_prebuilt_library_shared {
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libsensorndkbridge_vendor",
+                "libhidltransport-v33",
+                "libsensorndkbridge-v33",
                 "libhardware",
                 "libui",
                 "libc++",
@@ -21887,46 +20142,10 @@ cc_prebuilt_library_shared {
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libsensorndkbridge_vendor",
+                "libhidltransport-v33",
+                "libsensorndkbridge-v33",
                 "libhardware",
                 "libui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtextclassifier_hash_vendor",
-    stem: "libtextclassifier_hash",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libtextclassifier_hash.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtextclassifier_hash.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -21953,8 +20172,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libflatbuffers-cpp",
-                "libruy_vendor",
-                "libtextclassifier_hash_vendor",
+                "libruy-v33",
+                "libtextclassifier_hash",
                 "libnativewindow",
                 "libion",
                 "libc",
@@ -21969,8 +20188,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libflatbuffers-cpp",
-                "libruy_vendor",
-                "libtextclassifier_hash_vendor",
+                "libruy-v33",
+                "libtextclassifier_hash",
                 "libnativewindow",
                 "libion",
                 "libc",
@@ -22013,46 +20232,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "liblog",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinycompress_vendor",
-    stem: "libtinycompress",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libtinycompress.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinycompress.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
             ],
         },
     },
@@ -22545,7 +20724,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libwapi.so",
             ],
             shared_libs: [
-                "libkeystore-wifi-hidl_vendor",
+                "libkeystore-wifi-hidl-v33",
                 "libcrypto",
                 "liblog",
                 "libc++",
@@ -22559,7 +20738,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libwapi.so",
             ],
             shared_libs: [
-                "libkeystore-wifi-hidl_vendor",
+                "libkeystore-wifi-hidl-v33",
                 "libcrypto",
                 "liblog",
                 "libc++",
@@ -22608,8 +20787,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwpa_client_vendor",
-    stem: "libwpa_client",
+    name: "libwpa_client-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -22617,7 +20795,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libwpa_client.so",
+                "proprietary/vendor/lib/libwpa_client-v33.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -22630,7 +20808,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwpa_client.so",
+                "proprietary/vendor/lib64/libwpa_client-v33.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -22696,47 +20874,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmockdrmcryptoplugin_vendor",
-    stem: "libmockdrmcryptoplugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mediadrm",
     prefer: true,
     soc_specific: true,
 }
@@ -30544,8 +28681,8 @@ cc_prebuilt_library_shared {
                 "libgralloc_extra",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge_vendor",
-                "libdrm_vendor",
+                "libsensorndkbridge-v33",
+                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -30566,8 +28703,8 @@ cc_prebuilt_library_shared {
                 "libgralloc_extra",
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
-                "libsensorndkbridge_vendor",
-                "libdrm_vendor",
+                "libsensorndkbridge-v33",
+                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -31587,8 +29724,8 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libmtkcam_stdutils",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.0_vendor",
                 "libladder",
@@ -31611,8 +29748,8 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libmtkcam_stdutils",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.0_vendor",
                 "libladder",
@@ -32914,8 +31051,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "shared-file-region-aidl-cpp_vendor",
-    stem: "shared-file-region-aidl-cpp",
+    name: "shared-file-region-aidl-cpp-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -32923,7 +31059,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/shared-file-region-aidl-cpp.so",
+                "proprietary/vendor/lib/shared-file-region-aidl-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -32936,7 +31072,7 @@ cc_prebuilt_library_shared {
         },
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/shared-file-region-aidl-cpp.so",
+                "proprietary/vendor/lib64/shared-file-region-aidl-cpp-v33.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -35639,8 +33775,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libopus_vendor",
-    stem: "libopus",
+    name: "libstagefright_amrnb_common-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -35648,7 +33783,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libopus.so",
+                "proprietary/vendor/lib/libstagefright_amrnb_common-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -35664,8 +33799,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_amrnb_common_vendor",
-    stem: "libstagefright_amrnb_common",
+    name: "libstagefright_enc_common-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -35673,7 +33807,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libstagefright_amrnb_common.so",
+                "proprietary/vendor/lib/libstagefright_enc_common-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -35689,8 +33823,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_enc_common_vendor",
-    stem: "libstagefright_enc_common",
+    name: "libstagefright_flacdec-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -35698,32 +33831,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libstagefright_enc_common.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_flacdec_vendor",
-    stem: "libstagefright_flacdec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefright_flacdec.so",
+                "proprietary/vendor/lib/libstagefright_flacdec-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -35752,7 +33860,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_aacdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -35782,7 +33890,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_aacenc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -35811,11 +33919,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_amrdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libstagefright_amrnb_common_vendor",
+                "libstagefright_amrnb_common-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -35841,11 +33949,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_amrnbenc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libstagefright_amrnb_common_vendor",
+                "libstagefright_amrnb_common-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -35871,11 +33979,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_amrwbenc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libstagefright_enc_common_vendor",
+                "libstagefright_enc_common-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -35901,7 +34009,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_avcdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -35930,7 +34038,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_avcenc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -35959,11 +34067,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_flacdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libstagefright_flacdec_vendor",
+                "libstagefright_flacdec-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -35989,7 +34097,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_flacenc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36019,7 +34127,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_g711dec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36048,7 +34156,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_gsmdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36077,7 +34185,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_hevcdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36106,7 +34214,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_mp3dec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36135,7 +34243,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_mpeg2dec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36164,7 +34272,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_mpeg4dec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36193,7 +34301,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_mpeg4enc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36222,11 +34330,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_opusdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libopus_vendor",
+                "libopus",
                 "libc++",
                 "libc",
                 "libm",
@@ -36252,7 +34360,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_rawdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
@@ -36281,11 +34389,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_vorbisdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libvorbisidec_vendor",
+                "libvorbisidec",
                 "libc++",
                 "libc",
                 "libm",
@@ -36311,11 +34419,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_vpxdec.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libvpx_vendor",
+                "libvpx",
                 "libc++",
                 "libc",
                 "libm",
@@ -36341,11 +34449,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libstagefright_soft_vpxenc.so",
             ],
             shared_libs: [
-                "libstagefright_softomx_vendor",
+                "libstagefright_softomx-v33",
                 "libstagefright_foundation-v33",
                 "libutils",
                 "liblog",
-                "libvpx_vendor",
+                "libvpx",
                 "libc++",
                 "libc",
                 "libm",
@@ -36359,8 +34467,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libstagefright_softomx_vendor",
-    stem: "libstagefright_softomx",
+    name: "libstagefright_softomx-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -36368,42 +34475,13 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/libstagefright_softomx.so",
+                "proprietary/vendor/lib/libstagefright_softomx-v33.so",
             ],
             shared_libs: [
                 "libui_shim",
                 "libstagefright_foundation-v33",
                 "liblog",
                 "libui",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_softomx_plugin_vendor",
-    stem: "libstagefright_softomx_plugin",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libstagefright_softomx_plugin.so",
-            ],
-            shared_libs: [
-                "libstagefright_softomx_vendor",
-                "libstagefright_foundation-v33",
-                "liblog",
                 "libutils",
                 "libc++",
                 "libc",
@@ -36455,32 +34533,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libvcodec_utility",
                 "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvorbisidec_vendor",
-    stem: "libvorbisidec",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvorbisidec.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -36588,31 +34640,6 @@ cc_prebuilt_library_shared {
                 "libvcodecdrv",
                 "libvcodec_utility",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpx_vendor",
-    stem: "libvpx",
-    owner: "tcl",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvpx.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -36756,8 +34783,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.composer@2.1-resources_vendor",
-    stem: "android.hardware.graphics.composer@2.1-resources",
+    name: "android.hardware.graphics.composer@2.1-resources-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -36765,7 +34791,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.1-resources.so",
+                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.1-resources-v33.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.composer@2.1",
@@ -36790,8 +34816,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.composer@2.2-resources_vendor",
-    stem: "android.hardware.graphics.composer@2.2-resources",
+    name: "android.hardware.graphics.composer@2.2-resources-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -36799,10 +34824,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.2-resources.so",
+                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.2-resources-v33.so",
             ],
             shared_libs: [
-                "android.hardware.graphics.composer@2.1-resources_vendor",
+                "android.hardware.graphics.composer@2.1-resources-v33",
                 "android.hardware.graphics.composer@2.2",
                 "libc++",
                 "libc",
@@ -36897,7 +34922,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libutils",
                 "android.hardware.gnss@1.0",
                 "android.hardware.gnss@1.1",
@@ -36934,7 +34959,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.0-ScopedWakelock_vendor",
+                "android.hardware.sensors@2.0-ScopedWakelock-v33",
                 "android.hardware.sensors@2.1",
                 "libbase",
                 "libutils",
@@ -36980,8 +35005,8 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libpower",
                 "libhidlbase",
-                "libhwbinder_vendor",
-                "libhidltransport_vendor",
+                "libhwbinder-v33",
+                "libhidltransport-v33",
                 "libprocessgroup",
                 "libbase",
                 "libnativewindow",
@@ -36998,7 +35023,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "android.hardware.graphics.composer3-V1-ndk",
                 "libaedv",
-                "libdrm_vendor",
+                "libdrm",
                 "libged",
                 "libpq_prot",
                 "libbinder_ndk",
@@ -37036,7 +35061,7 @@ cc_prebuilt_library_shared {
                 "libladder",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "android.hardware.camera.common@1.0",
                 "android.hardware.camera.provider@2.4",
                 "android.hardware.camera.provider@2.5",
@@ -37084,7 +35109,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libhidlbase",
                 "libhidlmemory",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.camera.ccap@1.0",
                 "android.hardware.camera.common@1.0",
                 "android.hardware.camera.device@3.2",
@@ -37123,7 +35148,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libcamera_metadata",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.camera.isphal@1.0",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.common@1.0",
@@ -37170,7 +35195,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libcamera_metadata",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.camera.isphal@1.0",
                 "vendor.mediatek.hardware.camera.isphal@1.1",
                 "android.hardware.graphics.mapper@2.0",
@@ -37216,7 +35241,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.camera.lomoeffect@1.0",
                 "android.hardware.camera.common@1.0",
                 "android.hardware.camera.device@3.2",
@@ -37288,7 +35313,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libbinder",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libutils",
                 "vendor.mediatek.hardware.lbs@1.0",
                 "libc++",
@@ -38191,8 +36216,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamera2ndk_vendor_vendor",
-    stem: "libcamera2ndk_vendor",
+    name: "libcamera2ndk_vendor-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -38200,7 +36224,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcamera2ndk_vendor.so",
+                "proprietary/vendor/lib64/libcamera2ndk_vendor-v33.so",
             ],
             shared_libs: [
                 "libfmq",
@@ -38232,8 +36256,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libchrome_vendor",
-    stem: "libchrome",
+    name: "libchrome-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -38241,13 +36264,286 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libchrome.so",
+                "proprietary/vendor/lib64/libchrome-v33.so",
             ],
             shared_libs: [
                 "libbase",
                 "libevent",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_c2store",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v33",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libion",
+                "libion_mtk",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_vdec",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui-v33",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder-v33",
+                "libged",
+                "libcodec2_soft_common-v33",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v33",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libcodec2_vpp_qt_plugin",
+                "libcodec2_vpp_mi_plugin",
+                "libcodec2_vpp_rs_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_venc",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
+            ],
+            shared_libs: [
+                "libformatter",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui-v33",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder-v33",
+                "libged",
+                "libcodec2_soft_common-v33",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v33",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_alacdec",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_mtk_c2store",
+                "libalacdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_imaadpcmdec",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_mp3dec",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_mtk_c2store",
+                "libmp3dec_mtk",
+                "libmtk_drvb",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_mtk_msadpcmdec",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libcodec2_vndk-v33",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2-v33",
+                "libcodec2_mtk_c2store",
+                "libadpcmdec_mtk",
+                "libmtk_drvb",
                 "libc++",
                 "libc",
                 "libm",
@@ -38354,6 +36650,105 @@ cc_prebuilt_library_shared {
                 "libneuron_runtime.6",
                 "libsync",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_mi_plugin",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_mi_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libsfplugin_ccodec_utils-v33",
+                "libstagefright_foundation-v33",
+                "libcodec2-v33",
+                "libcodec2_vndk-v33",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_qt_plugin",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libsfplugin_ccodec_utils-v33",
+                "libstagefright_foundation-v33",
+                "libcodec2-v33",
+                "libcodec2_vndk-v33",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_rs_plugin",
+    owner: "tcl",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v33",
+                "libsfplugin_ccodec_utils-v33",
+                "libstagefright_foundation-v33",
+                "libcodec2-v33",
+                "libcodec2_vndk-v33",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -38640,8 +37035,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhwc2on1adapter_vendor",
-    stem: "libhwc2on1adapter",
+    name: "libhwc2on1adapter-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -38649,7 +37043,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libhwc2on1adapter.so",
+                "proprietary/vendor/lib64/libhwc2on1adapter-v33.so",
             ],
             shared_libs: [
                 "libutils",
@@ -38669,8 +37063,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhwc2onfbadapter_vendor",
-    stem: "libhwc2onfbadapter",
+    name: "libhwc2onfbadapter-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -38678,7 +37071,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libhwc2onfbadapter.so",
+                "proprietary/vendor/lib64/libhwc2onfbadapter-v33.so",
             ],
             shared_libs: [
                 "liblog",
@@ -38777,8 +37170,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeystore-engine-wifi-hidl_vendor",
-    stem: "libkeystore-engine-wifi-hidl",
+    name: "libkeystore-engine-wifi-hidl-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -38786,7 +37178,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so",
+                "proprietary/vendor/lib64/libkeystore-engine-wifi-hidl-v33.so",
             ],
             shared_libs: [
                 "android.system.keystore2-V1-ndk",
@@ -39830,7 +38222,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.radio@1.2",
                 "libbinder",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libbinder_ndk",
                 "android.hardware.radio.data-V1-ndk",
                 "android.hardware.radio.messaging-V1-ndk",
@@ -40214,8 +38606,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal_vendor",
-    stem: "libwifi-hal",
+    name: "libwifi-hal-v33",
     owner: "tcl",
     strip: {
         none: true,
@@ -40223,7 +38614,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
+                "proprietary/vendor/lib64/libwifi-hal-v33.so",
             ],
             shared_libs: [
                 "libbase",
@@ -41127,7 +39518,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_imgbuf",
                 "libcam.halsensor",
                 "libmtkcam_metadata",
-                "libdrm_vendor",
+                "libdrm",
                 "libminiui",
                 "libhardware",
                 "libutils",
@@ -41936,8 +40327,8 @@ cc_prebuilt_library_shared {
                 "libcameracustom.camera.sensors",
                 "libcam.hal3a.v3.ai3a",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.power@2.0",
                 "libcamalgo.nr",
@@ -42121,8 +40512,8 @@ cc_prebuilt_library_shared {
                 "libcamdrv_tuning_mgr",
                 "libaedv",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.power@2.0",
                 "libui",
@@ -42179,8 +40570,8 @@ cc_prebuilt_library_shared {
                 "libcam.pdtblgen",
                 "libaedv",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.power@2.0",
                 "vendor.mediatek.hardware.mtkpower@1.0_vendor",
@@ -42345,8 +40736,8 @@ cc_prebuilt_library_shared {
                 "libcam.utils.sensorprovider",
                 "libui",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.power@2.0",
                 "vendor.mediatek.hardware.mtkpower@1.0_vendor",
@@ -42464,8 +40855,8 @@ cc_prebuilt_library_shared {
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libsensorndkbridge_vendor",
+                "libhidltransport-v33",
+                "libsensorndkbridge-v33",
                 "libhardware",
                 "libmtkcam_modulehelper",
                 "libcamalgo.gyro",
@@ -43071,8 +41462,8 @@ cc_prebuilt_library_shared {
                 "libcam.halsensor",
                 "vendor.mediatek.hardware.power@1.1",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "liblog",
                 "libc++",
                 "libc",
@@ -44290,7 +42681,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libfmq",
                 "android.hardware.camera.device@3.2",
                 "android.hardware.camera.device@3.3",
@@ -44334,7 +42725,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libfmq",
                 "android.hardware.camera.device@3.2",
                 "android.hardware.camera.device@3.3",
@@ -44795,8 +43186,8 @@ cc_prebuilt_library_shared {
                 "libcamalgo.fdft",
                 "libmtkcam_sysutils",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.power@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.0_vendor",
                 "libc++",
@@ -45225,7 +43616,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libbinder_ndk",
                 "libbinder",
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -45435,7 +43826,7 @@ cc_prebuilt_library_shared {
                 "libcameracustom",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libfeature.stereo.provider",
                 "libmtkcam_synchelper",
                 "libmtkcam_ulog",
@@ -47537,8 +45928,8 @@ cc_prebuilt_binary {
                 "libmtkproperty",
                 "vendor.mediatek.hardware.atci@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "libnvram",
                 "libfile_op",
                 "libmipc",
@@ -47874,33 +46265,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "dmabuf_dump_vendor",
-    stem: "dmabuf_dump",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dmabuf_dump",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "dmc_core",
     owner: "tcl",
     target: {
@@ -48051,7 +46415,7 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libbinder",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libutils",
                 "libcutils",
                 "libbinder_ndk",
@@ -48092,12 +46456,12 @@ cc_prebuilt_binary {
                 "libaudio_param_parser-vnd",
                 "libxml2",
                 "libselinux",
-                "libalsautils_vendor",
+                "libalsautils-v33",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
                 "libtinyalsa",
-                "libtinycompress_vendor",
+                "libtinycompress",
                 "libaudiotoolkit_vendor",
                 "libmedia_helper",
                 "libladder",
@@ -48107,8 +46471,8 @@ cc_prebuilt_binary {
                 "libutils",
                 "android.system.suspend@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "android.hardware.health-V1-ndk",
                 "android.hardware.light-V1-ndk",
                 "libbinder_ndk",
@@ -48386,13 +46750,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "hs20-osu-client_vendor",
-    stem: "hs20-osu-client",
+    name: "hs20-osu-client-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hs20-osu-client",
+                "proprietary/vendor/bin/hs20-osu-client-v33",
             ],
             shared_libs: [
                 "libcrypto_shim_selene",
@@ -48426,16 +46789,16 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek",
             ],
             shared_libs: [
-                "libaudiofoundation_vendor",
+                "libaudiofoundation-v33",
                 "libcutils",
                 "libbinder",
                 "libbinder_ndk",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "libhardware",
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "android.hardware.audio@6.0",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
@@ -48481,7 +46844,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "android.hardware.bluetooth@1.0",
                 "android.hardware.bluetooth@1.1",
                 "libc++",
@@ -48564,13 +46927,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.gatekeeper@1.0-service_vendor",
-    stem: "android.hardware.gatekeeper@1.0-service",
+    name: "android.hardware.gatekeeper@1.0-service-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service",
+                "proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-v33",
             ],
             shared_libs: [
                 "android.hardware.gatekeeper@1.0",
@@ -48635,25 +46997,24 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.graphics.composer@2.1-service_vendor",
-    stem: "android.hardware.graphics.composer@2.1-service",
+    name: "android.hardware.graphics.composer@2.1-service-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service",
+                "proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service-v33",
             ],
             shared_libs: [
                 "android.hardware.graphics.composer@2.1",
-                "android.hardware.graphics.composer@2.1-resources_vendor",
+                "android.hardware.graphics.composer@2.1-resources-v33",
                 "libbase",
                 "libbinder",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhwc2on1adapter_vendor",
-                "libhwc2onfbadapter_vendor",
+                "libhwc2on1adapter-v33",
+                "libhwc2onfbadapter-v33",
                 "liblog",
                 "libsync",
                 "libutils",
@@ -48674,28 +47035,27 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.graphics.composer@2.3-service_vendor",
-    stem: "android.hardware.graphics.composer@2.3-service",
+    name: "android.hardware.graphics.composer@2.3-service-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.3-service",
+                "proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.3-service-v33",
             ],
             shared_libs: [
                 "android.hardware.graphics.composer@2.1",
                 "android.hardware.graphics.composer@2.2",
                 "android.hardware.graphics.composer@2.3",
-                "android.hardware.graphics.composer@2.1-resources_vendor",
-                "android.hardware.graphics.composer@2.2-resources_vendor",
+                "android.hardware.graphics.composer@2.1-resources-v33",
+                "android.hardware.graphics.composer@2.2-resources-v33",
                 "libbase",
                 "libbinder",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhwc2on1adapter_vendor",
-                "libhwc2onfbadapter_vendor",
+                "libhwc2on1adapter-v33",
+                "libhwc2onfbadapter-v33",
                 "liblog",
                 "libsync",
                 "libutils",
@@ -48716,29 +47076,28 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.graphics.composer@2.4-service_vendor",
-    stem: "android.hardware.graphics.composer@2.4-service",
+    name: "android.hardware.graphics.composer@2.4-service-v33",
     owner: "tcl",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service",
+                "proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service-v33",
             ],
             shared_libs: [
                 "android.hardware.graphics.composer@2.1",
                 "android.hardware.graphics.composer@2.2",
                 "android.hardware.graphics.composer@2.3",
                 "android.hardware.graphics.composer@2.4",
-                "android.hardware.graphics.composer@2.1-resources_vendor",
-                "android.hardware.graphics.composer@2.2-resources_vendor",
+                "android.hardware.graphics.composer@2.1-resources-v33",
+                "android.hardware.graphics.composer@2.2-resources-v33",
                 "libbase",
                 "libbinder",
                 "libcutils",
                 "libfmq",
                 "libhardware",
                 "libhidlbase",
-                "libhwc2on1adapter_vendor",
-                "libhwc2onfbadapter_vendor",
+                "libhwc2on1adapter-v33",
+                "libhwc2onfbadapter-v33",
                 "liblog",
                 "libsync",
                 "libutils",
@@ -48776,8 +47135,8 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "android.hardware.graphics.composer@2.2-resources_vendor",
-                "android.hardware.graphics.composer@2.1-resources_vendor",
+                "android.hardware.graphics.composer@2.2-resources-v33",
+                "android.hardware.graphics.composer@2.1-resources-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -48861,48 +47220,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.media.c2@1.2-mediatek",
-    owner: "tcl",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0_vendor",
-                "libcodec2_hidl@1.1_vendor",
-                "libcodec2_hidl@1.2_vendor",
-                "libcodec2_vndk_vendor",
-                "libhidlbase",
-                "libavservices_minijail_vendor",
-                "libbinder",
-                "libcodec2_mtk_c2store",
-                "libcodec2_mtk_vdec",
-                "libcodec2_mtk_venc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.media.c2@1.2-mediatek-64b",
     owner: "tcl",
     target: {
@@ -48923,7 +47240,7 @@ cc_prebuilt_binary {
                 "libcodec2_hidl@1.2-v33",
                 "libcodec2_vndk-v33",
                 "libhidlbase",
-                "libavservices_minijail_vendor",
+                "libavservices_minijail-v33",
                 "libbinder",
                 "libcodec2_mtk_c2store",
                 "libcodec2_mtk_vdec",
@@ -48945,20 +47262,19 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.media.omx@1.0-service_vendor",
-    stem: "android.hardware.media.omx@1.0-service",
+    name: "android.hardware.media.omx@1.0-service-v33",
     owner: "tcl",
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service",
+                "proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service-v33",
             ],
             shared_libs: [
                 "libbinder",
                 "libutils",
                 "liblog",
                 "libbase",
-                "libavservices_minijail_vendor",
+                "libavservices_minijail-v33",
                 "libcutils",
                 "libhidlbase",
                 "libstagefright_omx",
@@ -49164,7 +47480,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libbase_shim",
-                "android.hardware.sensors@2.0-ScopedWakelock_vendor",
+                "android.hardware.sensors@2.0-ScopedWakelock-v33",
                 "android.hardware.sensors@2.0",
                 "android.hardware.sensors@2.1",
                 "android.hardware.sensors-V1-ndk",
@@ -49338,7 +47654,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libnl",
                 "libutils",
-                "libwifi-hal_vendor",
+                "libwifi-hal-v33",
                 "libwifi-system-iface",
                 "libxml2",
                 "android.hardware.wifi@1.0",
@@ -49383,7 +47699,7 @@ cc_prebuilt_binary {
                 "libbinder",
                 "libcamera_metadata",
                 "libnativewindow",
-                "libcamera2ndk_vendor_vendor",
+                "libcamera2ndk_vendor-v33",
                 "libtctcameraalgo",
                 "libui",
                 "android.hardware.graphics.mapper@2.0",
@@ -49485,9 +47801,9 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libbinder",
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libmtkcam_stdutils",
                 "libmtkcam_ulog",
                 "libmtkcam_scenariorecorder",
@@ -49562,9 +47878,9 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/tetheroffloadservice",
             ],
             shared_libs: [
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libforkexecwrap",
                 "libcutils",
@@ -49729,7 +48045,7 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "libhardware",
@@ -49833,7 +48149,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libbinder",
                 "libnvram",
                 "liblog",
@@ -49934,7 +48250,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libsync",
                 "libbinder",
                 "libui",
@@ -50132,9 +48448,9 @@ cc_prebuilt_binary {
                 "libfmq",
                 "vendor.mediatek.hardware.videotelephony@1.0",
                 "libhardware",
-                "libhwbinder_vendor",
+                "libhwbinder-v33",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libc++",
                 "libc",
                 "libm",
@@ -50165,8 +48481,8 @@ cc_prebuilt_binary {
                 "liblog",
                 "libcrypto",
                 "libssl",
-                "libkeystore-wifi-hidl_vendor",
-                "libkeystore-engine-wifi-hidl_vendor",
+                "libkeystore-wifi-hidl-v33",
+                "libkeystore-engine-wifi-hidl-v33",
                 "libnl",
                 "android.hardware.wifi.supplicant-V1-ndk",
                 "libutils",
@@ -50262,7 +48578,7 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libbinder",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "libutils",
                 "vendor.mediatek.hardware.lbs@1.0",
                 "lbs_hidl_service-impl",
@@ -50382,7 +48698,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "vendor.mediatek.hardware.mdmonitor@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "liblog",
                 "libutils",
                 "libc++",
@@ -50456,7 +48772,7 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libbinder",
                 "libhidlbase",
-                "libhidltransport_vendor",
+                "libhidltransport-v33",
                 "vendor.mediatek.hardware.lbs@1.0",
                 "libkmsetkey",
                 "libsysenv",
@@ -50502,8 +48818,8 @@ cc_prebuilt_binary {
                 "android.frameworks.sensorservice@1.0",
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libsensorndkbridge_vendor",
+                "libhidltransport-v33",
+                "libsensorndkbridge-v33",
                 "libhfmanager",
                 "libc++",
                 "libc",
@@ -51128,7 +49444,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "libchrome_vendor",
+                "libchrome-v33",
                 "libsysutils",
                 "libc++",
                 "libc",
@@ -51322,8 +49638,8 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "vendor.mediatek.hardware.clientapi@1.0",
                 "libhardware_legacy",
                 "libc++",
@@ -51357,8 +49673,8 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "vendor.mediatek.hardware.rcs@2.0",
                 "libhardware_legacy",
                 "libcrypto",
@@ -51394,8 +49710,8 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport_vendor",
-                "libhwbinder_vendor",
+                "libhidltransport-v33",
+                "libhwbinder-v33",
                 "vendor.mediatek.hardware.rcs@2.0",
                 "libhardware_legacy",
                 "libcrypto",
@@ -51555,33 +49871,6 @@ cc_prebuilt_binary {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wmt_loader",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wpa_cli_vendor",
-    stem: "wpa_cli",
-    owner: "tcl",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wpa_cli",
             ],
             shared_libs: [
                 "libcutils",

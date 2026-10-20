@@ -1494,6 +1494,29 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
     vendor/tcl/selene_vzw/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@6.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@7.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.3-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio_policy.stub.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.dynamic_sensor_hal.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libmockdrmcryptoplugin.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@6.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@7.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.3-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio_policy.stub.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/hw/sensors.dynamic_sensor_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.dynamic_sensor_hal.so \
+    vendor/tcl/selene_vzw/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/tcl/selene_vzw/proprietary/vendor/odm/etc/SP.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/SP.prop \
     vendor/tcl/selene_vzw/proprietary/vendor/odm/etc/build.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/build.prop \
     vendor/tcl/selene_vzw/proprietary/vendor/odm/etc/group:$(TARGET_COPY_OUT_VENDOR)/odm/etc/group \
@@ -1507,19 +1530,19 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/selene_vzw/proprietary/vendor/rw.prop:$(TARGET_COPY_OUT_VENDOR)/rw.prop
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio.common-util_vendor \
-    android.hardware.audio.common@6.0-util_vendor \
-    android.hardware.audio.common@7.0-enums_vendor \
-    android.hardware.audio.common@7.0-util_vendor \
-    android.hardware.audio.common@7.1-enums_vendor \
-    android.hardware.audio.common@7.1-util_vendor \
-    android.hardware.audio.effect@6.0-util_vendor \
-    android.hardware.audio.effect@7.0-util_vendor \
-    android.hardware.audio@7.0-util_vendor \
-    android.hardware.audio@7.1-util_vendor \
-    android.hardware.sensors@2.0-ScopedWakelock_vendor \
-    android.media.audio.common.types-V1-cpp_vendor \
-    audioclient-types-aidl-cpp_vendor \
+    android.hardware.audio.common-util-v33 \
+    android.hardware.audio.common@6.0-util-v33 \
+    android.hardware.audio.common@7.0-enums-v33 \
+    android.hardware.audio.common@7.0-util-v33 \
+    android.hardware.audio.common@7.1-enums-v33 \
+    android.hardware.audio.common@7.1-util-v33 \
+    android.hardware.audio.effect@6.0-util-v33 \
+    android.hardware.audio.effect@7.0-util-v33 \
+    android.hardware.audio@7.0-util-v33 \
+    android.hardware.audio@7.1-util-v33 \
+    android.hardware.sensors@2.0-ScopedWakelock-v33 \
+    android.media.audio.common.types-V1-cpp-v33 \
+    audioclient-types-aidl-cpp-v33 \
     com.tct.cameraalgo.gs \
     com.tct.cameraalgo.mirror \
     com.tct.cameraalgo.scenedetect \
@@ -1531,23 +1554,14 @@ PRODUCT_PACKAGES += \
     libMEOW_qt \
     libMEOW_trace \
     libGLES_mali \
-    framework-permission-aidl-cpp_vendor \
-    android.hardware.audio.effect@6.0-impl_vendor \
-    android.hardware.audio.effect@7.0-impl_vendor \
+    framework-permission-aidl-cpp-v33 \
     android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio@7.0-impl-mediatek \
     android.hardware.audio@7.1-impl-mediatek \
     android.hardware.bluetooth@1.1-impl-mediatek \
-    android.hardware.gatekeeper@1.0-impl_vendor \
-    android.hardware.renderscript@1.0-impl_vendor \
-    android.hardware.soundtrigger@2.3-impl_vendor \
-    android.hardware.thermal@1.0-impl_vendor \
     android.hardware.thermal@2.0-impl \
     audio.primary.mediatek \
-    audio.r_submix.default_vendor \
     audio.r_submix.mediatek \
-    audio.usb.default_vendor \
-    audio_policy.stub_vendor \
     gps.default \
     libMcGatekeeper \
     libSoftGatekeeper \
@@ -1559,7 +1573,6 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     mtkflp.default \
     mtkgeofence.default \
-    sensors.dynamic_sensor_hal_vendor \
     sound_trigger.primary.default \
     thermal_hal \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
@@ -1871,7 +1884,7 @@ PRODUCT_PACKAGES += \
     libadpcmdec_mtk \
     libaedv \
     libalacdec_mtk \
-    libalsautils_vendor \
+    libalsautils-v33 \
     libapmonitor_vendor \
     libapu_mdw \
     libapu_mdw_batch \
@@ -1883,7 +1896,7 @@ PRODUCT_PACKAGES += \
     libasn1c_mapi \
     libasn1c_mdmi \
     libaudio_param_parser-vnd \
-    libaudioclient_aidl_conversion_vendor \
+    libaudioclient_aidl_conversion-v33 \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
     libaudiocomponentengine_vendor \
@@ -1891,13 +1904,13 @@ PRODUCT_PACKAGES += \
     libaudiocustparam_vendor \
     libaudiodcrflt_vendor \
     libaudiofmtconv \
-    libaudiofoundation_vendor \
+    libaudiofoundation-v33 \
     libaudioloudc \
     libaudioprimarydevicehalifclient \
     libaudiosmartpamtk \
     libaudiotoolkit_vendor \
     libaurisysdemo \
-    libavservices_minijail_vendor \
+    libavservices_minijail-v33 \
     libawinic_mtk_aurisys \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
@@ -1917,27 +1930,10 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
-    libcodec2_hidl@1.0_vendor \
-    libcodec2_hidl@1.1_vendor \
-    libcodec2_hidl@1.2_vendor \
-    libcodec2_hidl_plugin_vendor \
-    libcodec2_mtk_c2store \
-    libcodec2_mtk_vdec \
-    libcodec2_mtk_venc \
-    libcodec2_soft_common_vendor \
-    libcodec2_soft_mtk_alacdec \
-    libcodec2_soft_mtk_imaadpcmdec \
-    libcodec2_soft_mtk_mp3dec \
-    libcodec2_soft_mtk_msadpcmdec \
-    libcodec2_vndk_vendor \
-    libcodec2_vpp_mi_plugin \
-    libcodec2_vpp_qt_plugin \
-    libcodec2_vpp_rs_plugin \
     libconnfem \
     libcustom_nvram \
     libcvsd_mtk \
     libdecrypt \
-    libdrm_vendor \
     libdynamiclog \
     libfgauge_gm30 \
     libfile_op \
@@ -1951,9 +1947,9 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
-    libhidltransport_vendor \
-    libhidparser_vendor \
-    libhwbinder_vendor \
+    libhidltransport-v33 \
+    libhidparser-v33 \
+    libhwbinder-v33 \
     libicd_decoder \
     libimgsensorca \
     libion_mtk \
@@ -1962,10 +1958,9 @@ PRODUCT_PACKAGES += \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libkeystore-wifi-hidl_vendor \
+    libkeystore-wifi-hidl-v33 \
     libladder \
-    libmediautils_vendor_vendor \
-    libmemunreachable_vendor \
+    libmediautils_vendor-v33 \
     libminiui \
     libmml \
     libmmprofile \
@@ -2000,7 +1995,7 @@ PRODUCT_PACKAGES += \
     libmvpu_runtime_pub \
     libmvpuop_mtk_cv \
     libmvpuop_mtk_nn \
-    libnbaio_mono_vendor \
+    libnbaio_mono-v33 \
     libneuroeara \
     libneuron_graph_delegate.mtk \
     libneuropilot_hal_utils \
@@ -2013,7 +2008,7 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libopencv_core \
     libopencv_imgproc \
-    libpcap_vendor \
+    libpcap-v33 \
     libperfctl_vendor \
     libpixelflinger \
     libpkm \
@@ -2030,26 +2025,22 @@ PRODUCT_PACKAGES += \
     librgbwlightsensor \
     librpc \
     librt_extamp_intf \
-    libruy_vendor \
+    libruy-v33 \
     libscltm \
-    libsensorndkbridge_vendor \
-    libsfplugin_ccodec_utils_vendor \
-    libshmemcompat_vendor \
-    libshmemutil_vendor \
+    libsensorndkbridge-v33 \
+    libshmemcompat-v33 \
+    libshmemutil-v33 \
     libsimlock \
     libsimmelock \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libstagefright_bufferpool@2.0.1_vendor \
     libstorage_otp \
     libsysenv \
     libtclSceneDetector \
     libtcltflitev2 \
     libtctcameraalgo \
-    libtextclassifier_hash_vendor \
     libtflite_mtk \
     libthha \
-    libtinycompress_vendor \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
@@ -2063,9 +2054,8 @@ PRODUCT_PACKAGES += \
     libvpu5 \
     libwapi \
     libwifinvramdata \
-    libwpa_client_vendor \
+    libwpa_client-v33 \
     libwvaidl \
-    libmockdrmcryptoplugin_vendor \
     arm.graphics-V3-ndk \
     arm.mali.platform-V1-ndk \
     cxtvm15e79_gc05a2_mipi_raw_IdxMgr \
@@ -2311,7 +2301,7 @@ PRODUCT_PACKAGES += \
     tsppk8a4334_gc08a8_mipi_raw_tuning \
     tsppsnp3142_s5kjn1_mipi_raw_cust1_tuning \
     tsppsnp3142_s5kjn1_mipi_raw_cust2_tuning \
-    shared-file-region-aidl-cpp_vendor \
+    shared-file-region-aidl-cpp-v33 \
     libaudiopreprocessing_mtk \
     libspatializer \
     vendor.mediatek.hardware.apmonitor@2.0 \
@@ -2371,10 +2361,9 @@ PRODUCT_PACKAGES += \
     libh264enc_sa.ca7 \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
-    libopus_vendor \
-    libstagefright_amrnb_common_vendor \
-    libstagefright_enc_common_vendor \
-    libstagefright_flacdec_vendor \
+    libstagefright_amrnb_common-v33 \
+    libstagefright_enc_common-v33 \
+    libstagefright_flacdec-v33 \
     libstagefright_soft_aacdec_vendor \
     libstagefright_soft_aacenc_vendor \
     libstagefright_soft_amrdec_vendor \
@@ -2396,22 +2385,19 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_vorbisdec_vendor \
     libstagefright_soft_vpxdec_vendor \
     libstagefright_soft_vpxenc_vendor \
-    libstagefright_softomx_vendor \
-    libstagefright_softomx_plugin_vendor \
+    libstagefright_softomx-v33 \
     libstdc++_vendor \
     libvcodec_utility_plat.mt6835 \
-    libvorbisidec_vendor \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
-    libvpx_vendor \
     libvcodec_utility \
     libvcodecdrv \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
-    android.hardware.graphics.composer@2.1-resources_vendor \
-    android.hardware.graphics.composer@2.2-resources_vendor \
+    android.hardware.graphics.composer@2.1-resources-v33 \
+    android.hardware.graphics.composer@2.2-resources-v33 \
     android.hardware.power-service-mediatek_vendor \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
@@ -2456,10 +2442,20 @@ PRODUCT_PACKAGES += \
     libcamalgo.nr \
     libcamalgo.platform \
     libcamalgo.warp \
-    libcamera2ndk_vendor_vendor \
-    libchrome_vendor \
+    libcamera2ndk_vendor-v33 \
+    libchrome-v33 \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_soft_mtk_alacdec \
+    libcodec2_soft_mtk_imaadpcmdec \
+    libcodec2_soft_mtk_mp3dec \
+    libcodec2_soft_mtk_msadpcmdec \
     libcodec2_vpp_AIMEMC_plugin \
     libcodec2_vpp_AISR_plugin \
+    libcodec2_vpp_mi_plugin \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
     libcomposer_ext \
     libfacepose \
     libfft_vendor \
@@ -2470,12 +2466,12 @@ PRODUCT_PACKAGES += \
     libheichal \
     libhfmanager \
     libhfmanagerwrapper \
-    libhwc2on1adapter_vendor \
-    libhwc2onfbadapter_vendor \
+    libhwc2on1adapter-v33 \
+    libhwc2onfbadapter-v33 \
     libhwm \
     libifcutils_mtk \
     libimagebuffer_wrapper \
-    libkeystore-engine-wifi-hidl_vendor \
+    libkeystore-engine-wifi-hidl-v33 \
     libkmsetkey \
     libksensor \
     libmace \
@@ -2525,7 +2521,7 @@ PRODUCT_PACKAGES += \
     libviamipc-ril \
     libvpu \
     libwestalgo_cal \
-    libwifi-hal_vendor \
+    libwifi-hal-v33 \
     libwifical \
     libwifinvram \
     libwifitest \
@@ -2759,7 +2755,6 @@ PRODUCT_PACKAGES += \
     conninfra_loader \
     dconfig \
     dexecutor \
-    dmabuf_dump_vendor \
     dmc_core \
     doeapp-memtester \
     doeapp-sat \
@@ -2777,22 +2772,21 @@ PRODUCT_PACKAGES += \
     gps_dump \
     gsm0710muxd \
     hostapd_cli_vendor \
-    hs20-osu-client_vendor \
+    hs20-osu-client-v33 \
     android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm-service.clearkey-v33 \
     android.hardware.drm-service.widevine \
-    android.hardware.gatekeeper@1.0-service_vendor \
+    android.hardware.gatekeeper@1.0-service-v33 \
     android.hardware.gnss-service.mediatek \
-    android.hardware.graphics.composer@2.1-service_vendor \
-    android.hardware.graphics.composer@2.3-service_vendor \
-    android.hardware.graphics.composer@2.4-service_vendor \
+    android.hardware.graphics.composer@2.1-service-v33 \
+    android.hardware.graphics.composer@2.3-service-v33 \
+    android.hardware.graphics.composer@2.4-service-v33 \
     android.hardware.graphics.composer@3.1-service \
     android.hardware.health-service.example-v33 \
     android.hardware.lights-service.mediatek \
-    android.hardware.media.c2@1.2-mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.media.omx@1.0-service_vendor \
+    android.hardware.media.omx@1.0-service-v33 \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.neuralnetworks-shim-service-mtk-lazy \
@@ -2876,8 +2870,7 @@ PRODUCT_PACKAGES += \
     wifitest \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader \
-    wpa_cli_vendor
+    wmt_loader
 
 PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator@4_0-service-mediatek \
