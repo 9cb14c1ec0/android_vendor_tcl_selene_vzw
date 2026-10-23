@@ -1461,6 +1461,7 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/tcl/selene_vzw/proprietary/vendor/etc/xgf.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/xgf.cfg \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
+    vendor/tcl/selene_vzw/proprietary/vendor/firmware/CSOT_ICNL9951C.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/CSOT_ICNL9951C.bin \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/ICNL9951C.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ICNL9951C.bin \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/WMT_SOC.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/WMT_SOC.cfg \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
@@ -1471,6 +1472,7 @@ PRODUCT_COPY_FILES += \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/awinic_sinwave_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_sinwave_params.bin \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/btnvram_tcl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/btnvram_tcl.cfg \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/chipone_limit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/chipone_limit.bin \
+    vendor/tcl/selene_vzw/proprietary/vendor/firmware/csot_icnl9951c_limit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/csot_icnl9951c_limit.bin \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/icnl9951c_limit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/icnl9951c_limit.bin \
     vendor/tcl/selene_vzw/proprietary/vendor/firmware/mt6627_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6627_fm_v1_coeff.bin \

@@ -1,6 +1,6 @@
 [
   {
-    "Version": "V1.120"
+    "Version": "V1.121"
   },
   {
     "content": [
@@ -699,7 +699,7 @@
           "Hera_thermal_info": "false",
           "Hera_super_saving_mode": "false",
           "Hera_long_standby_mode": "false",
-          "Hera_dou_log_waring_threshold": 240,
+          "Hera_dou_log_waring_threshold": 0,
           "uploadblacklist": [
             "com.microsoft.amp.apps.bingnews"
           ]
@@ -1435,12 +1435,10 @@
             "packageName": [
                 "com.baidu.BaiduMap",
                 "com.chinamworld.main",
-                "com.eg.android.AlipayGphone",
                 "com.jiongji.andriod.card",
                 "com.yaya.mmbang",
                 "com.cleanmaster.mguard_cn",
                 "com.tencent.karaoke",
-                "com.tencent.mobileqq",
                 "com.youloft.calendar",
                 "air.tv.douyu.android",
                 "cn.gov.tax.its",
@@ -1468,7 +1466,6 @@
                 "com.ss.android.ugc.live",
                 "com.taobao.taobao",
                 "com.taobao.trip",
-                "com.tencent.mm",
                 "com.tencent.qqmusic",
                 "com.tmall.wireless",
                 "com.xingin.xhs",
